@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyBeaver.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3DD8B4F17AF82211342BD1551C1ED316</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9B8A7429F47C32C1D00ECB8376A0B83E</key>
+		<key>E148D1F5FFDC5A5D7AB50E9CEDA693F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C8ABAE9E5445A8D52EB9F6127198F46D</key>
+		<key>F04FE11FBF1FA4AAD08A642E7B0070FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

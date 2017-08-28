@@ -7,6 +7,7 @@ target 'MijnWords' do
 
 pod 'Alamofire'
 pod 'SwiftyJSON'
+pod 'SwiftyBeaver'
   # Pods for MijnWords
 
 end
