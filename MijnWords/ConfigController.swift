@@ -20,10 +20,10 @@ class ConfigController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         pickerFocusLanguage.delegate = self
         pickerFocusLanguage.dataSource = self
         tfBaseVerb.text = "ES"
-        tfFocusVerb.text = Common.getSystemLanguage()
+        tfFocusVerb.text = Common.getFocusLanguage()
         tfFocusVerb.inputView = pickerFocusLanguage
         
-        pickerFocusLanguage.selectRow(Common.allLanguages.index(of: Common.getSystemLanguage())!, inComponent: 0, animated: false)
+        pickerFocusLanguage.selectRow(Common.allLanguages.index(of: Common.getFocusLanguage())!, inComponent: 0, animated: false)
 
     }
 
