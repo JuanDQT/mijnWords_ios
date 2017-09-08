@@ -17,7 +17,7 @@ class API {
     func checkCommonErrors(_ response: DataResponse<String>, json: inout JSON) -> Bool {
         
         if response.result.isFailure {
-            log.info("E: \(response.result.error?._code)")
+            //log.info("E: \(response.result.error?._code)")
                         log.error("[ServerAPI] ERROR: \(String(describing: response.request?.url)) : \(String(describing: response.result.error))")
             var mapErros: [String: Any] = [:]
             

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MijnWords.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3DD8B4F17AF82211342BD1551C1ED316</key>
+		<key>019C261F0B127CC9A02F2E4E4F8C316D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1BC15521E4C2EA801FB5AD90CC0F45B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>23A94C7F4A19F3B9A9D0A01FD5E4F8C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>279AA6726F52A334C45E85774BD21A3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E148D1F5FFDC5A5D7AB50E9CEDA693F5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F04FE11FBF1FA4AAD08A642E7B0070FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

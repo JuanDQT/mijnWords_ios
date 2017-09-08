@@ -1,0 +1,4817 @@
+{
+  "A": [
+    {
+      "117": "amar"
+    },
+    {
+      "119": "abrir"
+    },
+    {
+      "120": "aprender"
+    },
+    {
+      "182": "ayudar"
+    },
+    {
+      "201": "aprovechar"
+    },
+    {
+      "211": "andar"
+    },
+    {
+      "243": "aconsejar"
+    },
+    {
+      "256": "acabar"
+    },
+    {
+      "266": "abandonar"
+    },
+    {
+      "284": "acostarse"
+    },
+    {
+      "295": "alegrar"
+    },
+    {
+      "297": "apuntar"
+    },
+    {
+      "305": "acostumbrar"
+    },
+    {
+      "306": "acostumbrarse"
+    },
+    {
+      "310": "aceptar"
+    },
+    {
+      "311": "acompañar"
+    },
+    {
+      "312": "alcanzar"
+    },
+    {
+      "313": "almorzar"
+    },
+    {
+      "316": "adquirir"
+    },
+    {
+      "328": "apretar"
+    },
+    {
+      "334": "aparcar"
+    },
+    {
+      "335": "alquilar"
+    },
+    {
+      "337": "aprobar"
+    },
+    {
+      "341": "aclarar"
+    },
+    {
+      "342": "aclararse"
+    },
+    {
+      "347": "ahorrar"
+    },
+    {
+      "355": "acariciar"
+    },
+    {
+      "375": "atrapar"
+    },
+    {
+      "383": "aparecer"
+    },
+    {
+      "405": "animar"
+    },
+    {
+      "424": "atar"
+    },
+    {
+      "429": "atender"
+    },
+    {
+      "446": "avergonzar"
+    },
+    {
+      "459": "admitir"
+    },
+    {
+      "464": "asistir"
+    },
+    {
+      "465": "adelgazar"
+    },
+    {
+      "466": "aplicar"
+    },
+    {
+      "467": "alborotar"
+    },
+    {
+      "470": "asustar"
+    },
+    {
+      "484": "amanecer"
+    },
+    {
+      "502": "abrazar"
+    },
+    {
+      "503": "acampar"
+    },
+    {
+      "504": "abusar"
+    },
+    {
+      "505": "acercar"
+    },
+    {
+      "506": "acercarse"
+    },
+    {
+      "507": "acontecer"
+    },
+    {
+      "508": "advertir"
+    },
+    {
+      "509": "afirmar"
+    },
+    {
+      "510": "anunciar"
+    },
+    {
+      "511": "añadir"
+    },
+    {
+      "512": "apagar"
+    },
+    {
+      "513": "avisar"
+    },
+    {
+      "539": "arder"
+    },
+    {
+      "552": "acceder"
+    },
+    {
+      "557": "alegrarse"
+    },
+    {
+      "564": "adorar"
+    },
+    {
+      "568": "asegurar"
+    },
+    {
+      "581": "ampliar"
+    },
+    {
+      "610": "asir"
+    },
+    {
+      "619": "acordarse"
+    },
+    {
+      "625": "arreglar"
+    },
+    {
+      "627": "atreverse"
+    },
+    {
+      "630": "arrepentirse"
+    },
+    {
+      "653": "aumentar"
+    },
+    {
+      "658": "agregar"
+    },
+    {
+      "666": "afectar"
+    },
+    {
+      "698": "aburrirse"
+    },
+    {
+      "708": "actuar"
+    },
+    {
+      "712": "aullar"
+    },
+    {
+      "726": "apurarse"
+    },
+    {
+      "727": "arriesgar"
+    },
+    {
+      "738": "arrestar"
+    },
+    {
+      "744": "almacenar"
+    },
+    {
+      "757": "atraer"
+    },
+    {
+      "774": "agradecer"
+    },
+    {
+      "783": "asustarse"
+    },
+    {
+      "796": "abolir"
+    },
+    {
+      "800": "apreciar"
+    },
+    {
+      "810": "afeitar"
+    },
+    {
+      "821": "afeitarse"
+    },
+    {
+      "826": "averiguar"
+    },
+    {
+      "830": "apetecer"
+    },
+    {
+      "847": "atribuir"
+    },
+    {
+      "857": "admirar"
+    },
+    {
+      "861": "autorizar"
+    },
+    {
+      "863": "aplaudir"
+    },
+    {
+      "867": "analizar"
+    },
+    {
+      "886": "acertar"
+    },
+    {
+      "891": "aguantar"
+    },
+    {
+      "894": "anochecer"
+    },
+    {
+      "906": "asumir"
+    },
+    {
+      "909": "abordar"
+    },
+    {
+      "910": "abortar"
+    },
+    {
+      "943": "atravesar"
+    },
+    {
+      "944": "alentar"
+    },
+    {
+      "950": "atacar"
+    },
+    {
+      "952": "apoyar"
+    },
+    {
+      "955": "acostar"
+    },
+    {
+      "956": "acortar"
+    },
+    {
+      "957": "acordar"
+    },
+    {
+      "958": "adornar"
+    },
+    {
+      "959": "asociar"
+    },
+    {
+      "960": "amenazar"
+    },
+    {
+      "971": "arrojar"
+    },
+    {
+      "972": "aliviar"
+    },
+    {
+      "973": "agradar"
+    },
+    {
+      "974": "anhelar"
+    },
+    {
+      "976": "avanzar"
+    },
+    {
+      "977": "ahorcar"
+    },
+    {
+      "979": "adivinar"
+    },
+    {
+      "980": "agorar"
+    },
+    {
+      "981": "aspirar"
+    },
+    {
+      "988": "afligir"
+    },
+    {
+      "993": "aguardar"
+    },
+    {
+      "1014": "apostar"
+    },
+    {
+      "1040": "afinar"
+    },
+    {
+      "1058": "administrar"
+    },
+    {
+      "1067": "adelantar"
+    },
+    {
+      "1068": "ajustar"
+    },
+    {
+      "1069": "anotar"
+    },
+    {
+      "1072": "adjuntar"
+    },
+    {
+      "1076": "arrancar"
+    },
+    {
+      "1083": "actualizar"
+    },
+    {
+      "1088": "adecuar"
+    },
+    {
+      "1102": "acusar"
+    },
+    {
+      "1103": "aducir"
+    },
+    {
+      "1110": "alejar"
+    },
+    {
+      "1111": "absolver"
+    },
+    {
+      "1120": "aterrizar"
+    },
+    {
+      "1123": "acentuar"
+    },
+    {
+      "1126": "alimentar"
+    },
+    {
+      "1127": "abstenerse"
+    },
+    {
+      "1128": "atenerse"
+    },
+    {
+      "1130": "atardecer"
+    },
+    {
+      "1132": "adaptar"
+    },
+    {
+      "1141": "absorber"
+    },
+    {
+      "1142": "abstraer"
+    },
+    {
+      "1159": "acudir"
+    },
+    {
+      "1163": "alterar"
+    },
+    {
+      "1166": "asombrar"
+    },
+    {
+      "1168": "agarrar"
+    },
+    {
+      "1169": "alargar"
+    },
+    {
+      "1170": "abarcar"
+    },
+    {
+      "1171": "abrochar"
+    },
+    {
+      "1172": "acomodar"
+    },
+    {
+      "1173": "acoplar"
+    },
+    {
+      "1174": "activar"
+    },
+    {
+      "1201": "acelerar"
+    },
+    {
+      "1206": "alojar"
+    },
+    {
+      "1209": "alumbrar"
+    },
+    {
+      "1215": "anular"
+    },
+    {
+      "1222": "ascender"
+    },
+    {
+      "1224": "asomar"
+    },
+    {
+      "1240": "aportar"
+    },
+    {
+      "1247": "apestar"
+    },
+    {
+      "1250": "añorar"
+    },
+    {
+      "1256": "abatir"
+    },
+    {
+      "1267": "anticipar"
+    },
+    {
+      "1271": "apuntarse"
+    },
+    {
+      "1273": "apresurarse"
+    },
+    {
+      "1274": "atrasar"
+    },
+    {
+      "1289": "asar"
+    },
+    {
+      "1292": "alegar"
+    },
+    {
+      "1295": "acrecentar"
+    },
+    {
+      "1296": "apartar"
+    },
+    {
+      "1300": "amplificar"
+    },
+    {
+      "1308": "ahogar"
+    },
+    {
+      "1310": "arrendar"
+    },
+    {
+      "1317": "alojarse"
+    },
+    {
+      "1321": "aliñar"
+    },
+    {
+      "1334": "agitar"
+    },
+    {
+      "1356": "agotar"
+    },
+    {
+      "1363": "adoptar"
+    },
+    {
+      "1364": "arañar"
+    },
+    {
+      "1368": "alarmar"
+    },
+    {
+      "1369": "autenticar"
+    },
+    {
+      "1384": "asesinar"
+    },
+    {
+      "1387": "acoger"
+    },
+    {
+      "1390": "aplazar"
+    },
+    {
+      "1391": "afrontar"
+    },
+    {
+      "1395": "alzar"
+    },
+    {
+      "1401": "asentir"
+    },
+    {
+      "1407": "amenizar"
+    },
+    {
+      "1408": "aburrir"
+    },
+    {
+      "1409": "alijar"
+    },
+    {
+      "1413": "aplastar"
+    },
+    {
+      "1416": "aflojar"
+    },
+    {
+      "1426": "arrastrar"
+    },
+    {
+      "1430": "adherir"
+    },
+    {
+      "1449": "atañer"
+    },
+    {
+      "1453": "apelar"
+    },
+    {
+      "1472": "armar"
+    },
+    {
+      "1475": "abonar"
+    },
+    {
+      "1481": "abrigar"
+    },
+    {
+      "1485": "acreditar"
+    },
+    {
+      "1500": "aturdir"
+    },
+    {
+      "1502": "abrigarse"
+    },
+    {
+      "1504": "acosar"
+    },
+    {
+      "1506": "alertar"
+    },
+    {
+      "1519": "ahogarse"
+    },
+    {
+      "1527": "archivar"
+    },
+    {
+      "1529": "automatizar"
+    },
+    {
+      "1538": "aproximar"
+    },
+    {
+      "1550": "atascar"
+    },
+    {
+      "1554": "agacharse"
+    },
+    {
+      "1558": "atenuar"
+    },
+    {
+      "1559": "aislar"
+    },
+    {
+      "1570": "atrancar"
+    },
+    {
+      "1571": "anestesiar"
+    },
+    {
+      "1574": "aligerar"
+    },
+    {
+      "1581": "abotonar"
+    },
+    {
+      "1582": "argüir"
+    },
+    {
+      "1595": "acumular"
+    },
+    {
+      "1601": "articular"
+    },
+    {
+      "1603": "agravar"
+    },
+    {
+      "1611": "albergar"
+    },
+    {
+      "1614": "allanar"
+    },
+    {
+      "1631": "ansiar"
+    },
+    {
+      "1635": "atropellar"
+    },
+    {
+      "1645": "aturar"
+    },
+    {
+      "1650": "asemejar"
+    },
+    {
+      "1651": "avaluar"
+    },
+    {
+      "1671": "abanar"
+    },
+    {
+      "1672": "agrupar"
+    },
+    {
+      "1682": "azotar"
+    },
+    {
+      "1692": "avergonzarse"
+    },
+    {
+      "1704": "aliar"
+    },
+    {
+      "1716": "arrebatar"
+    },
+    {
+      "1727": "apercibir"
+    }
+  ],
+  "B": [
+    {
+      "121": "bailar"
+    },
+    {
+      "139": "beber"
+    },
+    {
+      "167": "buscar"
+    },
+    {
+      "202": "bajar"
+    },
+    {
+      "260": "brindar"
+    },
+    {
+      "286": "besar"
+    },
+    {
+      "290": "bromear"
+    },
+    {
+      "376": "bañar"
+    },
+    {
+      "377": "bastar"
+    },
+    {
+      "382": "bullir"
+    },
+    {
+      "395": "borrar"
+    },
+    {
+      "427": "balancear"
+    },
+    {
+      "514": "bendecir"
+    },
+    {
+      "583": "bombear"
+    },
+    {
+      "623": "bloquear"
+    },
+    {
+      "751": "bañarse"
+    },
+    {
+      "813": "brillar"
+    },
+    {
+      "893": "brincar"
+    },
+    {
+      "919": "burlar"
+    },
+    {
+      "930": "bucear"
+    },
+    {
+      "932": "barrer"
+    },
+    {
+      "946": "batir"
+    },
+    {
+      "951": "bordar"
+    },
+    {
+      "1000": "bautizar"
+    },
+    {
+      "1027": "burlarse"
+    },
+    {
+      "1059": "bruñir"
+    },
+    {
+      "1202": "bostezar"
+    },
+    {
+      "1287": "broncear"
+    },
+    {
+      "1405": "barajar"
+    },
+    {
+      "1441": "beneficiar"
+    },
+    {
+      "1605": "basar"
+    },
+    {
+      "1688": "bramar"
+    },
+    {
+      "1719": "blasfemar"
+    },
+    {
+      "1725": "batallar"
+    }
+  ],
+  "C": [
+    {
+      "110": "comer"
+    },
+    {
+      "124": "cantar"
+    },
+    {
+      "125": "creer"
+    },
+    {
+      "134": "caminar"
+    },
+    {
+      "138": "compartir"
+    },
+    {
+      "156": "comprender"
+    },
+    {
+      "170": "conducir"
+    },
+    {
+      "176": "conjugar"
+    },
+    {
+      "186": "conocer"
+    },
+    {
+      "191": "cambiar"
+    },
+    {
+      "193": "comprar"
+    },
+    {
+      "198": "cansar"
+    },
+    {
+      "210": "caber"
+    },
+    {
+      "217": "cocinar"
+    },
+    {
+      "218": "cerrar"
+    },
+    {
+      "219": "confirmar"
+    },
+    {
+      "227": "caer"
+    },
+    {
+      "232": "casar"
+    },
+    {
+      "237": "correr"
+    },
+    {
+      "245": "contar"
+    },
+    {
+      "247": "cenar"
+    },
+    {
+      "255": "cesar"
+    },
+    {
+      "257": "callar"
+    },
+    {
+      "258": "cuidar"
+    },
+    {
+      "259": "construir"
+    },
+    {
+      "262": "citar"
+    },
+    {
+      "263": "comenzar"
+    },
+    {
+      "264": "comparar"
+    },
+    {
+      "272": "conectar"
+    },
+    {
+      "294": "convencer"
+    },
+    {
+      "309": "coger"
+    },
+    {
+      "314": "crecer"
+    },
+    {
+      "317": "cumplir"
+    },
+    {
+      "324": "cansarse"
+    },
+    {
+      "330": "confiar"
+    },
+    {
+      "332": "colgar"
+    },
+    {
+      "339": "conceder"
+    },
+    {
+      "348": "coleccionar"
+    },
+    {
+      "363": "calentar"
+    },
+    {
+      "367": "cuajar"
+    },
+    {
+      "371": "cubrir"
+    },
+    {
+      "380": "calmar"
+    },
+    {
+      "384": "costar"
+    },
+    {
+      "398": "cobrar"
+    },
+    {
+      "404": "chocar"
+    },
+    {
+      "406": "celebrar"
+    },
+    {
+      "409": "calcular"
+    },
+    {
+      "410": "completar"
+    },
+    {
+      "411": "controlar"
+    },
+    {
+      "412": "curar"
+    },
+    {
+      "432": "corregir"
+    },
+    {
+      "436": "confesar"
+    },
+    {
+      "463": "considerar"
+    },
+    {
+      "478": "copiar"
+    },
+    {
+      "479": "cortar"
+    },
+    {
+      "481": "conseguir"
+    },
+    {
+      "490": "cazar"
+    },
+    {
+      "520": "cargar"
+    },
+    {
+      "521": "causar"
+    },
+    {
+      "522": "censurar"
+    },
+    {
+      "523": "charlar"
+    },
+    {
+      "553": "componer"
+    },
+    {
+      "559": "contestar"
+    },
+    {
+      "571": "circular"
+    },
+    {
+      "572": "cometer"
+    },
+    {
+      "573": "colar"
+    },
+    {
+      "574": "colarse"
+    },
+    {
+      "578": "coquetear"
+    },
+    {
+      "582": "conquistar"
+    },
+    {
+      "585": "contribuir"
+    },
+    {
+      "588": "consolar"
+    },
+    {
+      "594": "comerciar"
+    },
+    {
+      "604": "continuar"
+    },
+    {
+      "621": "configurar"
+    },
+    {
+      "632": "casarse"
+    },
+    {
+      "645": "cocer"
+    },
+    {
+      "650": "conocerse"
+    },
+    {
+      "656": "contaminar"
+    },
+    {
+      "662": "carecer"
+    },
+    {
+      "671": "concluir"
+    },
+    {
+      "695": "crear"
+    },
+    {
+      "696": "complacer"
+    },
+    {
+      "701": "constituir"
+    },
+    {
+      "714": "conversar"
+    },
+    {
+      "719": "cruzar"
+    },
+    {
+      "720": "criticar"
+    },
+    {
+      "733": "capitular"
+    },
+    {
+      "736": "consumir"
+    },
+    {
+      "739": "combinar"
+    },
+    {
+      "742": "consistir"
+    },
+    {
+      "758": "confundir"
+    },
+    {
+      "759": "confundirse"
+    },
+    {
+      "760": "cuidarse"
+    },
+    {
+      "764": "competir"
+    },
+    {
+      "766": "coser"
+    },
+    {
+      "780": "contener"
+    },
+    {
+      "782": "consultar"
+    },
+    {
+      "802": "comprobar"
+    },
+    {
+      "811": "conservar"
+    },
+    {
+      "814": "comunicar"
+    },
+    {
+      "819": "convertir"
+    },
+    {
+      "822": "colocar"
+    },
+    {
+      "825": "concebir"
+    },
+    {
+      "840": "comentar"
+    },
+    {
+      "843": "congelar"
+    },
+    {
+      "871": "caerse"
+    },
+    {
+      "878": "cepillar"
+    },
+    {
+      "880": "convenir"
+    },
+    {
+      "883": "contratar"
+    },
+    {
+      "892": "concernir"
+    },
+    {
+      "898": "coordinar"
+    },
+    {
+      "937": "condenar"
+    },
+    {
+      "940": "culpar"
+    },
+    {
+      "948": "contradecir"
+    },
+    {
+      "961": "colonizar"
+    },
+    {
+      "962": "cancelar"
+    },
+    {
+      "975": "combatir"
+    },
+    {
+      "978": "clarificar"
+    },
+    {
+      "982": "caracterizar"
+    },
+    {
+      "985": "civilizar"
+    },
+    {
+      "986": "cultivar"
+    },
+    {
+      "995": "candar"
+    },
+    {
+      "998": "clasificar"
+    },
+    {
+      "999": "crucificar"
+    },
+    {
+      "1003": "confiscar"
+    },
+    {
+      "1004": "consentir"
+    },
+    {
+      "1006": "castigar"
+    },
+    {
+      "1020": "callarse"
+    },
+    {
+      "1021": "criar"
+    },
+    {
+      "1022": "convidar"
+    },
+    {
+      "1030": "calentarse"
+    },
+    {
+      "1031": "calmarse"
+    },
+    {
+      "1056": "conferir"
+    },
+    {
+      "1057": "cepillarse"
+    },
+    {
+      "1061": "chupar"
+    },
+    {
+      "1066": "corresponder"
+    },
+    {
+      "1070": "ceñir"
+    },
+    {
+      "1081": "colaborar"
+    },
+    {
+      "1087": "cagar"
+    },
+    {
+      "1093": "contraer"
+    },
+    {
+      "1094": "convertirse"
+    },
+    {
+      "1096": "ceder"
+    },
+    {
+      "1101": "contactar"
+    },
+    {
+      "1112": "contemplar"
+    },
+    {
+      "1118": "cooperar"
+    },
+    {
+      "1119": "cruzarse"
+    },
+    {
+      "1138": "coronar"
+    },
+    {
+      "1144": "codificar"
+    },
+    {
+      "1145": "cifrar"
+    },
+    {
+      "1154": "colegir"
+    },
+    {
+      "1157": "contravenir"
+    },
+    {
+      "1162": "comprimir"
+    },
+    {
+      "1175": "complicar"
+    },
+    {
+      "1176": "comportar"
+    },
+    {
+      "1177": "concordar"
+    },
+    {
+      "1212": "coincidir"
+    },
+    {
+      "1226": "calificar"
+    },
+    {
+      "1227": "cuantificar"
+    },
+    {
+      "1253": "constatar"
+    },
+    {
+      "1285": "cavar"
+    },
+    {
+      "1304": "comprometer"
+    },
+    {
+      "1328": "crujir"
+    },
+    {
+      "1330": "calzar"
+    },
+    {
+      "1331": "centrar"
+    },
+    {
+      "1336": "chatear"
+    },
+    {
+      "1352": "conjeturar"
+    },
+    {
+      "1360": "capturar"
+    },
+    {
+      "1367": "categorizar"
+    },
+    {
+      "1372": "caldear"
+    },
+    {
+      "1373": "centralizar"
+    },
+    {
+      "1380": "canalizar"
+    },
+    {
+      "1392": "compensar"
+    },
+    {
+      "1397": "colorear"
+    },
+    {
+      "1400": "corromper"
+    },
+    {
+      "1419": "cegar"
+    },
+    {
+      "1424": "concentrar"
+    },
+    {
+      "1435": "convivir"
+    },
+    {
+      "1451": "clavar"
+    },
+    {
+      "1458": "cautivar"
+    },
+    {
+      "1459": "compadecer"
+    },
+    {
+      "1464": "consolidar"
+    },
+    {
+      "1465": "cosechar"
+    },
+    {
+      "1466": "condicionar"
+    },
+    {
+      "1484": "compilar"
+    },
+    {
+      "1498": "clarear"
+    },
+    {
+      "1510": "confrontar"
+    },
+    {
+      "1512": "camuflar"
+    },
+    {
+      "1532": "colapsar"
+    },
+    {
+      "1545": "chiflar"
+    },
+    {
+      "1555": "conformar"
+    },
+    {
+      "1556": "convocar"
+    },
+    {
+      "1557": "concertar"
+    },
+    {
+      "1562": "catalizar"
+    },
+    {
+      "1576": "centellear"
+    },
+    {
+      "1578": "certificar"
+    },
+    {
+      "1584": "cometerse"
+    },
+    {
+      "1602": "culminar"
+    },
+    {
+      "1604": "curvar"
+    },
+    {
+      "1608": "currar"
+    },
+    {
+      "1609": "confortar"
+    },
+    {
+      "1618": "comandar"
+    },
+    {
+      "1619": "conmover"
+    },
+    {
+      "1621": "captar"
+    },
+    {
+      "1623": "copular"
+    },
+    {
+      "1626": "cotizar"
+    },
+    {
+      "1628": "castrar"
+    },
+    {
+      "1642": "cohabitar"
+    },
+    {
+      "1647": "camelar"
+    },
+    {
+      "1660": "concretizar"
+    },
+    {
+      "1662": "cuestionar"
+    },
+    {
+      "1674": "curtir"
+    },
+    {
+      "1689": "comparecer"
+    },
+    {
+      "1694": "cardar"
+    },
+    {
+      "1695": "circundar"
+    },
+    {
+      "1697": "contagiar"
+    },
+    {
+      "1706": "circuncidar"
+    },
+    {
+      "1714": "confitar"
+    },
+    {
+      "1728": "cuchichear"
+    }
+  ],
+  "D": [
+    {
+      "128": "dar"
+    },
+    {
+      "131": "decir"
+    },
+    {
+      "136": "dibujar"
+    },
+    {
+      "152": "darse"
+    },
+    {
+      "158": "desear"
+    },
+    {
+      "160": "decidir"
+    },
+    {
+      "165": "dormir"
+    },
+    {
+      "213": "dejar"
+    },
+    {
+      "215": "doler"
+    },
+    {
+      "234": "dirigir"
+    },
+    {
+      "238": "desayunar"
+    },
+    {
+      "275": "devolver"
+    },
+    {
+      "282": "dudar"
+    },
+    {
+      "291": "despertar"
+    },
+    {
+      "292": "despertarse"
+    },
+    {
+      "293": "descansar"
+    },
+    {
+      "303": "deber"
+    },
+    {
+      "318": "descubrir"
+    },
+    {
+      "320": "derivar"
+    },
+    {
+      "331": "desconfiar"
+    },
+    {
+      "336": "divertir"
+    },
+    {
+      "346": "disfrutar"
+    },
+    {
+      "366": "disfrazar"
+    },
+    {
+      "385": "disculpar"
+    },
+    {
+      "414": "divorciarse"
+    },
+    {
+      "423": "desnudar"
+    },
+    {
+      "425": "desatar"
+    },
+    {
+      "458": "destruir"
+    },
+    {
+      "468": "declarar"
+    },
+    {
+      "518": "diseñar"
+    },
+    {
+      "519": "demostrar"
+    },
+    {
+      "524": "desarrollar"
+    },
+    {
+      "525": "desarrollarse"
+    },
+    {
+      "541": "durar"
+    },
+    {
+      "542": "doblar"
+    },
+    {
+      "600": "detener"
+    },
+    {
+      "607": "delinquir"
+    },
+    {
+      "624": "disimular"
+    },
+    {
+      "633": "despedirse"
+    },
+    {
+      "634": "desvanecerse"
+    },
+    {
+      "635": "desaparecer"
+    },
+    {
+      "637": "danzar"
+    },
+    {
+      "643": "detestar"
+    },
+    {
+      "652": "distribuir"
+    },
+    {
+      "657": "disminuir"
+    },
+    {
+      "668": "definir"
+    },
+    {
+      "675": "distinguir"
+    },
+    {
+      "676": "discutir"
+    },
+    {
+      "693": "ducharse"
+    },
+    {
+      "694": "divertirse"
+    },
+    {
+      "707": "dominar"
+    },
+    {
+      "746": "disponer"
+    },
+    {
+      "747": "duplicar"
+    },
+    {
+      "752": "dormirse"
+    },
+    {
+      "765": "describir"
+    },
+    {
+      "777": "despedir"
+    },
+    {
+      "788": "defender"
+    },
+    {
+      "831": "deducir"
+    },
+    {
+      "856": "dedicar"
+    },
+    {
+      "868": "depender"
+    },
+    {
+      "869": "descender"
+    },
+    {
+      "895": "destinar"
+    },
+    {
+      "908": "distraer"
+    },
+    {
+      "941": "decorar"
+    },
+    {
+      "967": "devorar"
+    },
+    {
+      "1005": "deprimir"
+    },
+    {
+      "1011": "detenerse"
+    },
+    {
+      "1015": "deshacer"
+    },
+    {
+      "1016": "derretir"
+    },
+    {
+      "1023": "depositar"
+    },
+    {
+      "1041": "desafinar"
+    },
+    {
+      "1042": "desaconsejar"
+    },
+    {
+      "1047": "desollar"
+    },
+    {
+      "1064": "dividir"
+    },
+    {
+      "1074": "descargar"
+    },
+    {
+      "1084": "determinar"
+    },
+    {
+      "1085": "desandar"
+    },
+    {
+      "1098": "diferenciar"
+    },
+    {
+      "1134": "difundir"
+    },
+    {
+      "1139": "deponer"
+    },
+    {
+      "1143": "degustar"
+    },
+    {
+      "1149": "denunciar"
+    },
+    {
+      "1156": "devenir"
+    },
+    {
+      "1204": "descongelar"
+    },
+    {
+      "1211": "desosar"
+    },
+    {
+      "1213": "destacar"
+    },
+    {
+      "1214": "divisar"
+    },
+    {
+      "1239": "dañar"
+    },
+    {
+      "1244": "disculparse"
+    },
+    {
+      "1248": "declinar"
+    },
+    {
+      "1249": "deplorar"
+    },
+    {
+      "1257": "derribar"
+    },
+    {
+      "1272": "desplazar"
+    },
+    {
+      "1275": "dimitir"
+    },
+    {
+      "1302": "donar"
+    },
+    {
+      "1333": "despegar"
+    },
+    {
+      "1335": "degollar"
+    },
+    {
+      "1340": "detectar"
+    },
+    {
+      "1342": "disolver"
+    },
+    {
+      "1348": "disparar"
+    },
+    {
+      "1350": "deteriorar"
+    },
+    {
+      "1374": "debatir"
+    },
+    {
+      "1386": "descarrilar"
+    },
+    {
+      "1393": "dedicarse"
+    },
+    {
+      "1404": "disentir"
+    },
+    {
+      "1406": "decepcionar"
+    },
+    {
+      "1418": "divergir"
+    },
+    {
+      "1420": "denigrar"
+    },
+    {
+      "1439": "dictar"
+    },
+    {
+      "1440": "desconectar"
+    },
+    {
+      "1442": "desviar"
+    },
+    {
+      "1463": "discriminar"
+    },
+    {
+      "1468": "disputar"
+    },
+    {
+      "1495": "diferir"
+    },
+    {
+      "1501": "divulgar"
+    },
+    {
+      "1508": "desplegar"
+    },
+    {
+      "1511": "documentar"
+    },
+    {
+      "1513": "dramatizar"
+    },
+    {
+      "1518": "dispersar"
+    },
+    {
+      "1525": "depurar"
+    },
+    {
+      "1533": "diseminar"
+    },
+    {
+      "1534": "derrumbar"
+    },
+    {
+      "1540": "destilar"
+    },
+    {
+      "1541": "diluir"
+    },
+    {
+      "1547": "demoler"
+    },
+    {
+      "1548": "deletrear"
+    },
+    {
+      "1560": "descontar"
+    },
+    {
+      "1566": "derruir"
+    },
+    {
+      "1573": "detallar"
+    },
+    {
+      "1575": "decapitar"
+    },
+    {
+      "1585": "denegar"
+    },
+    {
+      "1586": "designar"
+    },
+    {
+      "1591": "demorar"
+    },
+    {
+      "1598": "derrotar"
+    },
+    {
+      "1612": "desvestir"
+    },
+    {
+      "1620": "descartar"
+    },
+    {
+      "1641": "deshacerse"
+    },
+    {
+      "1659": "dispensar"
+    },
+    {
+      "1680": "desembocar"
+    },
+    {
+      "1685": "disciplinar"
+    },
+    {
+      "1707": "dificultar"
+    },
+    {
+      "1709": "despreciar"
+    },
+    {
+      "1731": "desanimar"
+    }
+  ],
+  "E": [
+    {
+      "114": "estar"
+    },
+    {
+      "122": "escuchar"
+    },
+    {
+      "126": "explicar"
+    },
+    {
+      "140": "esperar"
+    },
+    {
+      "145": "encantar"
+    },
+    {
+      "149": "elegir"
+    },
+    {
+      "177": "enseñar"
+    },
+    {
+      "179": "educar"
+    },
+    {
+      "189": "escribir"
+    },
+    {
+      "208": "encontrar"
+    },
+    {
+      "212": "extrañar"
+    },
+    {
+      "228": "ejercer"
+    },
+    {
+      "241": "exigir"
+    },
+    {
+      "251": "empezar"
+    },
+    {
+      "261": "embrujar"
+    },
+    {
+      "268": "explorar"
+    },
+    {
+      "287": "entrar"
+    },
+    {
+      "289": "echar"
+    },
+    {
+      "300": "existir"
+    },
+    {
+      "315": "escoger"
+    },
+    {
+      "323": "enviar"
+    },
+    {
+      "325": "engañar"
+    },
+    {
+      "326": "engañarse"
+    },
+    {
+      "344": "entender"
+    },
+    {
+      "364": "enojar"
+    },
+    {
+      "365": "evitar"
+    },
+    {
+      "440": "exhibir"
+    },
+    {
+      "451": "emitir"
+    },
+    {
+      "453": "entrenar"
+    },
+    {
+      "485": "esconder"
+    },
+    {
+      "486": "echarse"
+    },
+    {
+      "487": "efectuar"
+    },
+    {
+      "488": "elaborar"
+    },
+    {
+      "489": "embarazar"
+    },
+    {
+      "492": "exportar"
+    },
+    {
+      "497": "evadir"
+    },
+    {
+      "498": "evacuar"
+    },
+    {
+      "499": "evaluar"
+    },
+    {
+      "500": "excusar"
+    },
+    {
+      "501": "excusarse"
+    },
+    {
+      "515": "entrevistar"
+    },
+    {
+      "516": "entregar"
+    },
+    {
+      "517": "exponer"
+    },
+    {
+      "526": "emigrar"
+    },
+    {
+      "527": "entretener"
+    },
+    {
+      "528": "entretenerse"
+    },
+    {
+      "535": "envejecer"
+    },
+    {
+      "536": "esquiar"
+    },
+    {
+      "537": "enriquecer"
+    },
+    {
+      "540": "experimentar"
+    },
+    {
+      "556": "encender"
+    },
+    {
+      "602": "errar"
+    },
+    {
+      "616": "editar"
+    },
+    {
+      "620": "especializarse"
+    },
+    {
+      "631": "equivocarse"
+    },
+    {
+      "640": "estudiar"
+    },
+    {
+      "660": "empeñarse"
+    },
+    {
+      "665": "establecer"
+    },
+    {
+      "684": "equivocar"
+    },
+    {
+      "685": "especificar"
+    },
+    {
+      "691": "enterarse"
+    },
+    {
+      "724": "estimular"
+    },
+    {
+      "731": "ejercitar"
+    },
+    {
+      "737": "expresar"
+    },
+    {
+      "754": "enfriar"
+    },
+    {
+      "755": "encontrarse"
+    },
+    {
+      "770": "extinguir"
+    },
+    {
+      "787": "enamorarse"
+    },
+    {
+      "797": "enfermar"
+    },
+    {
+      "823": "empeñar"
+    },
+    {
+      "860": "extraer"
+    },
+    {
+      "881": "embellecer"
+    },
+    {
+      "897": "excluir"
+    },
+    {
+      "903": "examinar"
+    },
+    {
+      "916": "emborracharse"
+    },
+    {
+      "929": "estimar"
+    },
+    {
+      "931": "eliminar"
+    },
+    {
+      "935": "enflaquecerse"
+    },
+    {
+      "936": "enriquecerse"
+    },
+    {
+      "938": "entusiasmar"
+    },
+    {
+      "939": "entusiasmarse"
+    },
+    {
+      "965": "explotar"
+    },
+    {
+      "966": "extender"
+    },
+    {
+      "983": "emplear"
+    },
+    {
+      "1013": "ensuciar"
+    },
+    {
+      "1019": "enfadar"
+    },
+    {
+      "1024": "esconderse"
+    },
+    {
+      "1033": "enojarse"
+    },
+    {
+      "1035": "enfadarse"
+    },
+    {
+      "1045": "erguir"
+    },
+    {
+      "1049": "envolver"
+    },
+    {
+      "1054": "escapar"
+    },
+    {
+      "1060": "embarcar"
+    },
+    {
+      "1062": "enredar"
+    },
+    {
+      "1063": "enredarse"
+    },
+    {
+      "1073": "expulsar"
+    },
+    {
+      "1079": "estirar"
+    },
+    {
+      "1080": "estirarse"
+    },
+    {
+      "1090": "enterrar"
+    },
+    {
+      "1091": "enterar"
+    },
+    {
+      "1092": "entrañar"
+    },
+    {
+      "1107": "elevar"
+    },
+    {
+      "1108": "encargar"
+    },
+    {
+      "1122": "expirar"
+    },
+    {
+      "1140": "escalar"
+    },
+    {
+      "1146": "empujar"
+    },
+    {
+      "1155": "embestir"
+    },
+    {
+      "1164": "enloquecer"
+    },
+    {
+      "1167": "enjugar"
+    },
+    {
+      "1179": "embrollar"
+    },
+    {
+      "1180": "enchufar"
+    },
+    {
+      "1208": "ejecutar"
+    },
+    {
+      "1216": "espirar"
+    },
+    {
+      "1228": "excitar"
+    },
+    {
+      "1230": "engrasar"
+    },
+    {
+      "1234": "estresar"
+    },
+    {
+      "1241": "excavar"
+    },
+    {
+      "1252": "elevarse"
+    },
+    {
+      "1261": "enganchar"
+    },
+    {
+      "1263": "encerrar"
+    },
+    {
+      "1265": "ensanchar"
+    },
+    {
+      "1270": "encuestar"
+    },
+    {
+      "1276": "encajar"
+    },
+    {
+      "1277": "exhalar"
+    },
+    {
+      "1293": "exprimir"
+    },
+    {
+      "1309": "entrenarse"
+    },
+    {
+      "1318": "escupir"
+    },
+    {
+      "1329": "estropear"
+    },
+    {
+      "1343": "envidiar"
+    },
+    {
+      "1351": "evolucionar"
+    },
+    {
+      "1357": "estrenar"
+    },
+    {
+      "1358": "exclamar"
+    },
+    {
+      "1366": "estallar"
+    },
+    {
+      "1370": "estornudar"
+    },
+    {
+      "1375": "engordar"
+    },
+    {
+      "1388": "emerger"
+    },
+    {
+      "1394": "exagerar"
+    },
+    {
+      "1396": "ensayar"
+    },
+    {
+      "1403": "enlazar"
+    },
+    {
+      "1421": "esforzar"
+    },
+    {
+      "1423": "emprender"
+    },
+    {
+      "1428": "esparcir"
+    },
+    {
+      "1432": "enfocar"
+    },
+    {
+      "1443": "expedir"
+    },
+    {
+      "1444": "estancar"
+    },
+    {
+      "1447": "encoger"
+    },
+    {
+      "1460": "enhebrar"
+    },
+    {
+      "1461": "edificar"
+    },
+    {
+      "1478": "estacionar"
+    },
+    {
+      "1479": "emancipar"
+    },
+    {
+      "1521": "estipular"
+    },
+    {
+      "1537": "estigmatizar"
+    },
+    {
+      "1542": "empapar"
+    },
+    {
+      "1587": "exceder"
+    },
+    {
+      "1594": "enfrentar"
+    },
+    {
+      "1617": "entrever"
+    },
+    {
+      "1634": "escurrir"
+    },
+    {
+      "1657": "espantar"
+    },
+    {
+      "1667": "engullir"
+    },
+    {
+      "1668": "expandir"
+    },
+    {
+      "1669": "enfilar"
+    },
+    {
+      "1676": "emocionar"
+    },
+    {
+      "1687": "encaminar"
+    },
+    {
+      "1708": "escobar"
+    },
+    {
+      "1710": "espiar"
+    },
+    {
+      "1721": "estofar"
+    },
+    {
+      "1722": "empeorar"
+    },
+    {
+      "1724": "espabilar"
+    }
+  ],
+  "F": [
+    {
+      "142": "fundir"
+    },
+    {
+      "196": "fumar"
+    },
+    {
+      "271": "fundar"
+    },
+    {
+      "298": "faltar"
+    },
+    {
+      "372": "frustrar"
+    },
+    {
+      "415": "felicitar"
+    },
+    {
+      "416": "figurar"
+    },
+    {
+      "417": "figurarse"
+    },
+    {
+      "418": "fijar"
+    },
+    {
+      "419": "fijarse"
+    },
+    {
+      "420": "filmar"
+    },
+    {
+      "421": "finalizar"
+    },
+    {
+      "422": "funcionar"
+    },
+    {
+      "428": "filtrar"
+    },
+    {
+      "430": "forzar"
+    },
+    {
+      "452": "fabricar"
+    },
+    {
+      "455": "freír"
+    },
+    {
+      "543": "fortalecer"
+    },
+    {
+      "570": "fluir"
+    },
+    {
+      "579": "flirtear"
+    },
+    {
+      "618": "fingir"
+    },
+    {
+      "673": "favorecer"
+    },
+    {
+      "689": "formar"
+    },
+    {
+      "748": "facturar"
+    },
+    {
+      "749": "fiarse"
+    },
+    {
+      "750": "fiar"
+    },
+    {
+      "785": "follar"
+    },
+    {
+      "816": "frenar"
+    },
+    {
+      "853": "fregar"
+    },
+    {
+      "859": "firmar"
+    },
+    {
+      "911": "fascinar"
+    },
+    {
+      "928": "florecer"
+    },
+    {
+      "1055": "financiar"
+    },
+    {
+      "1071": "fotografiar"
+    },
+    {
+      "1152": "fallecer"
+    },
+    {
+      "1181": "fatigar"
+    },
+    {
+      "1182": "frotar"
+    },
+    {
+      "1221": "fallar"
+    },
+    {
+      "1233": "fomentar"
+    },
+    {
+      "1242": "fruir"
+    },
+    {
+      "1262": "fortificar"
+    },
+    {
+      "1311": "festejar"
+    },
+    {
+      "1339": "fusionar"
+    },
+    {
+      "1353": "formular"
+    },
+    {
+      "1371": "flotar"
+    },
+    {
+      "1378": "fluctuar"
+    },
+    {
+      "1398": "facilitar"
+    },
+    {
+      "1467": "filosofar"
+    },
+    {
+      "1486": "fracasar"
+    },
+    {
+      "1515": "fertilizar"
+    },
+    {
+      "1638": "fotocopiar"
+    },
+    {
+      "1648": "fritar"
+    },
+    {
+      "1720": "falsificar"
+    }
+  ],
+  "G": [
+    {
+      "144": "gustar"
+    },
+    {
+      "220": "ganar"
+    },
+    {
+      "221": "gozar"
+    },
+    {
+      "350": "gastar"
+    },
+    {
+      "351": "generalizar"
+    },
+    {
+      "352": "guardar"
+    },
+    {
+      "547": "gobernar"
+    },
+    {
+      "569": "girar"
+    },
+    {
+      "593": "granizar"
+    },
+    {
+      "647": "generar"
+    },
+    {
+      "704": "gritar"
+    },
+    {
+      "828": "golpear"
+    },
+    {
+      "838": "guiar"
+    },
+    {
+      "858": "garantizar"
+    },
+    {
+      "877": "gemir"
+    },
+    {
+      "926": "gruñir"
+    },
+    {
+      "991": "graduar"
+    },
+    {
+      "992": "graduarse"
+    },
+    {
+      "1007": "glorificar"
+    },
+    {
+      "1065": "grabar"
+    },
+    {
+      "1160": "garrapatear"
+    },
+    {
+      "1161": "gandulear"
+    },
+    {
+      "1268": "gestionar"
+    },
+    {
+      "1517": "grapar"
+    },
+    {
+      "1717": "guiñar"
+    }
+  ],
+  "H": [
+    {
+      "107": "haber"
+    },
+    {
+      "108": "hacer"
+    },
+    {
+      "111": "hablar"
+    },
+    {
+      "130": "hacerse"
+    },
+    {
+      "230": "hervir"
+    },
+    {
+      "265": "habitar"
+    },
+    {
+      "278": "humillar"
+    },
+    {
+      "393": "huir"
+    },
+    {
+      "397": "herir"
+    },
+    {
+      "641": "hallar"
+    },
+    {
+      "778": "herrar"
+    },
+    {
+      "829": "helar"
+    },
+    {
+      "1034": "hallarse"
+    },
+    {
+      "1203": "henchir"
+    },
+    {
+      "1283": "hundir"
+    },
+    {
+      "1286": "hechizar"
+    },
+    {
+      "1301": "habituar"
+    },
+    {
+      "1319": "hipnotizar"
+    },
+    {
+      "1377": "heder"
+    },
+    {
+      "1427": "halagar"
+    },
+    {
+      "1520": "hurgar"
+    },
+    {
+      "1536": "hincar"
+    },
+    {
+      "1580": "hospedar"
+    },
+    {
+      "1599": "heredar"
+    },
+    {
+      "1666": "hartar"
+    },
+    {
+      "1673": "hornear"
+    },
+    {
+      "1701": "hipar"
+    }
+  ],
+  "I": [
+    {
+      "112": "ir"
+    },
+    {
+      "157": "informar"
+    },
+    {
+      "195": "interesar"
+    },
+    {
+      "222": "identificar"
+    },
+    {
+      "240": "invitar"
+    },
+    {
+      "244": "insistir"
+    },
+    {
+      "270": "intentar"
+    },
+    {
+      "276": "irse"
+    },
+    {
+      "279": "idealizar"
+    },
+    {
+      "407": "incluir"
+    },
+    {
+      "433": "introducir"
+    },
+    {
+      "435": "inducir"
+    },
+    {
+      "437": "invertir"
+    },
+    {
+      "491": "importar"
+    },
+    {
+      "529": "inmigrar"
+    },
+    {
+      "538": "inventar"
+    },
+    {
+      "609": "inquirir"
+    },
+    {
+      "615": "imprimir"
+    },
+    {
+      "649": "insertar"
+    },
+    {
+      "655": "interpretar"
+    },
+    {
+      "677": "investigar"
+    },
+    {
+      "690": "impedir"
+    },
+    {
+      "699": "iniciar"
+    },
+    {
+      "700": "ilustrar"
+    },
+    {
+      "711": "instalar"
+    },
+    {
+      "721": "integrar"
+    },
+    {
+      "722": "ignorar"
+    },
+    {
+      "767": "imaginar"
+    },
+    {
+      "768": "imaginarse"
+    },
+    {
+      "791": "insultar"
+    },
+    {
+      "794": "imponer"
+    },
+    {
+      "833": "indicar"
+    },
+    {
+      "834": "influir"
+    },
+    {
+      "835": "inhalar"
+    },
+    {
+      "874": "inspirar"
+    },
+    {
+      "879": "intervenir"
+    },
+    {
+      "887": "inmiscuirse"
+    },
+    {
+      "905": "imitar"
+    },
+    {
+      "914": "invocar"
+    },
+    {
+      "934": "invadir"
+    },
+    {
+      "1053": "ingresar"
+    },
+    {
+      "1078": "interrumpir"
+    },
+    {
+      "1114": "impresionar"
+    },
+    {
+      "1116": "iluminar"
+    },
+    {
+      "1117": "implementar"
+    },
+    {
+      "1131": "inundar"
+    },
+    {
+      "1150": "instruir"
+    },
+    {
+      "1184": "implicar"
+    },
+    {
+      "1185": "incrementar"
+    },
+    {
+      "1229": "interrogar"
+    },
+    {
+      "1245": "inferir"
+    },
+    {
+      "1259": "inscribirse"
+    },
+    {
+      "1290": "infectar"
+    },
+    {
+      "1298": "inscribir"
+    },
+    {
+      "1338": "incorporar"
+    },
+    {
+      "1385": "inaugurar"
+    },
+    {
+      "1389": "improvisar"
+    },
+    {
+      "1411": "intercambiar"
+    },
+    {
+      "1425": "informarse"
+    },
+    {
+      "1483": "inyectar"
+    },
+    {
+      "1487": "inspeccionar"
+    },
+    {
+      "1503": "inclinar"
+    },
+    {
+      "1514": "individualizar"
+    },
+    {
+      "1523": "impugnar"
+    },
+    {
+      "1524": "inflamar"
+    },
+    {
+      "1528": "intimidar"
+    },
+    {
+      "1531": "inmunizar"
+    },
+    {
+      "1543": "irritar"
+    },
+    {
+      "1553": "inflar"
+    },
+    {
+      "1564": "interceptar"
+    },
+    {
+      "1569": "infundir"
+    },
+    {
+      "1577": "irradiar"
+    },
+    {
+      "1583": "ilusionar"
+    },
+    {
+      "1596": "indagar"
+    },
+    {
+      "1600": "implantar"
+    },
+    {
+      "1606": "interferir"
+    },
+    {
+      "1624": "insinuar"
+    },
+    {
+      "1639": "interponer"
+    },
+    {
+      "1658": "incomodar"
+    },
+    {
+      "1665": "incidir"
+    },
+    {
+      "1703": "irritarse"
+    },
+    {
+      "1713": "infringir"
+    },
+    {
+      "1732": "infligir"
+    }
+  ],
+  "J": [
+    {
+      "223": "jugar"
+    },
+    {
+      "280": "juntar"
+    },
+    {
+      "373": "juzgar"
+    },
+    {
+      "544": "jurar"
+    },
+    {
+      "735": "juntarse"
+    },
+    {
+      "786": "joder"
+    },
+    {
+      "918": "jactarse"
+    },
+    {
+      "1410": "justificar"
+    }
+  ],
+  "K": [],
+  "L": [
+    {
+      "113": "llamar"
+    },
+    {
+      "173": "leer"
+    },
+    {
+      "183": "llorar"
+    },
+    {
+      "187": "llevar"
+    },
+    {
+      "194": "llegar"
+    },
+    {
+      "224": "lavar"
+    },
+    {
+      "235": "lanzar"
+    },
+    {
+      "274": "llamarse"
+    },
+    {
+      "277": "lavarse"
+    },
+    {
+      "307": "llover"
+    },
+    {
+      "327": "lograr"
+    },
+    {
+      "345": "luchar"
+    },
+    {
+      "357": "liberar"
+    },
+    {
+      "359": "lamentar"
+    },
+    {
+      "360": "lamentarse"
+    },
+    {
+      "374": "lloviznar"
+    },
+    {
+      "386": "llenar"
+    },
+    {
+      "449": "levantar"
+    },
+    {
+      "450": "levantarse"
+    },
+    {
+      "530": "lastimar"
+    },
+    {
+      "531": "lastimarse"
+    },
+    {
+      "532": "limpiar"
+    },
+    {
+      "686": "legitimar"
+    },
+    {
+      "734": "liquidar"
+    },
+    {
+      "775": "lucir"
+    },
+    {
+      "789": "llevarse"
+    },
+    {
+      "836": "limitar"
+    },
+    {
+      "864": "lamer"
+    },
+    {
+      "901": "licuar"
+    },
+    {
+      "927": "ladrar"
+    },
+    {
+      "933": "legalizar"
+    },
+    {
+      "1115": "latir"
+    },
+    {
+      "1195": "laborar"
+    },
+    {
+      "1254": "levar"
+    },
+    {
+      "1258": "liar"
+    },
+    {
+      "1266": "listar"
+    },
+    {
+      "1361": "localizar"
+    },
+    {
+      "1412": "legar"
+    },
+    {
+      "1473": "largar"
+    },
+    {
+      "1549": "ligar"
+    },
+    {
+      "1561": "lucrar"
+    },
+    {
+      "1661": "lidiar"
+    },
+    {
+      "1681": "licenciar"
+    },
+    {
+      "1696": "liderar"
+    }
+  ],
+  "M": [
+    {
+      "164": "morir"
+    },
+    {
+      "199": "mirar"
+    },
+    {
+      "242": "mandar"
+    },
+    {
+      "254": "medir"
+    },
+    {
+      "349": "molestar"
+    },
+    {
+      "356": "matar"
+    },
+    {
+      "358": "moler"
+    },
+    {
+      "370": "mentir"
+    },
+    {
+      "401": "mantener"
+    },
+    {
+      "447": "mutilar"
+    },
+    {
+      "457": "madrugar"
+    },
+    {
+      "460": "murmurar"
+    },
+    {
+      "482": "mostrarse"
+    },
+    {
+      "483": "mostrar"
+    },
+    {
+      "548": "manejar"
+    },
+    {
+      "549": "mezclar"
+    },
+    {
+      "575": "maquillar"
+    },
+    {
+      "595": "madurar"
+    },
+    {
+      "596": "mencionar"
+    },
+    {
+      "597": "mendigar"
+    },
+    {
+      "598": "mojar"
+    },
+    {
+      "599": "mentar"
+    },
+    {
+      "606": "menguar"
+    },
+    {
+      "661": "meter"
+    },
+    {
+      "664": "merecer"
+    },
+    {
+      "669": "mover"
+    },
+    {
+      "670": "mejorar"
+    },
+    {
+      "678": "movilizar"
+    },
+    {
+      "679": "moverse"
+    },
+    {
+      "697": "morder"
+    },
+    {
+      "702": "maldecir"
+    },
+    {
+      "715": "mantenerse"
+    },
+    {
+      "723": "modular"
+    },
+    {
+      "761": "marchar"
+    },
+    {
+      "776": "merendar"
+    },
+    {
+      "781": "montar"
+    },
+    {
+      "790": "mudarse"
+    },
+    {
+      "792": "marcar"
+    },
+    {
+      "812": "mecer"
+    },
+    {
+      "839": "manifestar"
+    },
+    {
+      "873": "modificar"
+    },
+    {
+      "913": "masticar"
+    },
+    {
+      "947": "mudar"
+    },
+    {
+      "953": "matricularse"
+    },
+    {
+      "954": "matricular"
+    },
+    {
+      "1010": "maquillarse"
+    },
+    {
+      "1043": "motivar"
+    },
+    {
+      "1052": "morirse"
+    },
+    {
+      "1077": "marcharse"
+    },
+    {
+      "1183": "mistificar"
+    },
+    {
+      "1186": "molar"
+    },
+    {
+      "1218": "maravillar"
+    },
+    {
+      "1232": "migrar"
+    },
+    {
+      "1237": "mear"
+    },
+    {
+      "1322": "manchar"
+    },
+    {
+      "1362": "meditar"
+    },
+    {
+      "1365": "maullar"
+    },
+    {
+      "1431": "manipular"
+    },
+    {
+      "1445": "marear"
+    },
+    {
+      "1488": "memorizar"
+    },
+    {
+      "1491": "modernizar"
+    },
+    {
+      "1499": "multiplicar"
+    },
+    {
+      "1530": "modelar"
+    },
+    {
+      "1539": "menospreciar"
+    },
+    {
+      "1544": "mitigar"
+    },
+    {
+      "1589": "morar"
+    },
+    {
+      "1610": "multar"
+    },
+    {
+      "1627": "malgastar"
+    },
+    {
+      "1705": "maniobrar"
+    },
+    {
+      "1718": "maltratar"
+    },
+    {
+      "1730": "moderar"
+    }
+  ],
+  "N": [
+    {
+      "225": "nadar"
+    },
+    {
+      "285": "necesitar"
+    },
+    {
+      "304": "navegar"
+    },
+    {
+      "368": "nevar"
+    },
+    {
+      "388": "nacer"
+    },
+    {
+      "389": "narrar"
+    },
+    {
+      "390": "negociar"
+    },
+    {
+      "391": "neviscar"
+    },
+    {
+      "392": "nutrir"
+    },
+    {
+      "461": "negar"
+    },
+    {
+      "565": "notar"
+    },
+    {
+      "687": "numerar"
+    },
+    {
+      "1037": "negarse"
+    },
+    {
+      "1187": "nublar"
+    },
+    {
+      "1200": "notificar"
+    },
+    {
+      "1219": "naufragar"
+    },
+    {
+      "1255": "neutralizar"
+    },
+    {
+      "1433": "nombrar"
+    },
+    {
+      "1700": "nivelar"
+    }
+  ],
+  "O": [
+    {
+      "132": "oír"
+    },
+    {
+      "141": "olvidar"
+    },
+    {
+      "207": "ocupar"
+    },
+    {
+      "249": "ordenar"
+    },
+    {
+      "431": "oler"
+    },
+    {
+      "434": "ofrecer"
+    },
+    {
+      "480": "obtener"
+    },
+    {
+      "561": "ocultar"
+    },
+    {
+      "626": "organizar"
+    },
+    {
+      "628": "osar"
+    },
+    {
+      "642": "odiar"
+    },
+    {
+      "663": "ocuparse"
+    },
+    {
+      "703": "ocurrir"
+    },
+    {
+      "762": "obedecer"
+    },
+    {
+      "805": "obligar"
+    },
+    {
+      "806": "oxidar"
+    },
+    {
+      "844": "oponer"
+    },
+    {
+      "845": "oponerse"
+    },
+    {
+      "876": "observar"
+    },
+    {
+      "964": "ofender"
+    },
+    {
+      "1089": "optar"
+    },
+    {
+      "1178": "omitir"
+    },
+    {
+      "1251": "oscilar"
+    },
+    {
+      "1278": "ordeñar"
+    },
+    {
+      "1327": "opinar"
+    },
+    {
+      "1354": "orinar"
+    },
+    {
+      "1355": "operar"
+    },
+    {
+      "1438": "oscurecer"
+    },
+    {
+      "1592": "orientar"
+    },
+    {
+      "1593": "originar"
+    }
+  ],
+  "P": [
+    {
+      "123": "preguntar"
+    },
+    {
+      "143": "pagar"
+    },
+    {
+      "146": "pedir"
+    },
+    {
+      "147": "pensar"
+    },
+    {
+      "150": "poder"
+    },
+    {
+      "166": "poner"
+    },
+    {
+      "200": "pasar"
+    },
+    {
+      "205": "perder"
+    },
+    {
+      "214": "preferir"
+    },
+    {
+      "233": "proteger"
+    },
+    {
+      "236": "partir"
+    },
+    {
+      "246": "pasear"
+    },
+    {
+      "250": "parecer"
+    },
+    {
+      "299": "permitir"
+    },
+    {
+      "308": "practicar"
+    },
+    {
+      "321": "producir"
+    },
+    {
+      "333": "probar"
+    },
+    {
+      "340": "provocar"
+    },
+    {
+      "426": "pintar"
+    },
+    {
+      "445": "pescar"
+    },
+    {
+      "462": "pregonar"
+    },
+    {
+      "471": "parlar"
+    },
+    {
+      "472": "protagonizar"
+    },
+    {
+      "473": "perfeccionar"
+    },
+    {
+      "474": "persistir"
+    },
+    {
+      "475": "poseer"
+    },
+    {
+      "533": "prometer"
+    },
+    {
+      "550": "pegar"
+    },
+    {
+      "554": "prender"
+    },
+    {
+      "562": "parar"
+    },
+    {
+      "563": "pararse"
+    },
+    {
+      "566": "percibir"
+    },
+    {
+      "567": "persuadir"
+    },
+    {
+      "589": "paralizar"
+    },
+    {
+      "605": "patinar"
+    },
+    {
+      "612": "pisar"
+    },
+    {
+      "636": "prestar"
+    },
+    {
+      "644": "permanecer"
+    },
+    {
+      "646": "publicar"
+    },
+    {
+      "654": "participar"
+    },
+    {
+      "705": "presentar"
+    },
+    {
+      "706": "preparar"
+    },
+    {
+      "740": "prevenir"
+    },
+    {
+      "741": "procurar"
+    },
+    {
+      "743": "pronunciar"
+    },
+    {
+      "753": "proveer"
+    },
+    {
+      "772": "ponerse"
+    },
+    {
+      "799": "privar"
+    },
+    {
+      "804": "prohibir"
+    },
+    {
+      "815": "pesar"
+    },
+    {
+      "817": "prever"
+    },
+    {
+      "820": "perseguir"
+    },
+    {
+      "824": "pertenecer"
+    },
+    {
+      "827": "proponer"
+    },
+    {
+      "832": "proponerse"
+    },
+    {
+      "848": "planchar"
+    },
+    {
+      "849": "preocuparse"
+    },
+    {
+      "851": "preocupar"
+    },
+    {
+      "865": "placer"
+    },
+    {
+      "872": "picar"
+    },
+    {
+      "884": "perdonar"
+    },
+    {
+      "888": "pasmar"
+    },
+    {
+      "907": "pelear"
+    },
+    {
+      "942": "protestar"
+    },
+    {
+      "963": "plantar"
+    },
+    {
+      "969": "peinar"
+    },
+    {
+      "984": "padecer"
+    },
+    {
+      "987": "proseguir"
+    },
+    {
+      "994": "predecir"
+    },
+    {
+      "996": "preservar"
+    },
+    {
+      "997": "purificar"
+    },
+    {
+      "1001": "peinarse"
+    },
+    {
+      "1029": "prepararse"
+    },
+    {
+      "1039": "preguntarse"
+    },
+    {
+      "1044": "perecer"
+    },
+    {
+      "1095": "pudrir"
+    },
+    {
+      "1097": "parecerse"
+    },
+    {
+      "1099": "proporcionar"
+    },
+    {
+      "1100": "promover"
+    },
+    {
+      "1104": "proyectar"
+    },
+    {
+      "1105": "pretender"
+    },
+    {
+      "1106": "proceder"
+    },
+    {
+      "1109": "propagar"
+    },
+    {
+      "1113": "portar"
+    },
+    {
+      "1129": "plegar"
+    },
+    {
+      "1137": "posponer"
+    },
+    {
+      "1147": "planear"
+    },
+    {
+      "1158": "provenir"
+    },
+    {
+      "1189": "posar"
+    },
+    {
+      "1190": "progresar"
+    },
+    {
+      "1193": "pinchar"
+    },
+    {
+      "1196": "perjudicar"
+    },
+    {
+      "1231": "pulsar"
+    },
+    {
+      "1236": "pender"
+    },
+    {
+      "1243": "piar"
+    },
+    {
+      "1246": "pulir"
+    },
+    {
+      "1279": "polucionar"
+    },
+    {
+      "1294": "puntuar"
+    },
+    {
+      "1320": "pillar"
+    },
+    {
+      "1325": "penetrar"
+    },
+    {
+      "1341": "platicar"
+    },
+    {
+      "1345": "plantear"
+    },
+    {
+      "1346": "pelar"
+    },
+    {
+      "1349": "prolongar"
+    },
+    {
+      "1359": "presumir"
+    },
+    {
+      "1381": "programar"
+    },
+    {
+      "1436": "patear"
+    },
+    {
+      "1448": "proclamar"
+    },
+    {
+      "1452": "parpadear"
+    },
+    {
+      "1469": "procesar"
+    },
+    {
+      "1471": "perfumar"
+    },
+    {
+      "1494": "pedalear"
+    },
+    {
+      "1496": "presionar"
+    },
+    {
+      "1535": "polarizar"
+    },
+    {
+      "1590": "preceder"
+    },
+    {
+      "1622": "pausar"
+    },
+    {
+      "1625": "perpetuar"
+    },
+    {
+      "1636": "punzar"
+    },
+    {
+      "1652": "punir"
+    },
+    {
+      "1654": "presidir"
+    },
+    {
+      "1670": "porfiar"
+    },
+    {
+      "1683": "procrastinar"
+    }
+  ],
+  "Q": [
+    {
+      "116": "querer"
+    },
+    {
+      "161": "quedar"
+    },
+    {
+      "381": "quitar"
+    },
+    {
+      "558": "quemar"
+    },
+    {
+      "617": "quebrar"
+    },
+    {
+      "682": "quedarse"
+    },
+    {
+      "837": "quitarse"
+    },
+    {
+      "1008": "quemarse"
+    },
+    {
+      "1012": "quejarse"
+    },
+    {
+      "1032": "quebrarse"
+    },
+    {
+      "1691": "quebrantar"
+    }
+  ],
+  "R": [
+    {
+      "163": "reír"
+    },
+    {
+      "180": "recordar"
+    },
+    {
+      "184": "recibir"
+    },
+    {
+      "216": "romper"
+    },
+    {
+      "252": "responder"
+    },
+    {
+      "281": "resistir"
+    },
+    {
+      "296": "realizar"
+    },
+    {
+      "301": "remitir"
+    },
+    {
+      "319": "repetir"
+    },
+    {
+      "322": "reducir"
+    },
+    {
+      "343": "rodar"
+    },
+    {
+      "361": "rogar"
+    },
+    {
+      "378": "remar"
+    },
+    {
+      "387": "respirar"
+    },
+    {
+      "394": "resultar"
+    },
+    {
+      "408": "reparar"
+    },
+    {
+      "439": "referir"
+    },
+    {
+      "580": "reaccionar"
+    },
+    {
+      "629": "regresar"
+    },
+    {
+      "639": "rendir"
+    },
+    {
+      "651": "robar"
+    },
+    {
+      "667": "recomendar"
+    },
+    {
+      "674": "reunirse"
+    },
+    {
+      "680": "regalar"
+    },
+    {
+      "681": "resumir"
+    },
+    {
+      "683": "referirse"
+    },
+    {
+      "725": "renunciar"
+    },
+    {
+      "728": "recoger"
+    },
+    {
+      "729": "reservar"
+    },
+    {
+      "745": "retrasar"
+    },
+    {
+      "763": "reírse"
+    },
+    {
+      "779": "regar"
+    },
+    {
+      "795": "rechazar"
+    },
+    {
+      "801": "restituir"
+    },
+    {
+      "803": "relajarse"
+    },
+    {
+      "809": "reconocer"
+    },
+    {
+      "818": "resolver"
+    },
+    {
+      "841": "respetar"
+    },
+    {
+      "842": "regir"
+    },
+    {
+      "850": "reñir"
+    },
+    {
+      "866": "rellenar"
+    },
+    {
+      "870": "repartir"
+    },
+    {
+      "875": "reproducir"
+    },
+    {
+      "882": "registrar"
+    },
+    {
+      "889": "reunir"
+    },
+    {
+      "890": "regular"
+    },
+    {
+      "945": "requerir"
+    },
+    {
+      "970": "reinar"
+    },
+    {
+      "989": "replicar"
+    },
+    {
+      "990": "reportar"
+    },
+    {
+      "1002": "renovar"
+    },
+    {
+      "1009": "reciclar"
+    },
+    {
+      "1017": "revelar"
+    },
+    {
+      "1025": "repasar"
+    },
+    {
+      "1026": "regatear"
+    },
+    {
+      "1028": "rehusar"
+    },
+    {
+      "1038": "renacer"
+    },
+    {
+      "1046": "roer"
+    },
+    {
+      "1048": "rehacer"
+    },
+    {
+      "1075": "revisar"
+    },
+    {
+      "1082": "rezar"
+    },
+    {
+      "1086": "retirar"
+    },
+    {
+      "1124": "retener"
+    },
+    {
+      "1125": "rascar"
+    },
+    {
+      "1133": "raer"
+    },
+    {
+      "1135": "reflejar"
+    },
+    {
+      "1148": "reconstruir"
+    },
+    {
+      "1153": "recelar"
+    },
+    {
+      "1165": "reconquistar"
+    },
+    {
+      "1191": "rebuscar"
+    },
+    {
+      "1192": "recuperar"
+    },
+    {
+      "1194": "rodear"
+    },
+    {
+      "1205": "representar"
+    },
+    {
+      "1207": "reponer"
+    },
+    {
+      "1223": "reemplazar"
+    },
+    {
+      "1238": "recorrer"
+    },
+    {
+      "1260": "refinar"
+    },
+    {
+      "1280": "reprochar"
+    },
+    {
+      "1281": "restablecer"
+    },
+    {
+      "1288": "recargar"
+    },
+    {
+      "1299": "remover"
+    },
+    {
+      "1305": "readmitir"
+    },
+    {
+      "1323": "restaurar"
+    },
+    {
+      "1324": "recopilar"
+    },
+    {
+      "1326": "reventar"
+    },
+    {
+      "1337": "redactar"
+    },
+    {
+      "1379": "resbalar"
+    },
+    {
+      "1382": "recaer"
+    },
+    {
+      "1383": "relacionar"
+    },
+    {
+      "1417": "ralentizar"
+    },
+    {
+      "1422": "reflexionar"
+    },
+    {
+      "1429": "refrigerar"
+    },
+    {
+      "1437": "reclamar"
+    },
+    {
+      "1450": "rebobinar"
+    },
+    {
+      "1456": "rectificar"
+    },
+    {
+      "1470": "radiar"
+    },
+    {
+      "1474": "relatar"
+    },
+    {
+      "1476": "revolver"
+    },
+    {
+      "1482": "resfriarse"
+    },
+    {
+      "1492": "roncar"
+    },
+    {
+      "1507": "recortar"
+    },
+    {
+      "1509": "reformar"
+    },
+    {
+      "1516": "reclutar"
+    },
+    {
+      "1522": "regenerar"
+    },
+    {
+      "1546": "reanudar"
+    },
+    {
+      "1597": "residir"
+    },
+    {
+      "1616": "restringir"
+    },
+    {
+      "1632": "recapitular"
+    },
+    {
+      "1633": "rasgar"
+    },
+    {
+      "1646": "rivalizar"
+    },
+    {
+      "1653": "recolectar"
+    },
+    {
+      "1677": "reforzar"
+    },
+    {
+      "1693": "remolcar"
+    },
+    {
+      "1711": "recompensar"
+    }
+  ],
+  "S": [
+    {
+      "115": "ser"
+    },
+    {
+      "137": "sentir"
+    },
+    {
+      "148": "saber"
+    },
+    {
+      "169": "seguir"
+    },
+    {
+      "190": "salir"
+    },
+    {
+      "203": "subir"
+    },
+    {
+      "226": "soñar"
+    },
+    {
+      "239": "sugerir"
+    },
+    {
+      "269": "sonreír"
+    },
+    {
+      "273": "sentarse"
+    },
+    {
+      "302": "sentirse"
+    },
+    {
+      "338": "sacrificar"
+    },
+    {
+      "354": "sacar"
+    },
+    {
+      "396": "sufrir"
+    },
+    {
+      "402": "separar"
+    },
+    {
+      "403": "secar"
+    },
+    {
+      "413": "sudar"
+    },
+    {
+      "448": "saludar"
+    },
+    {
+      "454": "solicitar"
+    },
+    {
+      "476": "saciar"
+    },
+    {
+      "477": "saltar"
+    },
+    {
+      "494": "suponer"
+    },
+    {
+      "495": "soportar"
+    },
+    {
+      "496": "sabotear"
+    },
+    {
+      "545": "salvar"
+    },
+    {
+      "555": "sorprender"
+    },
+    {
+      "560": "sembrar"
+    },
+    {
+      "587": "sonar"
+    },
+    {
+      "592": "sanar"
+    },
+    {
+      "611": "satisfacer"
+    },
+    {
+      "613": "surgir"
+    },
+    {
+      "622": "seleccionar"
+    },
+    {
+      "638": "soler"
+    },
+    {
+      "648": "servir"
+    },
+    {
+      "672": "sospechar"
+    },
+    {
+      "688": "sostener"
+    },
+    {
+      "713": "sustituir"
+    },
+    {
+      "718": "saborear"
+    },
+    {
+      "756": "sobrevivir"
+    },
+    {
+      "771": "sentar"
+    },
+    {
+      "784": "superar"
+    },
+    {
+      "793": "seducir"
+    },
+    {
+      "798": "simular"
+    },
+    {
+      "846": "soltar"
+    },
+    {
+      "854": "sumar"
+    },
+    {
+      "862": "significar"
+    },
+    {
+      "885": "separarse"
+    },
+    {
+      "902": "soldar"
+    },
+    {
+      "915": "señalar"
+    },
+    {
+      "923": "suspirar"
+    },
+    {
+      "924": "suceder"
+    },
+    {
+      "925": "situar"
+    },
+    {
+      "949": "simbolizar"
+    },
+    {
+      "968": "sacudir"
+    },
+    {
+      "1018": "satirizar"
+    },
+    {
+      "1036": "secarse"
+    },
+    {
+      "1121": "solucionar"
+    },
+    {
+      "1151": "subrayar"
+    },
+    {
+      "1198": "socorrer"
+    },
+    {
+      "1210": "soplar"
+    },
+    {
+      "1217": "suspender"
+    },
+    {
+      "1225": "sobrar"
+    },
+    {
+      "1264": "sobreseer"
+    },
+    {
+      "1332": "suplicar"
+    },
+    {
+      "1344": "serrar"
+    },
+    {
+      "1347": "sujetar"
+    },
+    {
+      "1376": "sincronizar"
+    },
+    {
+      "1399": "suplir"
+    },
+    {
+      "1446": "sobresalir"
+    },
+    {
+      "1454": "sintonizar"
+    },
+    {
+      "1455": "surtir"
+    },
+    {
+      "1457": "sintetizar"
+    },
+    {
+      "1462": "suprimir"
+    },
+    {
+      "1477": "supervisar"
+    },
+    {
+      "1490": "simpatizar"
+    },
+    {
+      "1493": "someter"
+    },
+    {
+      "1505": "salar"
+    },
+    {
+      "1526": "sofocar"
+    },
+    {
+      "1551": "suavizar"
+    },
+    {
+      "1552": "silbar"
+    },
+    {
+      "1563": "segmentar"
+    },
+    {
+      "1613": "salpicar"
+    },
+    {
+      "1629": "sangrar"
+    },
+    {
+      "1640": "sofreír"
+    },
+    {
+      "1643": "salvaguardar"
+    },
+    {
+      "1678": "sosegar"
+    },
+    {
+      "1698": "sonarse"
+    },
+    {
+      "1699": "secuestrar"
+    },
+    {
+      "1712": "sucumbir"
+    },
+    {
+      "1715": "susurrar"
+    },
+    {
+      "1726": "sustentar"
+    }
+  ],
+  "T": [
+    {
+      "106": "tener"
+    },
+    {
+      "118": "temer"
+    },
+    {
+      "127": "trabajar"
+    },
+    {
+      "129": "tomar"
+    },
+    {
+      "188": "tocar"
+    },
+    {
+      "192": "traer"
+    },
+    {
+      "206": "traducir"
+    },
+    {
+      "248": "terminar"
+    },
+    {
+      "267": "tragar"
+    },
+    {
+      "362": "tolerar"
+    },
+    {
+      "399": "tostar"
+    },
+    {
+      "400": "tostarse"
+    },
+    {
+      "493": "transportar"
+    },
+    {
+      "577": "tramar"
+    },
+    {
+      "584": "traicionar"
+    },
+    {
+      "586": "tumbar"
+    },
+    {
+      "590": "tartamudear"
+    },
+    {
+      "591": "tardar"
+    },
+    {
+      "601": "tropezar"
+    },
+    {
+      "608": "tañer"
+    },
+    {
+      "659": "telefonear"
+    },
+    {
+      "692": "teñir"
+    },
+    {
+      "709": "tratar"
+    },
+    {
+      "710": "tirar"
+    },
+    {
+      "716": "tejer"
+    },
+    {
+      "730": "transmitir"
+    },
+    {
+      "732": "tramitar"
+    },
+    {
+      "769": "triunfar"
+    },
+    {
+      "773": "torcer"
+    },
+    {
+      "807": "titular"
+    },
+    {
+      "852": "temblar"
+    },
+    {
+      "855": "tumbarse"
+    },
+    {
+      "896": "templar"
+    },
+    {
+      "899": "tatuar"
+    },
+    {
+      "900": "transformar"
+    },
+    {
+      "904": "transferir"
+    },
+    {
+      "921": "toser"
+    },
+    {
+      "922": "tapar"
+    },
+    {
+      "1050": "trasladar"
+    },
+    {
+      "1051": "tender"
+    },
+    {
+      "1197": "tentar"
+    },
+    {
+      "1220": "transcribir"
+    },
+    {
+      "1235": "tornear"
+    },
+    {
+      "1269": "trazar"
+    },
+    {
+      "1291": "tricotar"
+    },
+    {
+      "1314": "tararear"
+    },
+    {
+      "1480": "tintar"
+    },
+    {
+      "1497": "temperar"
+    },
+    {
+      "1567": "torturar"
+    },
+    {
+      "1579": "taladrar"
+    },
+    {
+      "1684": "tasar"
+    },
+    {
+      "1702": "tronar"
+    }
+  ],
+  "U": [
+    {
+      "159": "usar"
+    },
+    {
+      "329": "unir"
+    },
+    {
+      "441": "urgir"
+    },
+    {
+      "442": "utilizar"
+    },
+    {
+      "576": "urdir"
+    },
+    {
+      "917": "ubicar"
+    },
+    {
+      "920": "untar"
+    }
+  ],
+  "V": [
+    {
+      "109": "vivir"
+    },
+    {
+      "151": "ver"
+    },
+    {
+      "181": "venir"
+    },
+    {
+      "197": "visitar"
+    },
+    {
+      "204": "volver"
+    },
+    {
+      "209": "vender"
+    },
+    {
+      "229": "valer"
+    },
+    {
+      "231": "vestir"
+    },
+    {
+      "253": "volar"
+    },
+    {
+      "283": "vomitar"
+    },
+    {
+      "288": "viajar"
+    },
+    {
+      "353": "volverse"
+    },
+    {
+      "369": "vaciar"
+    },
+    {
+      "379": "violar"
+    },
+    {
+      "438": "votar"
+    },
+    {
+      "443": "valuar"
+    },
+    {
+      "444": "vibrar"
+    },
+    {
+      "456": "vestirse"
+    },
+    {
+      "469": "venerar"
+    },
+    {
+      "546": "variar"
+    },
+    {
+      "551": "vencer"
+    },
+    {
+      "603": "volcar"
+    },
+    {
+      "614": "vendar"
+    },
+    {
+      "717": "voltear"
+    },
+    {
+      "808": "verificar"
+    },
+    {
+      "1188": "vigilar"
+    },
+    {
+      "1199": "vacilar"
+    },
+    {
+      "1284": "vagar"
+    },
+    {
+      "1402": "vislumbrar"
+    },
+    {
+      "1489": "vincular"
+    },
+    {
+      "1565": "validar"
+    },
+    {
+      "1568": "vaporizar"
+    },
+    {
+      "1572": "vaguear"
+    },
+    {
+      "1588": "valorar"
+    },
+    {
+      "1607": "ventilar"
+    },
+    {
+      "1630": "vacunar"
+    }
+  ],
+  "X": [],
+  "Y": [
+    {
+      "534": "yacer"
+    },
+    {
+      "1136": "yuxtaponer"
+    }
+  ],
+  "Z": [
+    {
+      "912": "zambullirse"
+    },
+    {
+      "1434": "zurcir"
+    }
+  ]
+}

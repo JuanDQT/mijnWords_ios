@@ -19,6 +19,7 @@ class HomeController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         tfInput.delegate = self
+        tfInput.inputAccessoryView = UIView()
         // Do any additional setup after loading the view, typically from a nib.
         
         NotificationCenter.default.addObserver(self, selector: #selector(notificationErrorNetwork(_:)), name: Notification.Name(rawValue: "ERROR_NETWORK"), object: nil)
@@ -60,8 +61,8 @@ class HomeController: UIViewController, UITextFieldDelegate {
         var extras: [String: Any] = notification.userInfo as! [String: Any]
         toggleStatusButton()
         let errorView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ERROR_CONTROLLER") as! ErrorController
-        errorView.titleError = extras["title"] as! String
-        errorView.imageError = extras["image"] as! UIImage
+        errorView.titleError = extras["title"] as? String
+        errorView.imageError = extras["image"] as? UIImage
         self.present(errorView, animated: true, completion: nil)
     }
     
