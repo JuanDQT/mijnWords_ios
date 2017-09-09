@@ -69,7 +69,27 @@ class HomeController: UIViewController, UITextFieldDelegate {
     func notificationSuccess(_ notification: Notification) {
         tfInput.text = ""
         toggleStatusButton()
-        self.performSegue(withIdentifier: "DETAILS_CONTROLLER", sender: nil)
+        
+        let result: [String: Palabra] = (notification.userInfo as? [String: Palabra])!
+        
+        let palabra: Palabra = result["data"]!
+        
+        log.error("ejemplos: \(palabra.modoIndicativo?.futuro!)")
+        
+        
+        self.performSegue(withIdentifier: "DETAILS_CONTROLLER", sender: palabra)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "DETAILS_CONTROLLER" {
+            log.error("espera nen")
+            
+            if let afterSegue: DetailsController = segue.destination as? DetailsController {
+                afterSegue.palabra = sender as? Palabra
+            }
+        }
+        
     }
     
     // MARK - : OTHERS

@@ -18,6 +18,9 @@
 		5B1D38141F53370600FE40E4 /* nl_lang.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B1D38131F53370600FE40E4 /* nl_lang.png */; };
 		5B3A5F961F60109E006B1A91 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A5F951F60109E006B1A91 /* TestingViewController.swift */; };
 		5B3A5F981F61FC71006B1A91 /* ModoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A5F971F61FC71006B1A91 /* ModoCollectionCell.swift */; };
+		5B5D72E41F63DDF0009416EA /* Palabra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D72E31F63DDF0009416EA /* Palabra.swift */; };
+		5B5D72E61F63DE49009416EA /* ModoVerbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D72E51F63DE49009416EA /* ModoVerbo.swift */; };
+		5B5D72E81F63DE6E009416EA /* Ejemplo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D72E71F63DE6E009416EA /* Ejemplo.swift */; };
 		5B7B42481F55452900F9B582 /* access.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7B42471F55452900F9B582 /* access.json */; };
 		5B7B424A1F55897800F9B582 /* palabras.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7B42491F55897800F9B582 /* palabras.json */; };
 		5B96DCBA1F5DABA7002322B0 /* HandlerControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96DCB91F5DABA7002322B0 /* HandlerControllers.swift */; };
@@ -51,6 +54,9 @@
 		5B1D38131F53370600FE40E4 /* nl_lang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nl_lang.png; sourceTree = "<group>"; };
 		5B3A5F951F60109E006B1A91 /* TestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
 		5B3A5F971F61FC71006B1A91 /* ModoCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModoCollectionCell.swift; sourceTree = "<group>"; };
+		5B5D72E31F63DDF0009416EA /* Palabra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palabra.swift; sourceTree = "<group>"; };
+		5B5D72E51F63DE49009416EA /* ModoVerbo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModoVerbo.swift; sourceTree = "<group>"; };
+		5B5D72E71F63DE6E009416EA /* Ejemplo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ejemplo.swift; sourceTree = "<group>"; };
 		5B7B42471F55452900F9B582 /* access.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = access.json; sourceTree = "<group>"; };
 		5B7B42491F55897800F9B582 /* palabras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palabras.json; sourceTree = "<group>"; };
 		5B96DCB91F5DABA7002322B0 /* HandlerControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandlerControllers.swift; sourceTree = "<group>"; };
@@ -166,6 +172,9 @@
 				5BE51D6C1F51D19100EDEEED /* Common.swift */,
 				5B005A1D1F51C3FE007B4887 /* Info.plist */,
 				5BF9CB791F59EFD300061A40 /* NetworkManager.swift */,
+				5B5D72E31F63DDF0009416EA /* Palabra.swift */,
+				5B5D72E51F63DE49009416EA /* ModoVerbo.swift */,
+				5B5D72E71F63DE6E009416EA /* Ejemplo.swift */,
 			);
 			name = tools;
 			sourceTree = "<group>";
@@ -317,15 +326,18 @@
 			files = (
 				5B005A141F51C3FE007B4887 /* HomeController.swift in Sources */,
 				5BE51D6F1F51D9CA00EDEEED /* ConfigController.swift in Sources */,
+				5B5D72E81F63DE6E009416EA /* Ejemplo.swift in Sources */,
 				5B005A121F51C3FE007B4887 /* AppDelegate.swift in Sources */,
 				5B96DCBA1F5DABA7002322B0 /* HandlerControllers.swift in Sources */,
 				5BE51D6B1F51CE1500EDEEED /* API.swift in Sources */,
 				5BF9CB7A1F59EFD300061A40 /* NetworkManager.swift in Sources */,
+				5B5D72E61F63DE49009416EA /* ModoVerbo.swift in Sources */,
 				5BE51D6D1F51D19100EDEEED /* Common.swift in Sources */,
 				5B3A5F961F60109E006B1A91 /* TestingViewController.swift in Sources */,
 				5BB02A1D1F5895720027AFBC /* ErrorController.swift in Sources */,
 				5B3A5F981F61FC71006B1A91 /* ModoCollectionCell.swift in Sources */,
 				5BE51D691F51CA2F00EDEEED /* DetailsController.swift in Sources */,
+				5B5D72E41F63DDF0009416EA /* Palabra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

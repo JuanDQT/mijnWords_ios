@@ -8,16 +8,20 @@
 
 import UIKit
 
+// Pass data between views: http://blog.xebia.com/understanding-the-sender-in-segues-and-use-it-to-pass-on-data-to-another-view-controller/
 class DetailsController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var ccModos: UICollectionView!
     
     var allEntries: String!
+    var palabra: Palabra?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         ccModos.delegate = self
         ccModos.dataSource = self
+        
+        log.info("Me llego: \(palabra?.modoIndicativo?.futuro)")
     }
     
     func recibirPalabra(_: NotificationCenter) {
