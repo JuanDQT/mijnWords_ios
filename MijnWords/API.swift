@@ -25,12 +25,12 @@ class API {
         // Return empty JSON if any error
         return JSON([:])
     }
-
+    
     func checkCommonErrors(_ response: DataResponse<String>, json: inout JSON) -> Bool {
         
         if response.result.isFailure {
             //log.info("E: \(response.result.error?._code)")
-                        log.error("[ServerAPI] ERROR: \(String(describing: response.request?.url)) : \(String(describing: response.result.error))")
+            log.error("[ServerAPI] ERROR: \(String(describing: response.request?.url)) : \(String(describing: response.result.error))")
             var mapErros: [String: Any] = [:]
             
             // No tienes internet
@@ -54,55 +54,53 @@ class API {
             NotificationCenter.default.post(name: Notification.Name(rawValue: "ERROR_NETWORK"), object: nil, userInfo: mapErros)
             return false
         }
-
+        
         json = self.checkValidJSON(response.result.value)
         return true
     }
     
     func getResultados(id: String, palabra: String) {
-        
-        // Primera recoge web data
-        NetworkManager.sharedIntance.manager.request(Common.getServerURL(id)).responseString {
+
+
+        var params: [String: String] = [:]
+        params["id"] = id
+        params["os"] = "ios"
+        params["palabra"] = palabra
+        params["lng_focus"] = Common.getFocusLanguage()
+        params["lng_base"] = "ES"
+        params["app_version"] = "1"
+
+        // Peticion al servidor, json model
+        NetworkManager.sharedIntance.manager.request(Common.getJSONAccessData(field: "host"), method: .post, parameters: params).responseString {
             response in
-                var json: JSON = [:]
+            
+            var jsonResponse: JSON = [:]
+            
+            log.error(response)
+            
+            if self.checkCommonErrors(response, json: &jsonResponse) {
                 
-                if self.checkCommonErrors(response, json: &json) {
-                    //log.info("Continuamos y procesamos html")
-                    //log.error(response.result.value!)
-                    
-                    var params: [String: String] = [:]
-                    params["id"] = id
-                    params["palabra"] = palabra
-                    params["content"] = response.result.value!
-                    params["lng_focus"] = Common.getFocusLanguage()
-                    params["lng_base"] = "ES"
-                    params["app_version"] = "2"
-
-                    // Peticion al servidor, json model
-                    NetworkManager.sharedIntance.manager.request(Common.getJSONAccessData(field: "host"), method: .post, parameters: params).responseString {
-                        response in
-                        
-                        
-                        var jsonResponse: JSON = [:]
-                        
-                        if self.checkCommonErrors(response, json: &jsonResponse) {
-                            
-                            log.error(jsonResponse["updated"].bool!)
-                            
-                            if !jsonResponse["updated"].bool! {
-                                NotificationCenter.default.post(name: Notification.Name(rawValue: "UPDATE"), object: nil, userInfo: nil)
-                                return
-                            }
-                            
-                            var palabra: Palabra = Palabra()
-                            self.getData(json: jsonResponse, palabra: &palabra)
-                            
-                            NotificationCenter.default.post(name: Notification.Name(rawValue: "PALABRA"), object: nil, userInfo: ["data": palabra])
-                        }
-
-                    }
+                log.error(jsonResponse["updated"].bool!)
+                
+                if !jsonResponse["updated"].bool! {
+                    log.error("Decimos de upd")
+                    var mapUpdate: [String: Any] = [:]
+                
+                    mapUpdate["title"] = "Actualización disponible"
+                    mapUpdate["image"] = UIImage(named: "update_app.png")
+                    NotificationCenter.default.post(name: Notification.Name(rawValue: "UPDATE"), object: nil, userInfo: mapUpdate)
+                    return
                 }
+                                
+                var palabra: Palabra = Palabra()
+                self.getData(json: jsonResponse, palabra: &palabra)
+                
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "PALABRA"), object: nil, userInfo: ["data": palabra])
+            }
+            
         }
+        
+        
         
     }
     
@@ -123,45 +121,62 @@ class API {
         }
         
         /// Modo Indicativo
-        
+        palabra.modoIndicativo?.tiempo = "Modo indicativo"
+        var list: [String] = []
         for index in json["modo_indicativo"]["presente"].arrayValue {
-            palabra.modoIndicativo?.presente?.append(index.stringValue)
+            list.append(index.stringValue)
         }
+        palabra.modoIndicativo?.setPresente(modo: list)
+        list.removeAll()
         for index in json["modo_indicativo"]["preterito_imperfecto"].arrayValue {
-            palabra.modoIndicativo?.preteritoImperfecto?.append(index.stringValue)
+            list.append(index.stringValue)
         }
+        palabra.modoIndicativo?.setPreteritoImperfecto(modo: list)
+        list.removeAll()
         for index in json["modo_indicativo"]["preterito_indefinido"].arrayValue {
-            palabra.modoIndicativo?.preteritoIndefinido?.append(index.stringValue)
+            list.append(index.stringValue)
         }
+        palabra.modoIndicativo?.setPreteritoIndefinido(modo: list)
+        list.removeAll()
         for index in json["modo_indicativo"]["futuro"].arrayValue {
-            palabra.modoIndicativo?.futuro?.append(index.stringValue)
+            list.append(index.stringValue)
         }
-        
+        palabra.modoIndicativo?.setFuturo(modo: list)
+        list.removeAll()
         /// Modo Subjuntivo
-        
+        palabra.modoSubjuntivo?.tiempo = "Modo Subjuntivo"
         for index in json["modo_subjuntivo"]["presente"].arrayValue {
-            palabra.modoSubjuntivo?.presente?.append(index.stringValue)
+            list.append(index.stringValue)
         }
+        palabra.modoSubjuntivo?.setPresente(modo: list)
+        list.removeAll()
         for index in json["modo_subjuntivo"]["preterito_imperfecto"].arrayValue {
-            palabra.modoSubjuntivo?.preteritoImperfecto?.append(index.stringValue)
+            list.append(index.stringValue)
         }
-        for index in json["modo_indicativo"]["futuro"].arrayValue {
-            palabra.modoSubjuntivo?.futuro?.append(index.stringValue)
+        palabra.modoSubjuntivo?.setPreteritoImperfecto(modo: list)
+        list.removeAll()
+        for index in json["modo_subjuntivo"]["futuro"].arrayValue {
+            list.append(index.stringValue)
         }
-        
+        palabra.modoSubjuntivo?.setFuturo(modo: list)
+        list.removeAll()
         /// Modo Condicional
-        
+        palabra.modoCondicional?.tiempo = "Modo condicional"
         for index in json["modo_condicional"]["condicional"].arrayValue {
-            palabra.modoCondicional?.condicional?.append(index.stringValue)
+            list.append(index.stringValue)
         }
-        
+        palabra.modoCondicional?.setCondicional(modo: list)
+        list.removeAll()
         /// Modo Imperativo
+        palabra.modoImperativo?.tiempo = "Modo imperativo"
         for index in json["modo_imperativo"]["afirmativo"].arrayValue {
-            palabra.modoImperativo?.afirmativo?.append(index.stringValue)
+            list.append(index.stringValue)
         }
+        palabra.modoImperativo?.setAfirmativo(modo: list)
+        list.removeAll()
         for index in json["modo_imperativo"]["negativo"].arrayValue {
-            palabra.modoImperativo?.negativo?.append(index.stringValue)
+            list.append(index.stringValue)
         }
-
+        palabra.modoImperativo?.setNegativo(modo: list)
     }
 }

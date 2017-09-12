@@ -1,19 +1,22 @@
 //
-//  ModoCollectionCell.swift
+//  ModoImperativoCell.swift
 //  MijnWords
 //
-//  Created by Juan Daniel on 8/9/17.
+//  Created by Juan Daniel on 10/9/17.
 //  Copyright © 2017 Juan Daniel. All rights reserved.
 //
 
 import UIKit
 
-class ModoCollectionCell: UICollectionViewCell {
+class ModoIndicativoCell: UICollectionViewCell {
     
-    @IBOutlet weak var vPresente: UIView!
-    @IBOutlet weak var titleModo: UILabel!
+    override func awakeFromNib() {
+        log.info("cargadito Imperativo!")
+    }
     
-    @IBAction func touchTiempo(_ sender: Any) {
+    @IBAction func touchAction(_ sender: Any) {
+        
+        log.info("TOCUHACTIONNNN")
         
         let btn: UIButton = sender as! UIButton
         
@@ -40,7 +43,6 @@ class ModoCollectionCell: UICollectionViewCell {
             }
             
         }
-        
     }
     
 }

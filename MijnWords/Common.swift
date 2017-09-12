@@ -35,10 +35,6 @@ class Common {
         return json[field].stringValue
     }
     
-    static func getServerURL(_ idPalabra: String) -> String {
-        return getJSONAccessData(field: "url").replacingOccurrences(of: "XXX", with: idPalabra)
-    }
-    
     static func getPalabraIdFromJSON(palabra: String)-> (String, String) {
         let path: String = Bundle.main.path(forResource: "palabras", ofType: "json")!
         let url = URL(fileURLWithPath: path)

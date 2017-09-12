@@ -14,6 +14,7 @@ class Palabra {
     var modoSubjuntivo: ModoVerbo?
     var modoCondicional: ModoVerbo?
     var modoImperativo: ModoVerbo?
+    var allModos: [ModoVerbo]?
     
     init() {
         self.ejemplo = Ejemplo()
@@ -21,5 +22,6 @@ class Palabra {
         self.modoSubjuntivo = ModoVerbo()
         self.modoCondicional = ModoVerbo()
         self.modoImperativo = ModoVerbo()
+        self.allModos = [self.modoIndicativo!, self.modoSubjuntivo!, self.modoCondicional!, self.modoImperativo!]
     }
 }

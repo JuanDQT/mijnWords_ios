@@ -8,6 +8,7 @@
 
 class ModoVerbo {
     
+    var tiempo: String?
     var presente: [String]?
     var preteritoImperfecto: [String]?
     var preteritoIndefinido: [String]?
@@ -26,6 +27,35 @@ class ModoVerbo {
         self.afirmativo = []
         self.negativo = []
         self.allTimes = []
+    }
+    
+    func setPresente(modo: [String]) {
+        self.presente = modo
+        allTimes?.append(modo)
+    }
+    func setPreteritoImperfecto(modo: [String]) {
+        self.preteritoImperfecto = modo
+        allTimes?.append(modo)
+    }
+    func setPreteritoIndefinido(modo: [String]) {
+        self.preteritoIndefinido = modo
+        allTimes?.append(modo)
+    }
+    func setFuturo(modo: [String]) {
+        self.futuro = modo
+        allTimes?.append(modo)
+    }
+    func setCondicional(modo: [String]) {
+        self.condicional = modo
+        allTimes?.append(modo)
+    }
+    func setAfirmativo(modo: [String]) {
+        self.afirmativo = modo
+        allTimes?.append(modo)
+    }
+    func setNegativo(modo: [String]) {
+        self.negativo = modo
+        allTimes?.append(modo)
     }
     
 }

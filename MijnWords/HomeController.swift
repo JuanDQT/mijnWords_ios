@@ -24,6 +24,7 @@ class HomeController: UIViewController, UITextFieldDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(notificationErrorNetwork(_:)), name: Notification.Name(rawValue: "ERROR_NETWORK"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(notificationSuccess(_:)), name: Notification.Name(rawValue: "PALABRA"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationUpdate(_:)), name: Notification.Name(rawValue: "UPDATE"), object: nil)
     }
 
     @IBAction func loginAction(_ sender: Any) {
@@ -53,11 +54,19 @@ class HomeController: UIViewController, UITextFieldDelegate {
         self.present(configController, animated: true)
     }
     
-
-    
     // MARK - : OBSERVERS, network
     
     func notificationErrorNetwork(_ notification: Notification) {
+        var extras: [String: Any] = notification.userInfo as! [String: Any]
+        toggleStatusButton()
+        let errorView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ERROR_CONTROLLER") as! ErrorController
+        errorView.titleError = extras["title"] as? String
+        errorView.imageError = extras["image"] as? UIImage
+        self.present(errorView, animated: true, completion: nil)
+    }
+    
+    func notificationUpdate(_ notification: Notification) {
+        log.error("llegue al observer")
         var extras: [String: Any] = notification.userInfo as! [String: Any]
         toggleStatusButton()
         let errorView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ERROR_CONTROLLER") as! ErrorController
@@ -73,9 +82,6 @@ class HomeController: UIViewController, UITextFieldDelegate {
         let result: [String: Palabra] = (notification.userInfo as? [String: Palabra])!
         
         let palabra: Palabra = result["data"]!
-        
-        log.error("ejemplos: \(palabra.modoIndicativo?.futuro!)")
-        
         
         self.performSegue(withIdentifier: "DETAILS_CONTROLLER", sender: palabra)
     }

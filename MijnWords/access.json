@@ -1,5 +1,4 @@
 {
-  "url": "http://www.esfacil.eu/es/verbos/conjugacion/XXX.html",
   "host": "http://proyecto-dam.esy.es/mijnwords/php/getData.php",
   "host_suggest": "http://proyecto-dam.esy.es/mijnwords/php/inboxSuggestions.php",
   "host_report": "http://proyecto-dam.esy.es/mijnwords/php/reportExample.php",
