@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModoIndicativoCell" customModule="MijnWords" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Ownerrr" customClass="ModoIndicativoCell" customModule="MijnWords" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ModoIndicativoCell" customModule="MijnWords" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -28,7 +28,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIf-ty-b8E" userLabel="presente">
-                    <rect key="frame" x="0.0" y="45" width="375" height="220"/>
+                    <rect key="frame" x="0.0" y="45" width="375" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKw-XL-36V">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -41,8 +41,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="touchAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="5c5-zN-Wlh"/>
-                                <action selector="touchAction:" destination="-1" eventType="touchUpInside" id="jxK-nc-c9y"/>
+                                <action selector="titlePressed:" destination="-1" eventType="touchUpInside" id="NSH-Jl-K0W"/>
                             </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lCp-rC-gvj">
@@ -161,6 +160,9 @@
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" red="0.25882352939999997" green="0.32549019610000002" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
                     <constraints>
                         <constraint firstItem="MUy-xh-kXu" firstAttribute="top" secondItem="DGn-eG-TXN" secondAttribute="bottom" constant="8" id="2Ll-AW-Zdt"/>
                         <constraint firstAttribute="trailing" secondItem="v9X-Tj-sRm" secondAttribute="trailing" constant="20" id="A6h-NH-5Pu"/>
@@ -176,7 +178,7 @@
                         <constraint firstAttribute="trailing" secondItem="DGn-eG-TXN" secondAttribute="trailing" constant="20" id="W6L-GD-Mea"/>
                         <constraint firstItem="lCp-rC-gvj" firstAttribute="leading" secondItem="KIf-ty-b8E" secondAttribute="leading" constant="20" id="Z3I-pL-5hx"/>
                         <constraint firstItem="ZBH-fa-O7U" firstAttribute="top" secondItem="v9X-Tj-sRm" secondAttribute="bottom" constant="8" id="dGQ-I9-LWS"/>
-                        <constraint firstAttribute="height" constant="220" identifier="expandable" id="dRQ-7E-Qqa"/>
+                        <constraint firstAttribute="height" constant="40" identifier="expandable" id="dRQ-7E-Qqa"/>
                         <constraint firstAttribute="trailing" secondItem="tf6-05-l3r" secondAttribute="trailing" constant="20" id="dw6-2b-ls8"/>
                         <constraint firstItem="tf6-05-l3r" firstAttribute="top" secondItem="ZBH-fa-O7U" secondAttribute="bottom" constant="8" id="jqO-d0-dze"/>
                         <constraint firstItem="MUy-xh-kXu" firstAttribute="leading" secondItem="KIf-ty-b8E" secondAttribute="leading" constant="20" id="l8A-cq-eYL"/>
@@ -187,7 +189,7 @@
                     </constraints>
                 </view>
                 <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LST-FW-os1" userLabel="imperfecto">
-                    <rect key="frame" x="0.0" y="266" width="375" height="40"/>
+                    <rect key="frame" x="0.0" y="86" width="375" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYn-QE-c0S">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -199,9 +201,6 @@
                             <state key="normal" title="Pretérito Imperfecto">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
-                            <connections>
-                                <action selector="touchAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="YGs-ok-kCE"/>
-                            </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="arh-fe-Fyh">
                             <rect key="frame" x="20" y="50" width="335" height="20"/>
@@ -345,7 +344,7 @@
                     </constraints>
                 </view>
                 <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CK1-XA-NcN" userLabel="indefinido">
-                    <rect key="frame" x="0.0" y="307" width="375" height="40"/>
+                    <rect key="frame" x="0.0" y="127" width="375" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glr-xh-t1y">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -357,9 +356,6 @@
                             <state key="normal" title="Pretérito Indefinido">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
-                            <connections>
-                                <action selector="touchAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="BK8-SO-1mE"/>
-                            </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aTg-lU-Iuw">
                             <rect key="frame" x="20" y="50" width="335" height="20"/>
@@ -503,7 +499,7 @@
                     </constraints>
                 </view>
                 <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPN-MP-xRB" userLabel="futuro">
-                    <rect key="frame" x="0.0" y="348" width="375" height="40"/>
+                    <rect key="frame" x="0.0" y="168" width="375" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bct-ia-01n">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -515,9 +511,6 @@
                             <state key="normal" title="Futuro">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
-                            <connections>
-                                <action selector="touchAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="AIk-h9-0Tm"/>
-                            </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Rer-dP-6q6">
                             <rect key="frame" x="20" y="50" width="335" height="20"/>
@@ -681,7 +674,19 @@
                         <constraint firstItem="OG6-BT-SSW" firstAttribute="top" secondItem="piQ-ch-BeA" secondAttribute="bottom" constant="8" id="zvd-AM-cHO"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb4-0x-xXO">
+                    <rect key="frame" x="46" y="318" width="281" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Buttonnnnnnnnn"/>
+                </button>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2UL-0G-4Pc">
+                    <rect key="frame" x="147" y="261" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </switch>
             </subviews>
+            <accessibility key="accessibilityConfiguration">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
             <constraints>
                 <constraint firstItem="WaB-dI-gLN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="11R-PI-dbk"/>
                 <constraint firstItem="KIf-ty-b8E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2JS-SA-dAL"/>
@@ -699,6 +704,7 @@
                 <constraint firstAttribute="trailing" secondItem="CK1-XA-NcN" secondAttribute="trailing" id="t1z-a7-73o"/>
                 <constraint firstAttribute="trailing" secondItem="LST-FW-os1" secondAttribute="trailing" id="tfy-tW-Iq4"/>
             </constraints>
+            <point key="canvasLocation" x="-1265.5" y="41.5"/>
         </view>
     </objects>
 </document>

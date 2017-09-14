@@ -357,7 +357,7 @@
                                 <state key="normal" image="error.png"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2db-xR-Sbj">
-                                <rect key="frame" x="68" y="105.5" width="239" height="41"/>
+                                <rect key="frame" x="68" y="106" width="239" height="41"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esto es un mensaje de prueba" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ilh-ef-HYo">
                                         <rect key="frame" x="0.0" y="0.0" width="239" height="18"/>
@@ -373,40 +373,56 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DaE-rY-RPq">
-                                <rect key="frame" x="0.0" y="163.5" width="375" height="503.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rcW-Ag-nDa">
-                                    <size key="itemSize" width="377" height="494"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zG6-ef-jTA">
+                                <rect key="frame" x="0.0" y="178" width="375" height="489"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DaE-rY-RPq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="460"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="460" id="ygh-wS-ydg"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rcW-Ag-nDa">
+                                            <size key="itemSize" width="377" height="494"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DaE-rY-RPq" firstAttribute="leading" secondItem="zG6-ef-jTA" secondAttribute="leading" id="GdQ-0i-ZPt"/>
+                                    <constraint firstAttribute="bottom" secondItem="DaE-rY-RPq" secondAttribute="bottom" id="SgV-6U-Dno"/>
+                                    <constraint firstItem="DaE-rY-RPq" firstAttribute="centerX" secondItem="zG6-ef-jTA" secondAttribute="centerX" id="pKS-Re-XZv"/>
+                                    <constraint firstItem="DaE-rY-RPq" firstAttribute="top" secondItem="zG6-ef-jTA" secondAttribute="top" id="uxV-zK-eIp"/>
+                                    <constraint firstAttribute="trailing" secondItem="DaE-rY-RPq" secondAttribute="trailing" id="ygL-gN-XrZ"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JFl-yZ-iPt" firstAttribute="top" secondItem="wNT-d0-sRC" secondAttribute="bottom" constant="40" id="7eT-K2-emw"/>
-                            <constraint firstItem="DaE-rY-RPq" firstAttribute="leading" secondItem="Xre-u5-3Sg" secondAttribute="leading" id="BvR-bg-J2V"/>
                             <constraint firstItem="2db-xR-Sbj" firstAttribute="leading" secondItem="veZ-Ly-Evr" secondAttribute="trailing" constant="8" id="CbQ-YO-axb"/>
-                            <constraint firstItem="F5b-G1-EPM" firstAttribute="top" secondItem="DaE-rY-RPq" secondAttribute="bottom" id="G8A-Rf-sQo"/>
                             <constraint firstItem="veZ-Ly-Evr" firstAttribute="leading" secondItem="Xre-u5-3Sg" secondAttribute="leadingMargin" id="GeD-Zb-xvZ"/>
                             <constraint firstItem="JFl-yZ-iPt" firstAttribute="leading" secondItem="2db-xR-Sbj" secondAttribute="trailing" constant="8" id="HWr-wn-Ohb"/>
                             <constraint firstItem="2db-xR-Sbj" firstAttribute="centerY" secondItem="veZ-Ly-Evr" secondAttribute="centerY" id="IHP-wz-IQY"/>
-                            <constraint firstItem="DaE-rY-RPq" firstAttribute="top" secondItem="2db-xR-Sbj" secondAttribute="bottom" constant="17" id="S02-ee-Qjw"/>
-                            <constraint firstAttribute="trailing" secondItem="DaE-rY-RPq" secondAttribute="trailing" id="UYW-VN-RKf"/>
+                            <constraint firstItem="zG6-ef-jTA" firstAttribute="centerX" secondItem="2db-xR-Sbj" secondAttribute="centerX" id="Vbi-Tg-60b"/>
                             <constraint firstItem="JFl-yZ-iPt" firstAttribute="trailing" secondItem="Xre-u5-3Sg" secondAttribute="trailingMargin" id="d48-lU-fYn"/>
+                            <constraint firstItem="zG6-ef-jTA" firstAttribute="leading" secondItem="Xre-u5-3Sg" secondAttribute="leading" id="lBP-dr-AmN"/>
+                            <constraint firstItem="zG6-ef-jTA" firstAttribute="bottom" secondItem="F5b-G1-EPM" secondAttribute="top" id="myi-lX-RcU"/>
                             <constraint firstItem="veZ-Ly-Evr" firstAttribute="top" secondItem="wNT-d0-sRC" secondAttribute="bottom" constant="40" id="nZW-gU-AqU"/>
+                            <constraint firstItem="zG6-ef-jTA" firstAttribute="top" secondItem="JFl-yZ-iPt" secondAttribute="bottom" constant="30" id="xrt-cV-Hrx"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ccModos" destination="DaE-rY-RPq" id="nmS-AB-gqd"/>
+                        <outlet property="svContent" destination="zG6-ef-jTA" id="G0S-5N-3Vp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BT6-46-kOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1425" y="172"/>
+            <point key="canvasLocation" x="1424.8" y="171.36431784107947"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rqt-Ye-Go0">

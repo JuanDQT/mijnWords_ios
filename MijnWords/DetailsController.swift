@@ -13,8 +13,10 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
 
     @IBOutlet weak var ccModos: UICollectionView!
     
+    @IBOutlet weak var svContent: UIScrollView!
     var allEntries: [String] = ["juan", "sape", "lokita", "xdxd"]
     var palabra: Palabra?
+    //let defaultSizeScrollContent = 340
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +26,19 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         // Cargamos layouts
         let nibModoIndicativo: UINib = UINib(nibName: "ModoIndicativoView", bundle: nil)
         self.ccModos.register(nibModoIndicativo, forCellWithReuseIdentifier: "CC_MODO_INDICATIVO")
+        
         let nibModoSubjuntivo: UINib = UINib(nibName: "ModoSubjuntivoView", bundle: nil)
         self.ccModos.register(nibModoSubjuntivo, forCellWithReuseIdentifier: "CC_MODO_SUBJUNTIVO")
+        
+        log.info("tamano sv: \(svContent.contentSize)")
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        self.svContent.translatesAutoresizingMaskIntoConstraints = true
+        svContent.contentSize = CGSize(width: svContent.frame.width, height: 100.0)
+        
+        
     }
     
     // override
@@ -33,58 +46,23 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         log.error("CELL ES: \(indexPath.row)")
+        var customCell: UICollectionViewCell?
         switch indexPath.row {
         case 0:
-            return collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_INDICATIVO", for: indexPath) as! ModoIndicativoCell
+            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_INDICATIVO", for: indexPath) as! ModoIndicativoCell
         case 1:
-            return collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_SUBJUNTIVO", for: indexPath) as! ModoSubjuntivoCell
+            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_SUBJUNTIVO", for: indexPath) as! ModoSubjuntivoCell
             
         default:
-            return UICollectionViewCell()
+            customCell = UICollectionViewCell()
         }
-        // OK
-        //cell.titleModo.text = palabra?.allModos?[indexPath.row].tiempo
-        // Cuantos tiempos tenemos en la palabra, debug
-        ///cell.titleModo.text = "\(palabra?.allModos?[indexPath.row].allTimes?.count)"
-        // Cuantos tiempos UIVIEW tenemos
-        //cell.titleModo.text = "\(ccModos.subviews[0].subviews.count)"
         
-        
-        
-
-        // Rellenar resto
+//        customCell!.btnPresente.addTarget(self, action: Selector("action"), forControlEvents: UIControlEvents.TouchUpInside)
+//        
+        return customCell!
         
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        
-//        var tiemposView: [UIView] = []
-//        for view in ccModos.subviews[0].subviews[0].subviews {
-//            
-//            if view.tag == 2 {
-//                log.info("Una vista!")
-//                tiemposView.append(view)
-//            }
-//        }
-//        
-//        self.ccModos.subviews[0].subviews[0].subviews.last?.removeFromSuperview()
-//        
-//        //tiemposView[0].backgroundColor = UIColor.red
-//        
-//        
-//        
-//        var limit = 4 - (palabra?.allModos?[indexPath.row].allTimes?.count)!
-//        //tiemposView.removeLast(limit)
-//        
-//        for item in tiemposView{
-//            item.backgroundColor = UIColor.brown
-//            log.info("pintamos")
-//            
-//            //item.backgroundColor = UIColor.black
-//        }
-//        
-//    }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: ccModos.frame.width, height: ccModos.frame.height)
     }
@@ -97,5 +75,52 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         return 0.0
     }
     
+    // TODO: anadir scrollview dentro lde las vistas de cada archivo xib
+    @IBAction func touchTitle(_ sender: Any) {
+        
+        let btn: UIButton = sender as! UIButton
+        
+        let areaBtn = btn.superview!
+        // Recogemos el height de todas las views
+        //log.error("total views(4?): \(areaBtn.superview?.subviews.count)")
+
+        
+        for item in areaBtn.constraints {
+            
+            if let x = item.identifier {
+                
+                if x == "expandable" {
+                    log.error("TAGG: \(x)")
+                    
+                    if item.constant == 220 {
+                        item.constant = 40
+                    } else {
+                        item.constant = 220
+                    }
+                    
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.view.layoutIfNeeded()
+                    })            }
+            }
+            
+        }
+        
+        var newScrollViewSize: Float = 0.0
+        
+        for item in areaBtn.superview!.subviews {
+            if let _ = item as? UILabel {
+            } else {
+                newScrollViewSize += Float(item.frame.height)
+                
+            }
+        }
+        log.error("Tu height es: \(newScrollViewSize)")
+
+        newScrollViewSize += Float(svContent.frame.height)
+        
+        svContent.contentSize = CGSize(width: svContent.frame.width, height: CGFloat(newScrollViewSize))
+
+    }
     
+
 }
