@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fa2-Vc-aH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1426" y="938"/>
+            <point key="canvasLocation" x="1425" y="1886"/>
         </scene>
         <!--MijnWords-->
         <scene sceneID="tne-QT-ifu">
@@ -377,13 +377,13 @@
                                 <rect key="frame" x="0.0" y="178" width="375" height="489"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DaE-rY-RPq">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="460"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="460" id="ygh-wS-ydg"/>
+                                            <constraint firstAttribute="height" constant="1300" id="ygh-wS-ydg"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rcW-Ag-nDa">
-                                            <size key="itemSize" width="377" height="494"/>
+                                            <size key="itemSize" width="377" height="510"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>

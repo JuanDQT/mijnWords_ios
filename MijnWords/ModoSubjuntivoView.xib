@@ -12,10 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsController" customModule="MijnWords" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U7Y-ta-7r5" customClass="ModoSubjuntivoCell" customModule="MijnWords" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modo Subjuntivo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIw-os-xb6" userLabel="modo">
@@ -31,7 +31,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgM-qX-HTf" userLabel="presente">
-                        <rect key="frame" x="0.0" y="37" width="375" height="220"/>
+                        <rect key="frame" x="0.0" y="42" width="375" height="220"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWa-Hg-tvc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -192,7 +192,7 @@
                         </constraints>
                     </view>
                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWV-ry-kVS" userLabel="futuro">
-                        <rect key="frame" x="0.0" y="258" width="375" height="40"/>
+                        <rect key="frame" x="0.0" y="263" width="375" height="40"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNK-OC-YTL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -371,7 +371,7 @@
                         </constraints>
                     </view>
                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w90-Fn-mfc" userLabel="imperfecto">
-                        <rect key="frame" x="0.0" y="299" width="375" height="40"/>
+                        <rect key="frame" x="0.0" y="304" width="375" height="40"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ms-oK-nAr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -529,7 +529,7 @@
                         </constraints>
                     </view>
                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="asI-5k-jop" userLabel="indefinido">
-                        <rect key="frame" x="0.0" y="340" width="375" height="40"/>
+                        <rect key="frame" x="0.0" y="345" width="375" height="40"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oo2-JY-a37">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -698,15 +698,15 @@
                 <constraint firstAttribute="trailing" secondItem="bIw-os-xb6" secondAttribute="trailing" id="DRl-II-HnQ"/>
                 <constraint firstAttribute="trailing" secondItem="dgM-qX-HTf" secondAttribute="trailing" id="MWD-os-A8W"/>
                 <constraint firstAttribute="trailing" secondItem="w90-Fn-mfc" secondAttribute="trailing" id="O3m-OX-smv"/>
-                <constraint firstItem="dgM-qX-HTf" firstAttribute="top" secondItem="bIw-os-xb6" secondAttribute="bottom" id="PkE-3X-cA6"/>
+                <constraint firstItem="dgM-qX-HTf" firstAttribute="top" secondItem="bIw-os-xb6" secondAttribute="bottom" constant="5" id="PkE-3X-cA6"/>
                 <constraint firstItem="w90-Fn-mfc" firstAttribute="top" secondItem="vWV-ry-kVS" secondAttribute="bottom" constant="1" id="V0E-9D-XxB"/>
                 <constraint firstItem="vWV-ry-kVS" firstAttribute="leading" secondItem="U7Y-ta-7r5" secondAttribute="leading" id="kAa-LY-tbF"/>
                 <constraint firstItem="bIw-os-xb6" firstAttribute="leading" secondItem="U7Y-ta-7r5" secondAttribute="leading" id="ovJ-3C-5ah"/>
                 <constraint firstAttribute="trailing" secondItem="vWV-ry-kVS" secondAttribute="trailing" id="qoG-dn-5hY"/>
                 <constraint firstItem="bIw-os-xb6" firstAttribute="top" secondItem="U7Y-ta-7r5" secondAttribute="top" id="rSU-Q4-yqV"/>
             </constraints>
-            <size key="customSize" width="215" height="328"/>
-            <point key="canvasLocation" x="116.5" y="192.5"/>
+            <size key="customSize" width="215" height="664"/>
+            <point key="canvasLocation" x="116.5" y="360.5"/>
         </collectionViewCell>
     </objects>
 </document>

@@ -22,7 +22,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         super.viewDidLoad()
         ccModos.delegate = self
         ccModos.dataSource = self
-        
+                
         // Cargamos layouts
         let nibModoIndicativo: UINib = UINib(nibName: "ModoIndicativoView", bundle: nil)
         self.ccModos.register(nibModoIndicativo, forCellWithReuseIdentifier: "CC_MODO_INDICATIVO")
@@ -30,15 +30,13 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         let nibModoSubjuntivo: UINib = UINib(nibName: "ModoSubjuntivoView", bundle: nil)
         self.ccModos.register(nibModoSubjuntivo, forCellWithReuseIdentifier: "CC_MODO_SUBJUNTIVO")
         
-        log.info("tamano sv: \(svContent.contentSize)")
+        svContent.contentSize = CGSize(width: svContent.frame.width, height: svContent.frame.height + 400.0)
         
     }
     
     override func viewDidLayoutSubviews() {
         self.svContent.translatesAutoresizingMaskIntoConstraints = true
         svContent.contentSize = CGSize(width: svContent.frame.width, height: 100.0)
-        
-        
     }
     
     // override
@@ -77,12 +75,11 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     
     // TODO: anadir scrollview dentro lde las vistas de cada archivo xib
     @IBAction func touchTitle(_ sender: Any) {
-        
+
         let btn: UIButton = sender as! UIButton
         
         let areaBtn = btn.superview!
         // Recogemos el height de todas las views
-        //log.error("total views(4?): \(areaBtn.superview?.subviews.count)")
 
         
         for item in areaBtn.constraints {
@@ -114,13 +111,11 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
                 
             }
         }
-        log.error("Tu height es: \(newScrollViewSize)")
 
-        newScrollViewSize += Float(svContent.frame.height)
+        newScrollViewSize += Float(40 * 5)
         
         svContent.contentSize = CGSize(width: svContent.frame.width, height: CGFloat(newScrollViewSize))
 
     }
     
-
 }
