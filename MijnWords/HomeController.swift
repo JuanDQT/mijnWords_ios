@@ -28,9 +28,7 @@ class HomeController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func loginAction(_ sender: Any) {
-
-        // TODO: remove this line
-        tfInput.text = "amar"
+        
         if (tfInput.text?.trimmingCharacters(in: .whitespacesAndNewlines).characters.count)! > 0 {
             
             let palabra = Common.getPalabraIdFromJSON(palabra: tfInput.text!)

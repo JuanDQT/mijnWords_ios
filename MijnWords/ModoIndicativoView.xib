@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Ownerrr" customClass="DetailsController" customModule="MijnWords" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7IC-CE-1F3" customClass="ModoIndicativoCell" customModule="MijnWords" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7IC-CE-1F3" customClass="ModoCell" customModule="MijnWords" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -191,7 +191,7 @@
                             <constraint firstItem="NEu-YV-dsq" firstAttribute="top" secondItem="MRt-Et-VG2" secondAttribute="bottom" constant="8" id="zzD-7q-GDp"/>
                         </constraints>
                     </view>
-                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAl-Eb-JUJ" userLabel="futuro">
+                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAl-Eb-JUJ" userLabel="preterito imperfecto">
                         <rect key="frame" x="0.0" y="263" width="375" height="40"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dh-jc-8Vv">
@@ -201,7 +201,7 @@
                                     <constraint firstAttribute="height" constant="40" id="L6p-2w-Vih"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Futuro">
+                                <state key="normal" title="Pretérito imperfecto">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -370,7 +370,7 @@
                             <constraint firstItem="IUE-xw-aSW" firstAttribute="top" secondItem="8CL-Sb-XDr" secondAttribute="bottom" constant="8" id="z1R-DV-jDy"/>
                         </constraints>
                     </view>
-                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfb-h4-sDk" userLabel="imperfecto">
+                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfb-h4-sDk" userLabel="preterito indefinido">
                         <rect key="frame" x="0.0" y="304" width="375" height="40"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZO-sw-RWA">
@@ -380,7 +380,7 @@
                                     <constraint firstAttribute="height" constant="40" id="u3z-Ts-EmM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Pretérito Imperfecto">
+                                <state key="normal" title="Pretérito indefinido">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -528,7 +528,7 @@
                             <constraint firstItem="yZO-sw-RWA" firstAttribute="leading" secondItem="qfb-h4-sDk" secondAttribute="leading" id="zVL-Q5-gmG"/>
                         </constraints>
                     </view>
-                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bev-Tg-tVU" userLabel="indefinido">
+                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bev-Tg-tVU" userLabel="futuro">
                         <rect key="frame" x="0.0" y="345" width="375" height="40"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oZ-VO-Zwq">
@@ -538,7 +538,7 @@
                                     <constraint firstAttribute="height" constant="40" id="U3n-vr-auu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Pretérito Indefinido">
+                                <state key="normal" title="Futuro">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

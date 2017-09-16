@@ -17,15 +17,16 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     @IBOutlet weak var ibRefresh: UIButton!
     @IBOutlet weak var svEjemplos: UIStackView!
     @IBOutlet weak var svContent: UIScrollView!
+    @IBOutlet weak var headerContent: UIView!
+    @IBOutlet weak var lblBaseExample: UILabel!
+    @IBOutlet weak var lblFocusExample: UILabel!
     
     // Constraints
-    @IBOutlet weak var ibRefreshHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var ibToggleHeightRefreshConstraint: NSLayoutConstraint!
-    @IBOutlet weak var svEjemplosHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
     
     var allEntries: [String] = ["juan", "sape", "lokita", "xdxd"]
     var palabra: Palabra?
-    //let defaultSizeScrollContent = 340
+    var indexVerb = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,36 +39,46 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         
         let nibModoSubjuntivo: UINib = UINib(nibName: "ModoSubjuntivoView", bundle: nil)
         self.ccModos.register(nibModoSubjuntivo, forCellWithReuseIdentifier: "CC_MODO_SUBJUNTIVO")
-
-        log.info("Ejemplos: \(palabra!.ejemplo?.ejemploBase?.count)")
+        
+        let nibModoCondicional: UINib = UINib(nibName: "ModoCondicionalView", bundle: nil)
+        self.ccModos.register(nibModoCondicional, forCellWithReuseIdentifier: "CC_MODO_CONDICIONAL")
+        
+        let nibModoImperativo: UINib = UINib(nibName: "ModoImperativoView", bundle: nil)
+        self.ccModos.register(nibModoImperativo, forCellWithReuseIdentifier: "CC_MODO_IMPERATIVO")
         
         if let _ = palabra?.ejemplo {
-            
+            lblBaseExample.text = palabra!.ejemplo!.ejemploBase![indexVerb]
+            lblFocusExample.text = palabra!.ejemplo!.ejemploFocus![indexVerb]
         } else {
-            //hideHeader()
+            hideHeader()
         }
-        hideHeader()
+        
+        fillContentView()
 
     }
     
-    // override
+    // MARK: - overriding all UICollectionView methods
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
-        var customCell: UICollectionViewCell?
+        
+        var customCell: ModoCell = ModoCell()
+        
         switch indexPath.row {
         case 0:
-            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_INDICATIVO", for: indexPath) as! ModoIndicativoCell
+            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_INDICATIVO", for: indexPath) as! ModoCell
         case 1:
-            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_SUBJUNTIVO", for: indexPath) as! ModoSubjuntivoCell
-            
+            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_SUBJUNTIVO", for: indexPath) as! ModoCell
+        case 2:
+            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_CONDICIONAL", for: indexPath) as! ModoCell
+        case 3:
+            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_IMPERATIVO", for: indexPath) as! ModoCell
         default:
-            customCell = UICollectionViewCell()
+            return UICollectionViewCell()
         }
         
-//        customCell!.btnPresente.addTarget(self, action: Selector("action"), forControlEvents: UIControlEvents.TouchUpInside)
-//        
-        return customCell!
+        customCell.fillViews(palabra!.allModos![indexPath.row])
+
+        return customCell
         
     }
 
@@ -76,15 +87,17 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 4
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0.0
     }
     
+    // MARK: - Header examples functionality
+    
     @IBAction func touchTitle(_ sender: Any) {
-
+        
         let btn: UIButton = sender as! UIButton
         
         let areaBtn = btn.superview!
@@ -127,16 +140,30 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     }
     
     func hideHeader() {
-        ibToggleHeightRefreshConstraint.constant = 0
-        ibRefreshHeightConstraint.constant = 0
-        svEjemplosHeightConstraint.constant = 0
-//
-
+        headerHeightConstraint.constant = 0
+        for view in headerContent.subviews {
+            view.removeFromSuperview()
+        }
     }
     
     @IBAction func refreshAction(_ sender: Any) {
         UIView.animate(withDuration: 0.3, animations: {
             self.ibRefresh.transform = self.ibRefresh.transform.rotated(by: -180.0)
         })
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.ibRefresh.transform = self.ibRefresh.transform.rotated(by: -180.0)
+        }, completion: { (_: Bool) in
+            
+            self.indexVerb = self.indexVerb + 1 == self.palabra!.ejemplo!.ejemploBase!.count ? 0: self.indexVerb + 1
+            log.error("INDICE ES: \(self.indexVerb)")
+            
+            self.lblBaseExample.text = self.palabra!.ejemplo!.ejemploBase![self.indexVerb]
+            self.lblFocusExample.text = self.palabra!.ejemplo!.ejemploFocus![self.indexVerb]
+        })
+    }
+    
+    func fillContentView() {
+        
     }
 }
