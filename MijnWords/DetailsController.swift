@@ -11,9 +11,18 @@ import UIKit
 // Pass data between views: http://blog.xebia.com/understanding-the-sender-in-segues-and-use-it-to-pass-on-data-to-another-view-controller/
 class DetailsController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
+    // Views
     @IBOutlet weak var ccModos: UICollectionView!
-    
+    @IBOutlet weak var ibToggle: UIButton!
+    @IBOutlet weak var ibRefresh: UIButton!
+    @IBOutlet weak var svEjemplos: UIStackView!
     @IBOutlet weak var svContent: UIScrollView!
+    
+    // Constraints
+    @IBOutlet weak var ibRefreshHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var ibToggleHeightRefreshConstraint: NSLayoutConstraint!
+    @IBOutlet weak var svEjemplosHeightConstraint: NSLayoutConstraint!
+    
     var allEntries: [String] = ["juan", "sape", "lokita", "xdxd"]
     var palabra: Palabra?
     //let defaultSizeScrollContent = 340
@@ -29,21 +38,22 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         
         let nibModoSubjuntivo: UINib = UINib(nibName: "ModoSubjuntivoView", bundle: nil)
         self.ccModos.register(nibModoSubjuntivo, forCellWithReuseIdentifier: "CC_MODO_SUBJUNTIVO")
+
+        log.info("Ejemplos: \(palabra!.ejemplo?.ejemploBase?.count)")
         
-        svContent.contentSize = CGSize(width: svContent.frame.width, height: svContent.frame.height + 400.0)
-        
-    }
-    
-    override func viewDidLayoutSubviews() {
-        self.svContent.translatesAutoresizingMaskIntoConstraints = true
-        svContent.contentSize = CGSize(width: svContent.frame.width, height: 100.0)
+        if let _ = palabra?.ejemplo {
+            
+        } else {
+            //hideHeader()
+        }
+        hideHeader()
+
     }
     
     // override
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        log.error("CELL ES: \(indexPath.row)")
         var customCell: UICollectionViewCell?
         switch indexPath.row {
         case 0:
@@ -73,14 +83,12 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         return 0.0
     }
     
-    // TODO: anadir scrollview dentro lde las vistas de cada archivo xib
     @IBAction func touchTitle(_ sender: Any) {
 
         let btn: UIButton = sender as! UIButton
         
         let areaBtn = btn.superview!
         // Recogemos el height de todas las views
-
         
         for item in areaBtn.constraints {
             
@@ -118,4 +126,17 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
 
     }
     
+    func hideHeader() {
+        ibToggleHeightRefreshConstraint.constant = 0
+        ibRefreshHeightConstraint.constant = 0
+        svEjemplosHeightConstraint.constant = 0
+//
+
+    }
+    
+    @IBAction func refreshAction(_ sender: Any) {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.ibRefresh.transform = self.ibRefresh.transform.rotated(by: -180.0)
+        })
+    }
 }
