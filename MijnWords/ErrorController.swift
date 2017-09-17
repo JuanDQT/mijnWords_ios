@@ -13,19 +13,41 @@ class ErrorController: UIViewController {
     @IBOutlet weak var ivError: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var btnError: UIButton!
+    @IBOutlet weak var lblDescription: UILabel!
     
     var imageError: UIImage?
     var titleError: String?
+    var descriptionError: String?
+    var btnErrorDescription: String?
+    var goUpdate: Bool?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         lblTitle.text = titleError!
-        ivError.image = imageError
+        ivError.image = imageError!
+        lblDescription.text = descriptionError!
+        btnError.titleLabel?.text = btnErrorDescription!
         // Do any additional setup after loading the view.
     }
 
     @IBAction func tryAgain(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        
+        if let _ = goUpdate {
+            
+            guard let appStoreAppID = URL(string: "itms-apps://itunes.apple.com/app/bars/id706081574") else {
+                return //be safe
+            }
+
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(appStoreAppID, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(appStoreAppID)
+            }
+            
+        } else {
+            dismiss(animated: true, completion: nil)    
+        }
+        
     }
 }

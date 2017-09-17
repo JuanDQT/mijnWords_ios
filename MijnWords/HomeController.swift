@@ -31,7 +31,7 @@ class HomeController: UIViewController, UITextFieldDelegate {
         
         if (tfInput.text?.trimmingCharacters(in: .whitespacesAndNewlines).characters.count)! > 0 {
             
-            let palabra = Common.getPalabraIdFromJSON(palabra: tfInput.text!)
+            let palabra = Common.getPalabraIdFromJSON(palabra: tfInput.text!.lowercased())
             if palabra.0.isEmpty {
                 //log.info(NSLocalizedString("NO_WORD_EXIST", comment: "NO_WORD_EXIST"))
             } else {
@@ -58,6 +58,8 @@ class HomeController: UIViewController, UITextFieldDelegate {
         toggleStatusButton()
         let errorView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ERROR_CONTROLLER") as! ErrorController
         errorView.titleError = extras["title"] as? String
+        errorView.descriptionError = extras["description"] as? String
+        errorView.btnErrorDescription = extras["btnDescription"] as? String
         errorView.imageError = extras["image"] as? UIImage
         self.present(errorView, animated: true, completion: nil)
     }
@@ -67,7 +69,10 @@ class HomeController: UIViewController, UITextFieldDelegate {
         toggleStatusButton()
         let errorView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ERROR_CONTROLLER") as! ErrorController
         errorView.titleError = extras["title"] as? String
+        errorView.descriptionError = extras["description"] as? String
+        errorView.btnErrorDescription = extras["btnDescription"] as? String
         errorView.imageError = extras["image"] as? UIImage
+        errorView.goUpdate = true
         self.present(errorView, animated: true, completion: nil)
     }
     

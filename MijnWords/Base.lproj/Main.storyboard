@@ -297,6 +297,7 @@
                     <connections>
                         <outlet property="btnError" destination="eHZ-87-prQ" id="8QO-BO-J7C"/>
                         <outlet property="ivError" destination="OQV-6I-Jur" id="I2e-5i-cic"/>
+                        <outlet property="lblDescription" destination="0kL-ku-Ghp" id="3x6-aM-qun"/>
                         <outlet property="lblTitle" destination="KWj-VL-fme" id="h9W-RW-0M7"/>
                     </connections>
                 </viewController>

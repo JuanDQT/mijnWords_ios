@@ -6,7 +6,17 @@
   Copyright © 2017 Juan Daniel. All rights reserved.
 */
 
-"NO_INTERNET" = "No hay conexión a internet";
-"SERVER_NO_RESPONSE" = "De service reageert niet";
-"SLOW_INTERNET_CONNECTION" = "Internetverbinding is te traag";
-"UPDATE_AVAILABLE" = "Update available";
+"NO_INTERNET_TITLE" = "Error";
+"NO_INTERNET_DESCRIPTION" = "There is no internet connection";
+
+"SERVER_NO_RESPONSE_TITLE" = "Error";
+"SERVER_NO_RESPONSE_DESCRIPTION" = "The service does not respond";
+
+"SLOW_INTERNET_CONNECTION_TITLE" = "Error";
+"SLOW_INTERNET_CONNECTION_DESCRIPTION" = "Internet connection is too slow";
+
+"UPDATE_AVAILABLE_TITLE" = "Wow!";
+"UPDATE_AVAILABLE_DESCRIPTION" = "Update available";
+"UPDATE_AVAILABLE_BUTTON" = "Open AppStore!";
+
+"TRY_AGAIN" = "Try again!";
