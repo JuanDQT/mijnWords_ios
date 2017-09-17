@@ -335,57 +335,82 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4q-n9-6cr" userLabel="headerContent">
-                                <rect key="frame" x="0.0" y="64" width="375" height="113"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veZ-Ly-Evr">
-                                        <rect key="frame" x="10" y="44.5" width="24" height="24"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="2Ue-eg-ojz"/>
-                                            <constraint firstAttribute="width" constant="24" id="pfy-hP-E2o"/>
-                                        </constraints>
-                                        <state key="normal" image="refresh.png"/>
-                                        <connections>
-                                            <action selector="refreshAction:" destination="EcE-Fv-n3C" eventType="touchUpInside" id="qrp-Kv-WEc"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFl-yZ-iPt" userLabel="ibToggle">
-                                        <rect key="frame" x="341" y="44.5" width="24" height="24"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="24" id="6NI-vP-ha1"/>
-                                            <constraint firstAttribute="height" constant="24" id="QUS-aH-VwS"/>
-                                        </constraints>
-                                        <state key="normal" image="error.png"/>
-                                    </button>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2db-xR-Sbj">
-                                        <rect key="frame" x="82" y="36" width="210" height="41"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2db-xR-Sbj">
+                                        <rect key="frame" x="16" y="16" width="343" height="68"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esto es un mensaje de prueba" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ilh-ef-HYo">
-                                                <rect key="frame" x="0.0" y="0.0" width="210" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a test message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf5-aa-UTG">
-                                                <rect key="frame" x="0.0" y="23" width="210" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sl9-gS-Ev7">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="31.5"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="es_lang.png" translatesAutoresizingMaskIntoConstraints="NO" id="KPI-ul-QYX">
+                                                        <rect key="frame" x="0.0" y="4.5" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="RHb-ih-FLF"/>
+                                                            <constraint firstAttribute="width" constant="24" id="UxX-Z6-IpU"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="Esto es un mensaje de prueba" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilh-ef-HYo">
+                                                        <rect key="frame" x="36" y="0.0" width="307" height="31.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Ilh-ef-HYo" secondAttribute="trailing" id="Fp5-kd-BNY"/>
+                                                    <constraint firstItem="Ilh-ef-HYo" firstAttribute="top" secondItem="Sl9-gS-Ev7" secondAttribute="top" id="Tde-rb-ryg"/>
+                                                    <constraint firstItem="Ilh-ef-HYo" firstAttribute="leading" secondItem="KPI-ul-QYX" secondAttribute="trailing" constant="12" id="VZ7-QQ-OtO"/>
+                                                    <constraint firstItem="KPI-ul-QYX" firstAttribute="leading" secondItem="Sl9-gS-Ev7" secondAttribute="leading" id="eLL-au-9cT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ilh-ef-HYo" secondAttribute="bottom" id="onZ-vq-0VG"/>
+                                                    <constraint firstItem="KPI-ul-QYX" firstAttribute="centerY" secondItem="Sl9-gS-Ev7" secondAttribute="centerY" id="qub-uw-4N7"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nby-Tf-qmm">
+                                                <rect key="frame" x="0.0" y="36.5" width="343" height="31.5"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9vE-bh-YxP">
+                                                        <rect key="frame" x="0.0" y="4" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="MBM-jL-VVs"/>
+                                                            <constraint firstAttribute="height" constant="24" id="sva-CF-Bpi"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text="This is a test message" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf5-aa-UTG">
+                                                        <rect key="frame" x="36" y="0.0" width="307" height="31.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="9vE-bh-YxP" firstAttribute="centerY" secondItem="nby-Tf-qmm" secondAttribute="centerY" id="9T1-xi-DAJ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Hf5-aa-UTG" secondAttribute="bottom" id="CMK-5B-yb7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Hf5-aa-UTG" secondAttribute="trailing" id="g19-PN-vFj"/>
+                                                    <constraint firstItem="Hf5-aa-UTG" firstAttribute="leading" secondItem="9vE-bh-YxP" secondAttribute="trailing" constant="12" id="jwf-Uq-oWz"/>
+                                                    <constraint firstItem="Hf5-aa-UTG" firstAttribute="top" secondItem="nby-Tf-qmm" secondAttribute="top" id="tAt-98-Grl"/>
+                                                    <constraint firstItem="9vE-bh-YxP" firstAttribute="leading" secondItem="nby-Tf-qmm" secondAttribute="leading" id="x9i-en-5jH"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="113" id="Avh-sN-OUl"/>
-                                    <constraint firstItem="JFl-yZ-iPt" firstAttribute="centerY" secondItem="o4q-n9-6cr" secondAttribute="centerY" id="IPW-gh-r8u"/>
-                                    <constraint firstItem="veZ-Ly-Evr" firstAttribute="centerY" secondItem="o4q-n9-6cr" secondAttribute="centerY" id="JEi-sS-L94"/>
-                                    <constraint firstAttribute="trailing" secondItem="JFl-yZ-iPt" secondAttribute="trailing" constant="10" id="JHx-H5-HWj"/>
-                                    <constraint firstItem="2db-xR-Sbj" firstAttribute="centerX" secondItem="o4q-n9-6cr" secondAttribute="centerX" id="dFy-gX-DLb"/>
-                                    <constraint firstItem="2db-xR-Sbj" firstAttribute="centerY" secondItem="o4q-n9-6cr" secondAttribute="centerY" id="mx7-S6-zNC"/>
-                                    <constraint firstItem="veZ-Ly-Evr" firstAttribute="leading" secondItem="o4q-n9-6cr" secondAttribute="leading" constant="10" id="xnI-Ki-L0P"/>
+                                    <constraint firstAttribute="bottom" secondItem="2db-xR-Sbj" secondAttribute="bottom" constant="16" id="9UA-ws-F7O"/>
+                                    <constraint firstAttribute="height" constant="100" id="Avh-sN-OUl"/>
+                                    <constraint firstItem="2db-xR-Sbj" firstAttribute="leading" secondItem="o4q-n9-6cr" secondAttribute="leading" constant="16" id="FzR-bT-1OF"/>
+                                    <constraint firstAttribute="trailing" secondItem="2db-xR-Sbj" secondAttribute="trailing" constant="16" id="HC4-Xh-inR"/>
+                                    <constraint firstItem="2db-xR-Sbj" firstAttribute="top" secondItem="o4q-n9-6cr" secondAttribute="top" constant="16" id="V4y-er-hOh"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="s8c-yC-2dA" appends="YES" id="6ux-kq-olB"/>
+                                </connections>
                             </view>
                             <scrollView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zG6-ef-jTA">
-                                <rect key="frame" x="0.0" y="177" width="375" height="490"/>
+                                <rect key="frame" x="0.0" y="164" width="375" height="503"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DaE-rY-RPq">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
@@ -424,10 +449,10 @@
                     </view>
                     <connections>
                         <outlet property="ccModos" destination="DaE-rY-RPq" id="nmS-AB-gqd"/>
-                        <outlet property="headerContent" destination="o4q-n9-6cr" id="Bi0-e0-nIs"/>
+                        <outlet property="headerContent" destination="o4q-n9-6cr" id="TOu-jZ-oJR"/>
                         <outlet property="headerHeightConstraint" destination="Avh-sN-OUl" id="4cM-bw-EjD"/>
-                        <outlet property="ibRefresh" destination="veZ-Ly-Evr" id="kIW-FP-THj"/>
-                        <outlet property="ibToggle" destination="JFl-yZ-iPt" id="moI-nP-rNX"/>
+                        <outlet property="ivBase" destination="KPI-ul-QYX" id="gjA-U5-arX"/>
+                        <outlet property="ivFocus" destination="9vE-bh-YxP" id="8b1-zm-QQH"/>
                         <outlet property="lblBaseExample" destination="Ilh-ef-HYo" id="6T8-KT-Ekj"/>
                         <outlet property="lblFocusExample" destination="Hf5-aa-UTG" id="HJs-gp-fUj"/>
                         <outlet property="svContent" destination="zG6-ef-jTA" id="G0S-5N-3Vp"/>
@@ -435,6 +460,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BT6-46-kOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="s8c-yC-2dA">
+                    <connections>
+                        <action selector="touchRefresh:" destination="EcE-Fv-n3C" id="yXT-B5-EJT"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1424.8" y="171.36431784107947"/>
         </scene>
@@ -458,10 +488,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="error.png" width="100" height="100"/>
         <image name="es_lang.png" width="96" height="96"/>
         <image name="nl_lang.png" width="96" height="96"/>
         <image name="no_network.png" width="128" height="128"/>
-        <image name="refresh.png" width="96" height="96"/>
     </resources>
 </document>

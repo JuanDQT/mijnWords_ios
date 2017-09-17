@@ -10,29 +10,30 @@ import UIKit
 
 // Pass data between views: http://blog.xebia.com/understanding-the-sender-in-segues-and-use-it-to-pass-on-data-to-another-view-controller/
 class DetailsController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-
+    
     // Views
     @IBOutlet weak var ccModos: UICollectionView!
-    @IBOutlet weak var ibToggle: UIButton!
-    @IBOutlet weak var ibRefresh: UIButton!
     @IBOutlet weak var svEjemplos: UIStackView!
     @IBOutlet weak var svContent: UIScrollView!
     @IBOutlet weak var headerContent: UIView!
     @IBOutlet weak var lblBaseExample: UILabel!
     @IBOutlet weak var lblFocusExample: UILabel!
+    @IBOutlet weak var ivBase: UIImageView!
     
+    @IBOutlet weak var ivFocus: UIImageView!
     // Constraints
     @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
     
-    var allEntries: [String] = ["juan", "sape", "lokita", "xdxd"]
     var palabra: Palabra?
     var indexVerb = 0
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ccModos.delegate = self
         ccModos.dataSource = self
-                
+        
+        ivFocus.image = UIImage(named: "\(Common.getFocusLanguage().lowercased())_lang.png")
+        
         // Cargamos layouts
         let nibModoIndicativo: UINib = UINib(nibName: "ModoIndicativoView", bundle: nil)
         self.ccModos.register(nibModoIndicativo, forCellWithReuseIdentifier: "CC_MODO_INDICATIVO")
@@ -53,8 +54,17 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
             hideHeader()
         }
         
-        fillContentView()
+        
+        
+    }
+    
+    @IBAction func touchRefresh(_ sender: Any) {
 
+        self.indexVerb = self.indexVerb + 1 == self.palabra!.ejemplo!.ejemploBase!.count ? 0: self.indexVerb + 1
+        
+        self.lblBaseExample.text = self.palabra!.ejemplo!.ejemploBase![self.indexVerb]
+        self.lblFocusExample.text = self.palabra!.ejemplo!.ejemploFocus![self.indexVerb]
+        
     }
     
     // MARK: - overriding all UICollectionView methods
@@ -77,11 +87,11 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         }
         
         customCell.fillViews(palabra!.allModos![indexPath.row])
-
+        
         return customCell
         
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: ccModos.frame.width, height: ccModos.frame.height)
     }
@@ -89,7 +99,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0.0
     }
@@ -132,11 +142,11 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
                 
             }
         }
-
+        
         newScrollViewSize += Float(40 * 5)
         
         svContent.contentSize = CGSize(width: svContent.frame.width, height: CGFloat(newScrollViewSize))
-
+        
     }
     
     func hideHeader() {
@@ -144,26 +154,5 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         for view in headerContent.subviews {
             view.removeFromSuperview()
         }
-    }
-    
-    @IBAction func refreshAction(_ sender: Any) {
-        UIView.animate(withDuration: 0.3, animations: {
-            self.ibRefresh.transform = self.ibRefresh.transform.rotated(by: -180.0)
-        })
-        
-        UIView.animate(withDuration: 0.3, animations: {
-            self.ibRefresh.transform = self.ibRefresh.transform.rotated(by: -180.0)
-        }, completion: { (_: Bool) in
-            
-            self.indexVerb = self.indexVerb + 1 == self.palabra!.ejemplo!.ejemploBase!.count ? 0: self.indexVerb + 1
-            log.error("INDICE ES: \(self.indexVerb)")
-            
-            self.lblBaseExample.text = self.palabra!.ejemplo!.ejemploBase![self.indexVerb]
-            self.lblFocusExample.text = self.palabra!.ejemplo!.ejemploFocus![self.indexVerb]
-        })
-    }
-    
-    func fillContentView() {
-        
     }
 }

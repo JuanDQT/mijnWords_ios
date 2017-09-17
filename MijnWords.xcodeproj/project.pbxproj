@@ -26,7 +26,6 @@
 		5B5D72E81F63DE6E009416EA /* Ejemplo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D72E71F63DE6E009416EA /* Ejemplo.swift */; };
 		5B7B42481F55452900F9B582 /* access.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7B42471F55452900F9B582 /* access.json */; };
 		5B7B424A1F55897800F9B582 /* palabras.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7B42491F55897800F9B582 /* palabras.json */; };
-		5B96DCBC1F5DE024002322B0 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B96DCBB1F5DE024002322B0 /* error.png */; };
 		5B96DCBE1F5DE07C002322B0 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B96DCBD1F5DE07C002322B0 /* refresh.png */; };
 		5BB02A1D1F5895720027AFBC /* ErrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB02A1C1F5895720027AFBC /* ErrorController.swift */; };
 		5BB02A251F589CDD0027AFBC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB02A1E1F589CDD0027AFBC /* logo.png */; };
@@ -64,7 +63,6 @@
 		5B5D72E71F63DE6E009416EA /* Ejemplo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ejemplo.swift; sourceTree = "<group>"; };
 		5B7B42471F55452900F9B582 /* access.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = access.json; sourceTree = "<group>"; };
 		5B7B42491F55897800F9B582 /* palabras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palabras.json; sourceTree = "<group>"; };
-		5B96DCBB1F5DE024002322B0 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
 		5B96DCBD1F5DE07C002322B0 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
 		5BB02A1C1F5895720027AFBC /* ErrorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorController.swift; sourceTree = "<group>"; };
 		5BB02A1E1F589CDD0027AFBC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				5B96DCBD1F5DE07C002322B0 /* refresh.png */,
-				5B96DCBB1F5DE024002322B0 /* error.png */,
 				5BB02A1E1F589CDD0027AFBC /* logo.png */,
 				5BB02A1F1F589CDD0027AFBC /* no_network.png */,
 				5BB02A211F589CDD0027AFBC /* server_error.png */,
@@ -270,7 +267,6 @@
 				5BB02A2A1F589CDD0027AFBC /* unknow_error.png in Resources */,
 				5B4DEF721F65B692004FDFE0 /* ModoSubjuntivoView.xib in Resources */,
 				5B7B42481F55452900F9B582 /* access.json in Resources */,
-				5B96DCBC1F5DE024002322B0 /* error.png in Resources */,
 				5B7B424A1F55897800F9B582 /* palabras.json in Resources */,
 				5BB02A261F589CDD0027AFBC /* no_network.png in Resources */,
 				5BB02A281F589CDD0027AFBC /* server_error.png in Resources */,
