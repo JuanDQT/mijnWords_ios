@@ -20,7 +20,6 @@ class ErrorController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        log.info("me pasaste: \(titleError!)")
         lblTitle.text = titleError!
         ivError.image = imageError
         // Do any additional setup after loading the view.

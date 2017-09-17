@@ -33,10 +33,9 @@ class HomeController: UIViewController, UITextFieldDelegate {
             
             let palabra = Common.getPalabraIdFromJSON(palabra: tfInput.text!)
             if palabra.0.isEmpty {
-                log.info("Esa palabra no existe en el diccionario")
+                //log.info(NSLocalizedString("NO_WORD_EXIST", comment: "NO_WORD_EXIST"))
             } else {
                 toggleStatusButton()
-                log.info("Bien, vamos a buscar \(palabra.0)")
                 API().getResultados(id: palabra.0, palabra: palabra.1)
             }
         }
@@ -64,7 +63,6 @@ class HomeController: UIViewController, UITextFieldDelegate {
     }
     
     func notificationUpdate(_ notification: Notification) {
-        log.error("llegue al observer")
         var extras: [String: Any] = notification.userInfo as! [String: Any]
         toggleStatusButton()
         let errorView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ERROR_CONTROLLER") as! ErrorController
@@ -74,7 +72,6 @@ class HomeController: UIViewController, UITextFieldDelegate {
     }
     
     func notificationSuccess(_ notification: Notification) {
-        tfInput.text = ""
         toggleStatusButton()
         
         let result: [String: Palabra] = (notification.userInfo as? [String: Palabra])!
@@ -87,10 +84,11 @@ class HomeController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "DETAILS_CONTROLLER" {
-            log.error("espera nen")
             
             if let afterSegue: DetailsController = segue.destination as? DetailsController {
                 afterSegue.palabra = sender as? Palabra
+                afterSegue.palabraString = self.tfInput.text
+                tfInput.text = ""
             }
         }
         

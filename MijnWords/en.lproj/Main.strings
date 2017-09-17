@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "Volver a intentarlo"; ObjectID = "0kL-ku-Ghp"; */
+"0kL-ku-Ghp.text" = "Try again";
+
+/* Class = "UILabel"; text = "Verbos en"; ObjectID = "A3l-QY-2qO"; */
+"A3l-QY-2qO.text" = "Verbs in";
+
+/* Class = "UINavigationItem"; title = "MijnWords"; ObjectID = "BDE-Iq-4Qc"; */
+"BDE-Iq-4Qc.title" = "MijnWords";
+
+/* Class = "UILabel"; text = "Verbos en"; ObjectID = "Bjq-mq-4Fx"; */
+"Bjq-mq-4Fx.text" = "Verbs in";
+
+/* Class = "UILabel"; text = "This is a test message"; ObjectID = "Hf5-aa-UTG"; */
+"Hf5-aa-UTG.text" = "This is a test message";
+
+/* Class = "UILabel"; text = "Esto es un mensaje de prueba."; ObjectID = "Ilh-ef-HYo"; */
+"Ilh-ef-HYo.text" = "This is a test message.";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "KWj-VL-fme"; */
+"KWj-VL-fme.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Configurar"; ObjectID = "bbh-e3-fNa"; */
+"bbh-e3-fNa.title" = "Configurar";
+
+/* Class = "UILabel"; text = "Ejemplos en"; ObjectID = "eBm-CJ-jCQ"; */
+"eBm-CJ-jCQ.text" = "Examples in";
+
+/* Class = "UIButton"; normalTitle = "Reintentar"; ObjectID = "eHZ-87-prQ"; */
+"eHZ-87-prQ.normalTitle" = "Try again";
+
+/* Class = "UIButton"; normalTitle = "Guardar"; ObjectID = "kPQ-Sm-btk"; */
+"kPQ-Sm-btk.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "Ejemplos en"; ObjectID = "p77-7z-hZm"; */
+"p77-7z-hZm.text" = "Examples in";
+
+/* Class = "UIButton"; normalTitle = "Buscar"; ObjectID = "pak-ha-F6B"; */
+"pak-ha-F6B.normalTitle" = "Search";
+
+/* Class = "UILabel"; text = "Introduce una palabra"; ObjectID = "uZw-5m-c7M"; */
+"uZw-5m-c7M.text" = "Introduce a word";

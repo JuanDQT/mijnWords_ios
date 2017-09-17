@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MijnWords
+
+  Created by Juan Daniel on 17/9/17.
+  Copyright © 2017 Juan Daniel. All rights reserved.
+*/
+
+"NO_INTERNET" = "There is no internet connection";
+"SERVER_NO_RESPONSE" = "The service does not respond";
+"SLOW_INTERNET_CONNECTION" = "Internet connection is too slow";
+"UPDATE_AVAILABLE" = "Update available";

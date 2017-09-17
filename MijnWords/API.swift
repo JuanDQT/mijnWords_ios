@@ -29,25 +29,24 @@ class API {
     func checkCommonErrors(_ response: DataResponse<String>, json: inout JSON) -> Bool {
         
         if response.result.isFailure {
-            //log.info("E: \(response.result.error?._code)")
-            log.error("[ServerAPI] ERROR: \(String(describing: response.request?.url)) : \(String(describing: response.result.error))")
+            //log.error("[ServerAPI] ERROR: \(String(describing: response.request?.url)) : \(String(describing: response.result.error))")
             var mapErros: [String: Any] = [:]
             
             // No tienes internet
             if response.result.error?._code == NSURLErrorNotConnectedToInternet {
-                mapErros["title"] = "No hay conexión a internet"
+                mapErros["title"] = NSLocalizedString("NO_INTERNET", comment: "NO_INTERNET")
                 mapErros["image"] = UIImage(named: "no_network.png")
             }
             
             // El servidor esta off
             if response.result.error?._code == NSURLErrorCannotConnectToHost {
-                mapErros["title"] = "El servidor no responde"
+                mapErros["title"] = NSLocalizedString("SERVER_NO_RESPONSE", comment: "SERVER_NO_RESPONSE")
                 mapErros["image"] = UIImage(named: "server_error.png")
             }
             
             // Tiempo de espera
             if response.result.error?._code == NSURLErrorTimedOut {
-                mapErros["title"] = "Conexión a internet demasiado lenta"
+                mapErros["title"] = NSLocalizedString("SLOW_INTERNET_CONNECTION", comment: "SLOW_INTERNET_CONNECTION")
                 mapErros["image"] = UIImage(named: "slow_internet.png")
             }
             
@@ -86,7 +85,7 @@ class API {
                     log.error("Decimos de upd")
                     var mapUpdate: [String: Any] = [:]
                 
-                    mapUpdate["title"] = "Actualización disponible"
+                    mapUpdate["title"] = NSLocalizedString("UPDATE_AVAILABLE", comment: "UPDATE_AVAILABLE")
                     mapUpdate["image"] = UIImage(named: "update_app.png")
                     NotificationCenter.default.post(name: Notification.Name(rawValue: "UPDATE"), object: nil, userInfo: mapUpdate)
                     return

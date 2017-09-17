@@ -26,12 +26,15 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     
     var palabra: Palabra?
     var indexVerb = 0
+    var palabraString: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ccModos.delegate = self
         ccModos.dataSource = self
-        
+        self.navigationController?.navigationBar.topItem?.title = " "
+
+        title = palabraString?.uppercased()
         ivFocus.image = UIImage(named: "\(Common.getFocusLanguage().lowercased())_lang.png")
         
         // Cargamos layouts
@@ -118,7 +121,6 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
             if let x = item.identifier {
                 
                 if x == "expandable" {
-                    log.error("TAGG: \(x)")
                     
                     if item.constant == 220 {
                         item.constant = 40
