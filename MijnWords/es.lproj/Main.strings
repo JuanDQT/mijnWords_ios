@@ -20,6 +20,9 @@
 /* Class = "UILabel"; text = "Label"; ObjectID = "KWj-VL-fme"; */
 "KWj-VL-fme.text" = "Label";
 
+/* Class = "UILabel"; text = "www.esfacil.eu"; ObjectID = "bFV-gY-zLB"; */
+"bFV-gY-zLB.text" = "www.esfacil.eu";
+
 /* Class = "UINavigationItem"; title = "Configurar"; ObjectID = "bbh-e3-fNa"; */
 "bbh-e3-fNa.title" = "Configurar";
 
@@ -29,8 +32,14 @@
 /* Class = "UIButton"; normalTitle = "Reintentar"; ObjectID = "eHZ-87-prQ"; */
 "eHZ-87-prQ.normalTitle" = "Reintentar";
 
+/* Class = "UIButton"; normalTitle = "Cerrar"; ObjectID = "iyS-jV-DRv"; */
+"iyS-jV-DRv.normalTitle" = "Cerrar";
+
 /* Class = "UIButton"; normalTitle = "Guardar"; ObjectID = "kPQ-Sm-btk"; */
 "kPQ-Sm-btk.normalTitle" = "Guardar";
+
+/* Class = "UILabel"; text = "Annemijn Scholtmeijer"; ObjectID = "oN0-qo-zho"; */
+"oN0-qo-zho.text" = "Annemijn Scholtmeijer♥";
 
 /* Class = "UILabel"; text = "Ejemplos en"; ObjectID = "p77-7z-hZm"; */
 "p77-7z-hZm.text" = "Ejemplos en";
@@ -38,5 +47,8 @@
 /* Class = "UIButton"; normalTitle = "Buscar"; ObjectID = "pak-ha-F6B"; */
 "pak-ha-F6B.normalTitle" = "Buscar";
 
+/* Class = "UILabel"; text = "Créditos"; ObjectID = "rC6-zd-5vb"; */
+"rC6-zd-5vb.text" = "Créditos";
+
 /* Class = "UILabel"; text = "Introduce una palabra"; ObjectID = "uZw-5m-c7M"; */
-"uZw-5m-c7M.text" = "Introduce una palabra";
+"uZw-5m-c7M.text" = "Introduce un verbo";

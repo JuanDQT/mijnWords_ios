@@ -1,6 +1,6 @@
 
 /* Class = "UILabel"; text = "Volver a intentarlo"; ObjectID = "0kL-ku-Ghp"; */
-"0kL-ku-Ghp.text" = "Try again";
+"0kL-ku-Ghp.text" = "Try again!";
 
 /* Class = "UILabel"; text = "Verbos en"; ObjectID = "A3l-QY-2qO"; */
 "A3l-QY-2qO.text" = "Verbs in";
@@ -9,19 +9,22 @@
 "BDE-Iq-4Qc.title" = "MijnWords";
 
 /* Class = "UILabel"; text = "Verbos en"; ObjectID = "Bjq-mq-4Fx"; */
-"Bjq-mq-4Fx.text" = "Verbs in";
+"Bjq-mq-4Fx.text" = "Verbs en";
 
 /* Class = "UILabel"; text = "This is a test message"; ObjectID = "Hf5-aa-UTG"; */
 "Hf5-aa-UTG.text" = "This is a test message";
 
 /* Class = "UILabel"; text = "Esto es un mensaje de prueba."; ObjectID = "Ilh-ef-HYo"; */
-"Ilh-ef-HYo.text" = "This is a test message.";
+"Ilh-ef-HYo.text" = "Esto es un mensaje de prueba.";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "KWj-VL-fme"; */
 "KWj-VL-fme.text" = "Label";
 
+/* Class = "UILabel"; text = "www.esfacil.eu"; ObjectID = "bFV-gY-zLB"; */
+"bFV-gY-zLB.text" = "www.esfacil.eu";
+
 /* Class = "UINavigationItem"; title = "Configurar"; ObjectID = "bbh-e3-fNa"; */
-"bbh-e3-fNa.title" = "Configurar";
+"bbh-e3-fNa.title" = "Configuration";
 
 /* Class = "UILabel"; text = "Ejemplos en"; ObjectID = "eBm-CJ-jCQ"; */
 "eBm-CJ-jCQ.text" = "Examples in";
@@ -29,8 +32,14 @@
 /* Class = "UIButton"; normalTitle = "Reintentar"; ObjectID = "eHZ-87-prQ"; */
 "eHZ-87-prQ.normalTitle" = "Try again";
 
+/* Class = "UIButton"; normalTitle = "Cerrar"; ObjectID = "iyS-jV-DRv"; */
+"iyS-jV-DRv.normalTitle" = "Close";
+
 /* Class = "UIButton"; normalTitle = "Guardar"; ObjectID = "kPQ-Sm-btk"; */
 "kPQ-Sm-btk.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "Annemijn Scholtmeijer"; ObjectID = "oN0-qo-zho"; */
+"oN0-qo-zho.text" = "Annemijn Scholtmeijer♥";
 
 /* Class = "UILabel"; text = "Ejemplos en"; ObjectID = "p77-7z-hZm"; */
 "p77-7z-hZm.text" = "Examples in";
@@ -38,5 +47,8 @@
 /* Class = "UIButton"; normalTitle = "Buscar"; ObjectID = "pak-ha-F6B"; */
 "pak-ha-F6B.normalTitle" = "Search";
 
+/* Class = "UILabel"; text = "Créditos"; ObjectID = "rC6-zd-5vb"; */
+"rC6-zd-5vb.text" = "Credits";
+
 /* Class = "UILabel"; text = "Introduce una palabra"; ObjectID = "uZw-5m-c7M"; */
-"uZw-5m-c7M.text" = "Introduce a word";
+"uZw-5m-c7M.text" = "Introduce a verb";

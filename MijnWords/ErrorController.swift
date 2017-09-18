@@ -27,7 +27,7 @@ class ErrorController: UIViewController {
         lblTitle.text = titleError!
         ivError.image = imageError!
         lblDescription.text = descriptionError!
-        btnError.titleLabel?.text = btnErrorDescription!
+        btnError.setTitle(btnErrorDescription!, for: .normal)
         // Do any additional setup after loading the view.
     }
 
@@ -35,7 +35,7 @@ class ErrorController: UIViewController {
         
         if let _ = goUpdate {
             
-            guard let appStoreAppID = URL(string: "itms-apps://itunes.apple.com/app/bars/id706081574") else {
+            guard let appStoreAppID = URL(string: "itms-apps://itunes.apple.com/app/bars/id1286605525") else {
                 return //be safe
             }
 

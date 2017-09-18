@@ -121,5 +121,10 @@ class HomeController: UIViewController, UITextFieldDelegate {
         return true
     }
 
+    @IBAction func creditsAction(_ sender: Any) {
+        let viewCredits: CreditsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CREDITS_CONTROLLER") as! CreditsController
+        
+        present(viewCredits, animated: true, completion: nil)
+    }
 }
 

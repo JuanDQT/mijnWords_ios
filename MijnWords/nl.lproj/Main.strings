@@ -20,6 +20,9 @@
 /* Class = "UILabel"; text = "Label"; ObjectID = "KWj-VL-fme"; */
 "KWj-VL-fme.text" = "Label";
 
+/* Class = "UILabel"; text = "www.esfacil.eu"; ObjectID = "bFV-gY-zLB"; */
+"bFV-gY-zLB.text" = "www.esfacil.eu";
+
 /* Class = "UINavigationItem"; title = "Configurar"; ObjectID = "bbh-e3-fNa"; */
 "bbh-e3-fNa.title" = "Talen configureren";
 
@@ -27,10 +30,16 @@
 "eBm-CJ-jCQ.text" = "Voorbeelden in";
 
 /* Class = "UIButton"; normalTitle = "Reintentar"; ObjectID = "eHZ-87-prQ"; */
-"eHZ-87-prQ.normalTitle" = "Probeer later opnieuw";
+"eHZ-87-prQ.normalTitle" = "Try again";
+
+/* Class = "UIButton"; normalTitle = "Cerrar"; ObjectID = "iyS-jV-DRv"; */
+"iyS-jV-DRv.normalTitle" = "Dicht";
 
 /* Class = "UIButton"; normalTitle = "Guardar"; ObjectID = "kPQ-Sm-btk"; */
 "kPQ-Sm-btk.normalTitle" = "Opslaan";
+
+/* Class = "UILabel"; text = "Annemijn Scholtmeijer"; ObjectID = "oN0-qo-zho"; */
+"oN0-qo-zho.text" = "Annemijn Scholtmeijer♥";
 
 /* Class = "UILabel"; text = "Ejemplos en"; ObjectID = "p77-7z-hZm"; */
 "p77-7z-hZm.text" = "Voorbeelden in";
@@ -38,5 +47,8 @@
 /* Class = "UIButton"; normalTitle = "Buscar"; ObjectID = "pak-ha-F6B"; */
 "pak-ha-F6B.normalTitle" = "Zoeken";
 
+/* Class = "UILabel"; text = "Créditos"; ObjectID = "rC6-zd-5vb"; */
+"rC6-zd-5vb.text" = "Met dank aan";
+
 /* Class = "UILabel"; text = "Introduce una palabra"; ObjectID = "uZw-5m-c7M"; */
-"uZw-5m-c7M.text" = "Introduceer een woord";
+"uZw-5m-c7M.text" = "Introduceer een werkwoorden";
