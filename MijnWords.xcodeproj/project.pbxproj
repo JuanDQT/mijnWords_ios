@@ -247,7 +247,7 @@
 				TargetAttributes = {
 					5B005A0D1F51C3FE007B4887 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 7A84FVPLVE;
+						DevelopmentTeam = 85RGNG7LK2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -509,10 +509,10 @@
 			baseConfigurationReference = 027F33BDDC2ADA747E44219D /* Pods-MijnWords.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7A84FVPLVE;
+				DEVELOPMENT_TEAM = 85RGNG7LK2;
 				INFOPLIST_FILE = MijnWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.MijnWords";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juandqt.mijnwords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -523,10 +523,10 @@
 			baseConfigurationReference = C5A34CDC75E58B4A9EAE51AA /* Pods-MijnWords.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7A84FVPLVE;
+				DEVELOPMENT_TEAM = 85RGNG7LK2;
 				INFOPLIST_FILE = MijnWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.MijnWords";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juandqt.mijnwords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
