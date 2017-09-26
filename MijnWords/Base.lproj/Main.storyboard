@@ -384,7 +384,7 @@
             </objects>
             <point key="canvasLocation" x="-1140" y="-520"/>
         </scene>
-        <!--Details Controller-->
+        <!--Title-->
         <scene sceneID="fSm-eI-0m0">
             <objects>
                 <viewController id="EcE-Fv-n3C" customClass="DetailsController" customModule="MijnWords" customModuleProvider="target" sceneMemberID="viewController">
@@ -509,6 +509,9 @@
                             <constraint firstItem="zG6-ef-jTA" firstAttribute="leading" secondItem="Xre-u5-3Sg" secondAttribute="leading" id="yhU-eE-hMB"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="vjp-zV-vmN">
+                        <barButtonItem key="rightBarButtonItem" image="star.png" width="5" style="done" id="rE6-Jd-fAi"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="ccModos" destination="DaE-rY-RPq" id="nmS-AB-gqd"/>
                         <outlet property="headerContent" destination="o4q-n9-6cr" id="TOu-jZ-oJR"/>
@@ -553,5 +556,6 @@
         <image name="es_lang.png" width="96" height="96"/>
         <image name="nl_lang.png" width="96" height="96"/>
         <image name="no_network.png" width="128" height="128"/>
+        <image name="star.png" width="25" height="25"/>
     </resources>
 </document>

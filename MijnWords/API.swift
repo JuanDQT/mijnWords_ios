@@ -69,7 +69,6 @@ class API {
 
         var params: [String: String] = [:]
         params["id"] = id
-        params["os"] = "ios"
         params["palabra"] = palabra
         params["lng_focus"] = Common.getFocusLanguage()
         params["lng_base"] = "ES"
