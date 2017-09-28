@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 // Pass data between views: http://blog.xebia.com/understanding-the-sender-in-segues-and-use-it-to-pass-on-data-to-another-view-controller/
 class DetailsController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -19,12 +20,14 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     @IBOutlet weak var lblBaseExample: UILabel!
     @IBOutlet weak var lblFocusExample: UILabel!
     @IBOutlet weak var ivBase: UIImageView!
+    @IBOutlet weak var bbiSave: UIBarButtonItem!
     
     @IBOutlet weak var ivFocus: UIImageView!
     // Constraints
     @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
     
     var palabra: Palabra?
+    var palabraId: Int?
     var indexVerb = 0
     var palabraString: String?
     
@@ -57,7 +60,13 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
             hideHeader()
         }
         
+        let realm = try! Realm()
         
+        if let _ = realm.objects(Palabras.self).filter("id = %@", palabraId).first {
+            self.bbiSave.title = "Borrar"
+        } else {
+            self.bbiSave.title = "Guardar"
+        }
         
     }
     
@@ -157,4 +166,27 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
             view.removeFromSuperview()
         }
     }
+    
+    @IBAction func guardarAction(_ sender: Any) {
+        let realm = try! Realm()
+        
+        if let item = realm.objects(Palabras.self).filter("id = %@", palabraId).first {
+            bbiSave.title = "Guardar"
+            
+            try! realm.write {
+                realm.delete(item)
+            }
+        } else {
+            bbiSave.title = "Borrar"
+            try! realm.write {
+                let itemToAdd: Palabras = Palabras()
+                itemToAdd.id = palabraId!
+                // TODO: revisar esto
+                itemToAdd.languageCode = "ES"
+                itemToAdd.name = palabraString
+                realm.add(itemToAdd)
+            }
+        }
+    }
+    
 }

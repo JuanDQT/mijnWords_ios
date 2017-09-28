@@ -193,6 +193,16 @@
                                     <constraint firstItem="eBm-CJ-jCQ" firstAttribute="leading" secondItem="Bvt-Sy-KCd" secondAttribute="leading" id="rhQ-IC-kFI"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="987-da-Hbd">
+                                <rect key="frame" x="24" y="609" width="327" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="22A-pd-rPa"/>
+                                </constraints>
+                                <state key="normal" title="Creditos"/>
+                                <connections>
+                                    <action selector="creditsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zkh-V6-Y18"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -203,10 +213,13 @@
                             <constraint firstItem="Bvt-Sy-KCd" firstAttribute="top" secondItem="Eg7-b9-ZQ8" secondAttribute="bottom" constant="8" id="BOb-Ay-VSr"/>
                             <constraint firstItem="uZw-5m-c7M" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IEd-fC-Aom"/>
                             <constraint firstItem="Eg7-b9-ZQ8" firstAttribute="top" secondItem="pak-ha-F6B" secondAttribute="bottom" constant="32" id="NTX-3f-tGo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="987-da-Hbd" secondAttribute="trailing" constant="8" id="WG5-Qe-zRE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="987-da-Hbd" secondAttribute="bottom" constant="28" id="Wah-Ak-RoJ"/>
                             <constraint firstItem="uZw-5m-c7M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bzT-lh-sB6"/>
                             <constraint firstItem="tjy-7n-2tA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ctn-YK-ocq"/>
                             <constraint firstItem="uZw-5m-c7M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="151" id="fyJ-x4-fJM"/>
                             <constraint firstItem="pak-ha-F6B" firstAttribute="top" secondItem="tjy-7n-2tA" secondAttribute="bottom" constant="39" id="gZJ-Xr-g3J"/>
+                            <constraint firstItem="987-da-Hbd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="jdw-o8-kYu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MijnWords" id="BDE-Iq-4Qc">
@@ -217,7 +230,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="rSV-J1-BV8">
                             <connections>
-                                <action selector="creditsAction:" destination="BYZ-38-t0r" id="tlH-sO-sf8"/>
+                                <segue destination="nP3-Xa-DF5" kind="popoverPresentation" identifier="HISTORIC_CONTROLLER" popoverAnchorBarButtonItem="rSV-J1-BV8" id="PXi-o1-N95">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -510,9 +525,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="vjp-zV-vmN">
-                        <barButtonItem key="rightBarButtonItem" image="star.png" width="5" style="done" id="rE6-Jd-fAi"/>
+                        <barButtonItem key="rightBarButtonItem" width="5" style="done" id="rE6-Jd-fAi">
+                            <connections>
+                                <action selector="guardarAction:" destination="EcE-Fv-n3C" id="biw-WT-2v2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="bbiSave" destination="rE6-Jd-fAi" id="7Ua-mS-ld5"/>
                         <outlet property="ccModos" destination="DaE-rY-RPq" id="nmS-AB-gqd"/>
                         <outlet property="headerContent" destination="o4q-n9-6cr" id="TOu-jZ-oJR"/>
                         <outlet property="headerHeightConstraint" destination="Avh-sN-OUl" id="4cM-bw-EjD"/>
@@ -533,6 +553,57 @@
             </objects>
             <point key="canvasLocation" x="1424.8" y="171.36431784107947"/>
         </scene>
+        <!--Seleccione un verbo-->
+        <scene sceneID="aiN-Ob-EH0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GXv-Gh-LRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="SbO-RR-Zca" customClass="HistoricController" customModule="MijnWords" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eCA-ob-bJ5"/>
+                        <viewControllerLayoutGuide type="bottom" id="HKg-Rb-aHl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O7D-Fa-3HN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qvV-Dc-aIm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="eMh-Sj-H5K">
+                                        <rect key="frame" x="0.0" y="1" width="375" height="30"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eMh-Sj-H5K" id="zhY-Uu-NYc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="29.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qvV-Dc-aIm" firstAttribute="top" secondItem="eCA-ob-bJ5" secondAttribute="bottom" id="4vs-KU-uCC"/>
+                            <constraint firstAttribute="trailing" secondItem="qvV-Dc-aIm" secondAttribute="trailing" id="RsK-Yc-V9L"/>
+                            <constraint firstItem="HKg-Rb-aHl" firstAttribute="top" secondItem="qvV-Dc-aIm" secondAttribute="bottom" id="Wer-Yq-LaQ"/>
+                            <constraint firstItem="qvV-Dc-aIm" firstAttribute="leading" secondItem="O7D-Fa-3HN" secondAttribute="leading" id="b7i-Q9-OFn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Seleccione un verbo" id="K5O-QQ-KKE">
+                        <barButtonItem key="rightBarButtonItem" title="Cerrar" id="ox5-b9-E3X">
+                            <connections>
+                                <action selector="closeAction:" destination="SbO-RR-Zca" id="w6L-iE-sBO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="qvV-Dc-aIm" id="l2H-uY-p8y"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1824.8" y="-638.2308845577212"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rqt-Ye-Go0">
             <objects>
@@ -551,11 +622,28 @@
             </objects>
             <point key="canvasLocation" x="-219" y="938"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="E9l-gh-gkG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nP3-Xa-DF5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3bL-16-SIN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SbO-RR-Zca" kind="relationship" relationship="rootViewController" id="DYF-as-vNn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vln-fV-kgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.60000000000002" y="-638.2308845577212"/>
+        </scene>
     </scenes>
     <resources>
         <image name="es_lang.png" width="96" height="96"/>
         <image name="nl_lang.png" width="96" height="96"/>
         <image name="no_network.png" width="128" height="128"/>
-        <image name="star.png" width="25" height="25"/>
     </resources>
 </document>
