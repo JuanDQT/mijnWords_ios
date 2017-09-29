@@ -14,7 +14,7 @@ class HistoricController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var table: UITableView!
     var result: [Palabras]?
     
-    var wordSelected: ((_ response: String) -> Void)?
+    var wordSelected: (( _ response: String) -> Void)?
     var realm: Realm?
     
     override func viewDidLoad() {
@@ -42,6 +42,7 @@ class HistoricController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        log.error("ENVIAMOS DESDE HISTORIC: \(result![indexPath.row].name!)")
         wordSelected?(result![indexPath.row].name!)
         dismiss(animated: true, completion: nil)
     }
@@ -87,4 +88,5 @@ class HistoricController: UIViewController, UITableViewDelegate, UITableViewData
         title.center = self.view.center
         view.addSubview(title)
     }
+    
 }

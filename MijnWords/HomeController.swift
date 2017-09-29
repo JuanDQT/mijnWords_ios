@@ -96,14 +96,11 @@ class HomeController: UIViewController, UITextFieldDelegate {
                 tfInput.text = ""
             }
         }
-        if (segue.identifier == "HISTORIC_CONTROLLER") {
-            log.error("lokita ahora si")
-            
+        if segue.identifier == "HISTORIC_CONTROLLER" {
             let view = segue.destination as? HistoricController
             
             view?.wordSelected = {
                 response in
-                log.error("Recibido: \(response)")
                 self.tfInput.text = response
                 self.loginAction(self)
             }

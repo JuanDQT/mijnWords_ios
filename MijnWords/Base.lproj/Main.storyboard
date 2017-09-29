@@ -230,7 +230,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="rSV-J1-BV8">
                             <connections>
-                                <segue destination="nP3-Xa-DF5" kind="popoverPresentation" identifier="HISTORIC_CONTROLLER" popoverAnchorBarButtonItem="rSV-J1-BV8" id="PXi-o1-N95">
+                                <segue destination="SbO-RR-Zca" kind="popoverPresentation" identifier="HISTORIC_CONTROLLER" popoverAnchorBarButtonItem="rSV-J1-BV8" id="otu-w7-mk6">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                 </segue>
                             </connections>
@@ -553,10 +553,9 @@
             </objects>
             <point key="canvasLocation" x="1424.8" y="171.36431784107947"/>
         </scene>
-        <!--Seleccione un verbo-->
+        <!--Historic Controller-->
         <scene sceneID="aiN-Ob-EH0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GXv-Gh-LRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="SbO-RR-Zca" customClass="HistoricController" customModule="MijnWords" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eCA-ob-bJ5"/>
@@ -566,6 +565,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPo-Gt-uIy">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BOI-a1-Vyd"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Seleccione un verbo" id="jlN-Nb-qA9">
+                                        <barButtonItem key="rightBarButtonItem" title="Cerrar" id="Bbm-xC-wQu">
+                                            <connections>
+                                                <action selector="closeAction:" destination="SbO-RR-Zca" id="HRz-VB-oOQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qvV-Dc-aIm">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -584,23 +598,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qvV-Dc-aIm" firstAttribute="top" secondItem="eCA-ob-bJ5" secondAttribute="bottom" id="4vs-KU-uCC"/>
-                            <constraint firstAttribute="trailing" secondItem="qvV-Dc-aIm" secondAttribute="trailing" id="RsK-Yc-V9L"/>
-                            <constraint firstItem="HKg-Rb-aHl" firstAttribute="top" secondItem="qvV-Dc-aIm" secondAttribute="bottom" id="Wer-Yq-LaQ"/>
-                            <constraint firstItem="qvV-Dc-aIm" firstAttribute="leading" secondItem="O7D-Fa-3HN" secondAttribute="leading" id="b7i-Q9-OFn"/>
+                            <constraint firstItem="qvV-Dc-aIm" firstAttribute="top" secondItem="wPo-Gt-uIy" secondAttribute="bottom" id="6cX-nv-hrN"/>
+                            <constraint firstAttribute="trailing" secondItem="qvV-Dc-aIm" secondAttribute="trailing" id="BdH-0e-hmt"/>
+                            <constraint firstItem="wPo-Gt-uIy" firstAttribute="top" secondItem="eCA-ob-bJ5" secondAttribute="bottom" id="D4t-i4-yUl"/>
+                            <constraint firstItem="HKg-Rb-aHl" firstAttribute="top" secondItem="qvV-Dc-aIm" secondAttribute="bottom" id="W3l-pA-7os"/>
+                            <constraint firstAttribute="trailing" secondItem="wPo-Gt-uIy" secondAttribute="trailing" id="WfT-iu-UCQ"/>
+                            <constraint firstItem="wPo-Gt-uIy" firstAttribute="leading" secondItem="O7D-Fa-3HN" secondAttribute="leading" id="bMr-cK-A6b"/>
+                            <constraint firstItem="qvV-Dc-aIm" firstAttribute="leading" secondItem="O7D-Fa-3HN" secondAttribute="leading" id="uGR-AG-Rqq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Seleccione un verbo" id="K5O-QQ-KKE">
-                        <barButtonItem key="rightBarButtonItem" title="Cerrar" id="ox5-b9-E3X">
-                            <connections>
-                                <action selector="closeAction:" destination="SbO-RR-Zca" id="w6L-iE-sBO"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
                         <outlet property="table" destination="qvV-Dc-aIm" id="l2H-uY-p8y"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GXv-Gh-LRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1824.8" y="-638.2308845577212"/>
         </scene>
@@ -621,24 +632,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pla-4w-oWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-219" y="938"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="E9l-gh-gkG">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nP3-Xa-DF5" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3bL-16-SIN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="SbO-RR-Zca" kind="relationship" relationship="rootViewController" id="DYF-as-vNn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vln-fV-kgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="885.60000000000002" y="-638.2308845577212"/>
         </scene>
     </scenes>
     <resources>
