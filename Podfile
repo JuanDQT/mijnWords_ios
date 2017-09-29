@@ -9,6 +9,7 @@ pod 'Alamofire'
 pod 'SwiftyJSON'
 pod 'SwiftyBeaver'
 pod 'IQKeyboardManager'
+pod 'RealmSwift'
   # Pods for MijnWords
 
 end

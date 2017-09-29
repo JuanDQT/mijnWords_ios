@@ -43,6 +43,7 @@ class HomeController: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        title = "MijnWords"
         ivFocusLanguage.image = UIImage(named: "\(Common.getFocusLanguage().lowercased())_lang.png")
     }
 
@@ -79,11 +80,8 @@ class HomeController: UIViewController, UITextFieldDelegate {
     func notificationSuccess(_ notification: Notification) {
         toggleStatusButton()
         
-        let result: [String: Palabra] = (notification.userInfo as? [String: Palabra])!
-        
-        let palabra: Palabra = result["data"]!
-        
-        self.performSegue(withIdentifier: "DETAILS_CONTROLLER", sender: palabra)
+        let result: [String: Any] = (notification.userInfo as? [String: Any])!
+        self.performSegue(withIdentifier: "DETAILS_CONTROLLER", sender: result)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -91,9 +89,23 @@ class HomeController: UIViewController, UITextFieldDelegate {
         if segue.identifier == "DETAILS_CONTROLLER" {
             
             if let afterSegue: DetailsController = segue.destination as? DetailsController {
-                afterSegue.palabra = sender as? Palabra
+                let result = sender as! [String: Any]
+                afterSegue.palabra = result["data"] as? Palabra
                 afterSegue.palabraString = self.tfInput.text
+                afterSegue.palabraId = result["palabraId"] as? Int
                 tfInput.text = ""
+            }
+        }
+        if (segue.identifier == "HISTORIC_CONTROLLER") {
+            log.error("lokita ahora si")
+            
+            let view = segue.destination as? HistoricController
+            
+            view?.wordSelected = {
+                response in
+                log.error("Recibido: \(response)")
+                self.tfInput.text = response
+                self.loginAction(self)
             }
         }
         
@@ -126,5 +138,8 @@ class HomeController: UIViewController, UITextFieldDelegate {
         
         present(viewCredits, animated: true, completion: nil)
     }
+    
+    
+    
 }
 

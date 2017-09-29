@@ -101,7 +101,7 @@ class API {
                 var palabra: Palabra = Palabra()
                 self.getData(json: jsonResponse, palabra: &palabra)
                 
-                NotificationCenter.default.post(name: Notification.Name(rawValue: "PALABRA"), object: nil, userInfo: ["data": palabra])
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "PALABRA"), object: nil, userInfo: ["data": palabra, "palabraId": Int(id)])
             }
             
         }
