@@ -15,5 +15,4 @@ class Ejemplo {
         self.ejemploBase = []
         self.ejemploFocus = []
     }
-    
 }

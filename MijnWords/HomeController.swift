@@ -90,7 +90,7 @@ class HomeController: UIViewController, UITextFieldDelegate {
             
             if let afterSegue: DetailsController = segue.destination as? DetailsController {
                 let result = sender as! [String: Any]
-                afterSegue.palabra = result["data"] as? Palabra
+                afterSegue.palabra = result["data"] as? Palabras
                 afterSegue.palabraString = self.tfInput.text
                 afterSegue.palabraId = result["palabraId"] as? Int
                 tfInput.text = ""

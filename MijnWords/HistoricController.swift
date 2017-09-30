@@ -12,7 +12,7 @@ import RealmSwift
 class HistoricController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var table: UITableView!
-    var result: [Palabras]?
+    var result: [PalabraSearch]?
     
     var wordSelected: (( _ response: String) -> Void)?
     var realm: Realm?
@@ -23,7 +23,7 @@ class HistoricController: UIViewController, UITableViewDelegate, UITableViewData
         table.dataSource = self
         
         realm = try! Realm()
-        result = Array(realm!.objects(Palabras.self))
+        result = Array(realm!.objects(PalabraSearch.self))
         
         if result?.count == 0 {
             self.showNoVerbsSaved()

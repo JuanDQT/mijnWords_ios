@@ -27,7 +27,7 @@ class API {
     }
     
     func checkCommonErrors(_ response: DataResponse<String>, json: inout JSON) -> Bool {
-        
+//        
         if response.result.isFailure {
             //log.error("[ServerAPI] ERROR: \(String(describing: response.request?.url)) : \(String(describing: response.result.error))")
             var mapErros: [String: Any] = [:]
@@ -72,16 +72,14 @@ class API {
         params["palabra"] = palabra
         params["lng_focus"] = Common.getFocusLanguage()
         params["lng_base"] = "ES"
-        params["app_version"] = "1"
+        params["app_version"] = "3"
 
         // Peticion al servidor, json model
         NetworkManager.sharedIntance.manager.request(Common.getJSONAccessData(field: "host"), method: .post, parameters: params).responseString {
             response in
             
             var jsonResponse: JSON = [:]
-            
-            log.error(response)
-            
+                        
             if self.checkCommonErrors(response, json: &jsonResponse) {
                 
                 log.error(jsonResponse["updated"].bool!)
@@ -98,10 +96,10 @@ class API {
                     return
                 }
                                 
-                var palabra: Palabra = Palabra()
+                var palabra: Palabras = Palabras()
                 self.getData(json: jsonResponse, palabra: &palabra)
                 
-                NotificationCenter.default.post(name: Notification.Name(rawValue: "PALABRA"), object: nil, userInfo: ["data": palabra, "palabraId": Int(id)])
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "PALABRA"), object: nil, userInfo: ["data": palabra, "palabraId": Int(id)!])
             }
             
         }
@@ -110,79 +108,49 @@ class API {
         
     }
     
-    func getData(json: JSON, palabra: inout Palabra) {
+    func getData(json: JSON, palabra: inout Palabras) {
         
         // Get ejemplos
         if let _ = json["ejemplo"]["base"].array {
             // Hay ejemplos
-            
+            //log.error("tenemossss: \(json["ejemplo"]["base"].array!.count)")
+            let ejemplo: Ejemplo = Ejemplo()
             for index in 0..<json["ejemplo"]["base"].array!.count {
-                palabra.ejemplo?.ejemploBase?.append(json["ejemplo"]["base"][index].stringValue)
-                palabra.ejemplo?.ejemploFocus?.append(json["ejemplo"]["focus"][index].stringValue)
+                ejemplo.ejemploBase?.append(json["ejemplo"]["base"][index].stringValue)
+                ejemplo.ejemploFocus?.append(json["ejemplo"]["focus"][index].stringValue)
             }
+            palabra.ejemplo = ejemplo
             
         } else {
             palabra.ejemplo = nil // Es necesario?
             log.error("No hay ejemplos")
         }
         
-        /// Modo Indicativo
-        palabra.modoIndicativo?.tiempo = "Modo indicativo"
-        var list: [String] = []
-        for index in json["modo_indicativo"]["presente"].arrayValue {
-            list.append(index.stringValue)
+        let jsonModos = json["modos"].arrayValue
+        
+        for modoJSON in jsonModos {
+            
+            let modo = Modo()
+            
+            let verbContainer = modoJSON["verbs"].arrayValue
+            let title = modoJSON["title"].stringValue
+            let times = modoJSON["times"].stringValue.components(separatedBy: ",")
+            let persons = modoJSON["persons"].stringValue.components(separatedBy: ",")
+            
+            modo.title = title
+            modo.persons = persons
+            
+            for (index, verbsJSON) in verbContainer.enumerated() {
+                let verbo = Verbo()
+                verbo.tiempo = times[index]
+                
+                for verbJSON in verbsJSON {
+                    verbo.verbs?.append(verbJSON.1.stringValue)
+                }
+                
+                modo.allVerbs?.append(verbo)
+            }
+            palabra.modos?.append(modo)
         }
-        palabra.modoIndicativo?.setPresente(modo: list)
-        list.removeAll()
-        for index in json["modo_indicativo"]["preterito_imperfecto"].arrayValue {
-            list.append(index.stringValue)
-        }
-        palabra.modoIndicativo?.setPreteritoImperfecto(modo: list)
-        list.removeAll()
-        for index in json["modo_indicativo"]["preterito_indefinido"].arrayValue {
-            list.append(index.stringValue)
-        }
-        palabra.modoIndicativo?.setPreteritoIndefinido(modo: list)
-        list.removeAll()
-        for index in json["modo_indicativo"]["futuro"].arrayValue {
-            list.append(index.stringValue)
-        }
-        palabra.modoIndicativo?.setFuturo(modo: list)
-        list.removeAll()
-        /// Modo Subjuntivo
-        palabra.modoSubjuntivo?.tiempo = "Modo Subjuntivo"
-        for index in json["modo_subjuntivo"]["presente"].arrayValue {
-            list.append(index.stringValue)
-        }
-        palabra.modoSubjuntivo?.setPresente(modo: list)
-        list.removeAll()
-        for index in json["modo_subjuntivo"]["preterito_imperfecto"].arrayValue {
-            list.append(index.stringValue)
-        }
-        palabra.modoSubjuntivo?.setPreteritoImperfecto(modo: list)
-        list.removeAll()
-        for index in json["modo_subjuntivo"]["futuro"].arrayValue {
-            list.append(index.stringValue)
-        }
-        palabra.modoSubjuntivo?.setFuturo(modo: list)
-        list.removeAll()
-        /// Modo Condicional
-        palabra.modoCondicional?.tiempo = "Modo condicional"
-        for index in json["modo_condicional"]["condicional"].arrayValue {
-            list.append(index.stringValue)
-        }
-        palabra.modoCondicional?.setCondicional(modo: list)
-        list.removeAll()
-        /// Modo Imperativo
-        palabra.modoImperativo?.tiempo = "Modo imperativo"
-        for index in json["modo_imperativo"]["afirmativo"].arrayValue {
-            list.append(index.stringValue)
-        }
-        palabra.modoImperativo?.setAfirmativo(modo: list)
-        list.removeAll()
-        for index in json["modo_imperativo"]["negativo"].arrayValue {
-            list.append(index.stringValue)
-        }
-        palabra.modoImperativo?.setNegativo(modo: list)
     }
 }
