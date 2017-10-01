@@ -16,8 +16,6 @@ class ModoCell: UICollectionViewCell {
     
     func fillViews(_ modo: Modo) {
         
-        log.error("Hola fill!")
-        
         for item in contentView.subviews {
             if let _ = item as? UILabel {
                 
@@ -43,7 +41,7 @@ class ModoCell: UICollectionViewCell {
             // Creamos los Labels con los tiempos
             
             let btnTiempo = UIButton()
-            btnTiempo.addTarget(self, action: "tapTiempoEvent:", for: .touchUpInside)
+            btnTiempo.addTarget(self, action: #selector(tapTiempoEvent(_:)), for: .touchUpInside)
             
             viewRow.addSubview(btnTiempo)
             btnTiempo.backgroundColor = UIColor.init(rgb: 0x4656A4)
@@ -96,8 +94,6 @@ class ModoCell: UICollectionViewCell {
     func tapTiempoEvent(_ sender: Any) {
         let btnTiempo: UIButton = sender as! UIButton
         
-        log.error("clicked loko")
-        
         let areaBtn = btnTiempo.superview!
         // Recogemos el height de todas las views
         
@@ -106,12 +102,6 @@ class ModoCell: UICollectionViewCell {
             if let x = item.identifier {
                 
                 if x == "expandable" {
-                    log.error("lokita")
-//                    if item.constant == 220 {
-//                        item.constant = 40
-//                    } else {
-//                        item.constant = 220
-//                    }
                     
                     if item.constant > CGFloat(defaultHeightScrollable) {
                         item.constant = CGFloat(defaultHeightScrollable)
@@ -126,41 +116,22 @@ class ModoCell: UICollectionViewCell {
             
         }
         
-        var newScrollViewSize: Float = 0.0
-        
-        for item in areaBtn.superview!.subviews {
-            if let _ = item as? UILabel {
-            } else {
-                newScrollViewSize += Float(item.frame.height)
-                
-            }
-        }
-        
-        newScrollViewSize += Float(40 * 5)
-        
-//        svContent.contentSize = CGSize(width: svContent.frame.width, height: CGFloat(newScrollViewSize))
-    }
-    
-    
-    
-//    func fillViews(_ modo: Modo) {
+//        var newScrollViewSize: Float = 0.0
 //        
-//        let allViews: [UIView] = contentView.subviews.filter({$0 is UILabel == false})
-//        
-//        for (index, baseView) in allViews.enumerated() {
-//            
-//            
-//            
-//            let stacksViews = baseView.subviews.filter({$0 is UIStackView})
-//            
-//            for (indexStackView, stackView) in stacksViews.enumerated() {
-//                let label: UILabel = stackView.subviews[1] as! UILabel
-//                label.text = modo.allVerbs![index].verbs![indexStackView]
-//                //label.text = modo.allTimes![index][indexStackView]
-//                
+//        for item in areaBtn.superview!.subviews {
+//            if let _ = item as? UILabel {
+//            } else {
+//                newScrollViewSize += Float(item.frame.height)
 //                
 //            }
 //        }
-//    }
+        
+        //newScrollViewSize += Float(40 * 5)
+        
+        //self.contentView.contentSize = CGSize(width: contentView.frame.width, height: CGFloat(newScrollViewSize))
+    }
+    
+    // let allViews: [UIView] = contentView.subviews.filter({$0 is UILabel == false})
+
     
 }
