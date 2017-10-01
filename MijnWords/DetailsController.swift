@@ -56,7 +56,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         
         let realm = try! Realm()
         
-        if let _ = realm.objects(PalabraSearch.self).filter("id = %@", palabraId).first {
+        if let _ = realm.objects(PalabraSearch.self).filter("id = %@", self.palabraId).first {
             self.bbiSave.title = "Borrar"
         } else {
             self.bbiSave.title = "Guardar"

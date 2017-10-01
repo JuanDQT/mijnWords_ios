@@ -20,7 +20,6 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfs-Gk-Dfi" userLabel="modo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
-                        <color key="backgroundColor" red="0.91076594591140747" green="0.21793654561042786" blue="0.0466875359416008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration">
                             <bool key="isElement" value="NO"/>
                         </accessibility>
