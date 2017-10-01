@@ -26,7 +26,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     // Constraints
     @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
     
-    var palabra: Palabra?
+    var palabra: Palabras?
     var palabraId: Int?
     var indexVerb = 0
     var palabraString: String?
@@ -36,22 +36,16 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         ccModos.delegate = self
         ccModos.dataSource = self
         self.navigationController?.navigationBar.topItem?.title = " "
-
+        
         title = palabraString?.uppercased()
         ivFocus.image = UIImage(named: "\(Common.getFocusLanguage().lowercased())_lang.png")
         
         // Cargamos layouts
-        let nibModoIndicativo: UINib = UINib(nibName: "ModoIndicativoView", bundle: nil)
-        self.ccModos.register(nibModoIndicativo, forCellWithReuseIdentifier: "CC_MODO_INDICATIVO")
-        
-        let nibModoSubjuntivo: UINib = UINib(nibName: "ModoSubjuntivoView", bundle: nil)
-        self.ccModos.register(nibModoSubjuntivo, forCellWithReuseIdentifier: "CC_MODO_SUBJUNTIVO")
-        
-        let nibModoCondicional: UINib = UINib(nibName: "ModoCondicionalView", bundle: nil)
-        self.ccModos.register(nibModoCondicional, forCellWithReuseIdentifier: "CC_MODO_CONDICIONAL")
-        
-        let nibModoImperativo: UINib = UINib(nibName: "ModoImperativoView", bundle: nil)
-        self.ccModos.register(nibModoImperativo, forCellWithReuseIdentifier: "CC_MODO_IMPERATIVO")
+        //4 times
+        for _ in 0..<palabra!.modos!.count {
+            let nibView = UINib(nibName: "ModoView", bundle: nil)
+            self.ccModos.register(nibView, forCellWithReuseIdentifier: "CC_MODO")
+        }
         
         if let _ = palabra?.ejemplo {
             lblBaseExample.text = palabra!.ejemplo!.ejemploBase![indexVerb]
@@ -62,7 +56,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         
         let realm = try! Realm()
         
-        if let _ = realm.objects(Palabras.self).filter("id = %@", palabraId).first {
+        if let _ = realm.objects(PalabraSearch.self).filter("id = %@", self.palabraId).first {
             self.bbiSave.title = "Borrar"
         } else {
             self.bbiSave.title = "Guardar"
@@ -71,7 +65,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     }
     
     @IBAction func touchRefresh(_ sender: Any) {
-
+        
         self.indexVerb = self.indexVerb + 1 == self.palabra!.ejemplo!.ejemploBase!.count ? 0: self.indexVerb + 1
         
         self.lblBaseExample.text = self.palabra!.ejemplo!.ejemploBase![self.indexVerb]
@@ -83,26 +77,13 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        var customCell: ModoCell = ModoCell()
-        
-        switch indexPath.row {
-        case 0:
-            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_INDICATIVO", for: indexPath) as! ModoCell
-        case 1:
-            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_SUBJUNTIVO", for: indexPath) as! ModoCell
-        case 2:
-            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_CONDICIONAL", for: indexPath) as! ModoCell
-        case 3:
-            customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO_IMPERATIVO", for: indexPath) as! ModoCell
-        default:
-            return UICollectionViewCell()
-        }
-        
-        customCell.fillViews(palabra!.allModos![indexPath.row])
+        let customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO", for: indexPath) as! ModoCell
+        customCell.fillViews(palabra!.modos![indexPath.row])
         
         return customCell
-        
     }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: ccModos.frame.width, height: ccModos.frame.height)
@@ -110,6 +91,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
+        //return palabra!.modos!.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -170,7 +152,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     @IBAction func guardarAction(_ sender: Any) {
         let realm = try! Realm()
         
-        if let item = realm.objects(Palabras.self).filter("id = %@", palabraId).first {
+        if let item = realm.objects(PalabraSearch.self).filter("id = %@", palabraId).first {
             bbiSave.title = "Guardar"
             
             try! realm.write {
@@ -179,7 +161,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         } else {
             bbiSave.title = "Borrar"
             try! realm.write {
-                let itemToAdd: Palabras = Palabras()
+                let itemToAdd: PalabraSearch = PalabraSearch()
                 itemToAdd.id = palabraId!
                 // TODO: revisar esto
                 itemToAdd.languageCode = "ES"

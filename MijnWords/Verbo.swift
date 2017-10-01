@@ -1,5 +1,5 @@
 //
-//  Palabras.swift
+//  Verbo.swift
 //  MijnWords
 //
 //  Created by Juan Daniel on 29/9/17.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class Palabras {
-    var ejemplo: Ejemplo?
-    var modos: [Modo]?
+class Verbo {
+    var tiempo: String?
+    var verbs: [String]?
     
     init() {
-        self.modos = []
+        self.verbs = []
     }
+    
 }
