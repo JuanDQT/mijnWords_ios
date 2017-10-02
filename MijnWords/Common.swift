@@ -12,6 +12,10 @@ class Common {
     
     static let allLanguages:[String] = [String](arrayLiteral: "EN", "NL")
     
+    static func getBaseLanguage() -> String {
+        return "ES"
+    }
+    
     static func getFocusLanguage() -> String {
         
         if (UserDefaults.standard.string(forKey: "LN")) == nil {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ModoCell: UICollectionViewCell {
     
@@ -76,10 +77,13 @@ class ModoCell: UICollectionViewCell {
                 lblPerson.textColor = UIColor.white
                 stackView.addArrangedSubview(lblPerson)
                 
-                let lblVerb = UILabel()
-                lblVerb.text = modo.allVerbs![index].verbs![k]
-                lblVerb.textColor = UIColor.white
-                stackView.addArrangedSubview(lblVerb)
+                let btnVerb = UIButton()
+                btnVerb.setTitle(modo.allVerbs![index].verbs![k], for: .normal)
+                btnVerb.setTitleColor(UIColor.white, for: .normal)
+                btnVerb.contentHorizontalAlignment = .left
+                btnVerb.addTarget(self, action: #selector(tapVerb(_:)), for: .touchUpInside)
+                
+                stackView.addArrangedSubview(btnVerb)
                 
                 NSLayoutConstraint.activate([stackViewRightContraint,stackViewLeftConstraint, stackViewRightContraint, stackViewHeightConstraint, stackViewTopConstraint])
             }
@@ -115,7 +119,7 @@ class ModoCell: UICollectionViewCell {
             }
             
         }
-        
+    }
 //        var newScrollViewSize: Float = 0.0
 //        
 //        for item in areaBtn.superview!.subviews {
@@ -129,6 +133,21 @@ class ModoCell: UICollectionViewCell {
         //newScrollViewSize += Float(40 * 5)
         
         //self.contentView.contentSize = CGSize(width: contentView.frame.width, height: CGFloat(newScrollViewSize))
+    func tapVerb(_ sender: Any) {
+        
+        
+        let btnVerb = sender as! UIButton
+        
+        let lngCodeIOS = AVSpeechSynthesisVoice.speechVoices().filter({$0.language.components(separatedBy: "-")[0] == Common.getBaseLanguage().lowercased()}).first
+        
+        if let _ = lngCodeIOS {
+            let speechSynthesizer = AVSpeechSynthesizer()
+            let speechUtterance = AVSpeechUtterance(string: btnVerb.titleLabel!.text!)
+            speechUtterance.voice = AVSpeechSynthesisVoice(language: lngCodeIOS?.language)
+            speechSynthesizer.speak(speechUtterance)
+        } else {
+            // No existe esa voz para ese dispositivo
+        }
     }
     
     // let allViews: [UIView] = contentView.subviews.filter({$0 is UILabel == false})

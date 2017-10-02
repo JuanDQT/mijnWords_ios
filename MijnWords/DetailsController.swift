@@ -56,7 +56,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         
         let realm = try! Realm()
         
-        if let _ = realm.objects(PalabraSearch.self).filter("id = %@", self.palabraId).first {
+        if let _ = realm.objects(PalabraSearch.self).filter("id = %@", palabraId!).first {
             self.bbiSave.title = "Borrar"
         } else {
             self.bbiSave.title = "Guardar"
@@ -79,6 +79,8 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         
         let customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO", for: indexPath) as! ModoCell
         customCell.fillViews(palabra!.modos![indexPath.row])
+        
+        
         
         return customCell
     }
@@ -152,7 +154,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
     @IBAction func guardarAction(_ sender: Any) {
         let realm = try! Realm()
         
-        if let item = realm.objects(PalabraSearch.self).filter("id = %@", palabraId).first {
+        if let item = realm.objects(PalabraSearch.self).filter("id = %@", palabraId!).first {
             bbiSave.title = "Guardar"
             
             try! realm.write {
@@ -164,7 +166,7 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
                 let itemToAdd: PalabraSearch = PalabraSearch()
                 itemToAdd.id = palabraId!
                 // TODO: revisar esto
-                itemToAdd.languageCode = "ES"
+                itemToAdd.languageCode = Common.getBaseLanguage()
                 itemToAdd.name = palabraString
                 realm.add(itemToAdd)
             }

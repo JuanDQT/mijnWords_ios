@@ -71,7 +71,7 @@ class API {
         params["id"] = id
         params["palabra"] = palabra
         params["lng_focus"] = Common.getFocusLanguage()
-        params["lng_base"] = "ES"
+        params["lng_base"] = Common.getBaseLanguage()
         params["app_version"] = "3"
 
         // Peticion al servidor, json model
