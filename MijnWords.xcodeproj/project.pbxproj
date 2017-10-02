@@ -21,16 +21,10 @@
 		5B2295201F7E8F0600683504 /* Modo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B22951F1F7E8F0600683504 /* Modo.swift */; };
 		5B2295221F7E8F4900683504 /* Verbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2295211F7E8F4900683504 /* Verbo.swift */; };
 		5B2295241F7E90F500683504 /* Palabras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2295231F7E90F500683504 /* Palabras.swift */; };
-		5B294BF51F6D995E00777EB5 /* ModoCondicionalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B294BF41F6D995E00777EB5 /* ModoCondicionalView.xib */; };
-		5B294BF91F6D9EC700777EB5 /* ModoImperativoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B294BF81F6D9EC700777EB5 /* ModoImperativoView.xib */; };
 		5B362C5B1F6F9481002E0F4A /* CreditsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B362C5A1F6F9481002E0F4A /* CreditsController.swift */; };
 		5B3A5F981F61FC71006B1A91 /* ModoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3A5F971F61FC71006B1A91 /* ModoCell.swift */; };
 		5B3E35F81F7FF4190030D12A /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E35F71F7FF4190030D12A /* Tools.swift */; };
-		5B4DEF701F65ABF2004FDFE0 /* ModoIndicativoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B4DEF6F1F65ABF2004FDFE0 /* ModoIndicativoView.xib */; };
-		5B4DEF721F65B692004FDFE0 /* ModoSubjuntivoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B4DEF711F65B692004FDFE0 /* ModoSubjuntivoView.xib */; };
 		5B564AA21F7ABFA4007DBA4C /* PalabrasSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B564AA11F7ABFA4007DBA4C /* PalabrasSearch.swift */; };
-		5B5D72E41F63DDF0009416EA /* Palabra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D72E31F63DDF0009416EA /* Palabra.swift */; };
-		5B5D72E61F63DE49009416EA /* ModoVerbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D72E51F63DE49009416EA /* ModoVerbo.swift */; };
 		5B5D72E81F63DE6E009416EA /* Ejemplo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D72E71F63DE6E009416EA /* Ejemplo.swift */; };
 		5B66CD2E1F6EEB61005732CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B66CD301F6EEB61005732CE /* Localizable.strings */; };
 		5B7B42481F55452900F9B582 /* access.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7B42471F55452900F9B582 /* access.json */; };
@@ -67,19 +61,13 @@
 		5B22951F1F7E8F0600683504 /* Modo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modo.swift; sourceTree = "<group>"; };
 		5B2295211F7E8F4900683504 /* Verbo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verbo.swift; sourceTree = "<group>"; };
 		5B2295231F7E90F500683504 /* Palabras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palabras.swift; sourceTree = "<group>"; };
-		5B294BF41F6D995E00777EB5 /* ModoCondicionalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModoCondicionalView.xib; sourceTree = "<group>"; };
-		5B294BF81F6D9EC700777EB5 /* ModoImperativoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModoImperativoView.xib; sourceTree = "<group>"; };
 		5B362C5A1F6F9481002E0F4A /* CreditsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsController.swift; sourceTree = "<group>"; };
 		5B362C621F6FA8CE002E0F4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		5B362C641F6FA933002E0F4A /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
 		5B362C661F6FAA55002E0F4A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		5B3A5F971F61FC71006B1A91 /* ModoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModoCell.swift; sourceTree = "<group>"; };
 		5B3E35F71F7FF4190030D12A /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
-		5B4DEF6F1F65ABF2004FDFE0 /* ModoIndicativoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModoIndicativoView.xib; sourceTree = "<group>"; };
-		5B4DEF711F65B692004FDFE0 /* ModoSubjuntivoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModoSubjuntivoView.xib; sourceTree = "<group>"; };
 		5B564AA11F7ABFA4007DBA4C /* PalabrasSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalabrasSearch.swift; sourceTree = "<group>"; };
-		5B5D72E31F63DDF0009416EA /* Palabra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palabra.swift; sourceTree = "<group>"; };
-		5B5D72E51F63DE49009416EA /* ModoVerbo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModoVerbo.swift; sourceTree = "<group>"; };
 		5B5D72E71F63DE6E009416EA /* Ejemplo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ejemplo.swift; sourceTree = "<group>"; };
 		5B66CD1B1F6EDADB005732CE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5B66CD211F6EDBB0005732CE /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -165,10 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				5B22951D1F7E8C3C00683504 /* ModoView.xib */,
-				5B4DEF6F1F65ABF2004FDFE0 /* ModoIndicativoView.xib */,
-				5B4DEF711F65B692004FDFE0 /* ModoSubjuntivoView.xib */,
-				5B294BF41F6D995E00777EB5 /* ModoCondicionalView.xib */,
-				5B294BF81F6D9EC700777EB5 /* ModoImperativoView.xib */,
 				5B3A5F971F61FC71006B1A91 /* ModoCell.swift */,
 			);
 			name = views;
@@ -178,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				5B564AA11F7ABFA4007DBA4C /* PalabrasSearch.swift */,
+				5B5D72E71F63DE6E009416EA /* Ejemplo.swift */,
 				5B22951F1F7E8F0600683504 /* Modo.swift */,
 				5B2295211F7E8F4900683504 /* Verbo.swift */,
 				5B2295231F7E90F500683504 /* Palabras.swift */,
@@ -225,9 +210,6 @@
 				5BE51D6C1F51D19100EDEEED /* Common.swift */,
 				5B005A1D1F51C3FE007B4887 /* Info.plist */,
 				5BF9CB791F59EFD300061A40 /* NetworkManager.swift */,
-				5B5D72E31F63DDF0009416EA /* Palabra.swift */,
-				5B5D72E51F63DE49009416EA /* ModoVerbo.swift */,
-				5B5D72E71F63DE6E009416EA /* Ejemplo.swift */,
 				5B3E35F71F7FF4190030D12A /* Tools.swift */,
 			);
 			name = tools;
@@ -311,7 +293,6 @@
 				5B1D38141F53370600FE40E4 /* nl_lang.png in Resources */,
 				5BB02A251F589CDD0027AFBC /* logo.png in Resources */,
 				5BB02A2A1F589CDD0027AFBC /* unknow_error.png in Resources */,
-				5B4DEF721F65B692004FDFE0 /* ModoSubjuntivoView.xib in Resources */,
 				5B66CD2E1F6EEB61005732CE /* Localizable.strings in Resources */,
 				5B7B42481F55452900F9B582 /* access.json in Resources */,
 				5B7B424A1F55897800F9B582 /* palabras.json in Resources */,
@@ -320,10 +301,7 @@
 				5BB02A291F589CDD0027AFBC /* slow_internet.png in Resources */,
 				5B005A191F51C3FE007B4887 /* Assets.xcassets in Resources */,
 				5B1D38111F53365600FE40E4 /* en_lang.png in Resources */,
-				5B294BF51F6D995E00777EB5 /* ModoCondicionalView.xib in Resources */,
-				5B294BF91F6D9EC700777EB5 /* ModoImperativoView.xib in Resources */,
 				5B1D38121F53365600FE40E4 /* es_lang.png in Resources */,
-				5B4DEF701F65ABF2004FDFE0 /* ModoIndicativoView.xib in Resources */,
 				5B96DCBE1F5DE07C002322B0 /* refresh.png in Resources */,
 				5B005A171F51C3FE007B4887 /* Main.storyboard in Resources */,
 				5BB02A2B1F589CDD0027AFBC /* update_app.png in Resources */,
@@ -398,12 +376,10 @@
 				5B2295241F7E90F500683504 /* Palabras.swift in Sources */,
 				5BF9CB7A1F59EFD300061A40 /* NetworkManager.swift in Sources */,
 				5B564AA21F7ABFA4007DBA4C /* PalabrasSearch.swift in Sources */,
-				5B5D72E61F63DE49009416EA /* ModoVerbo.swift in Sources */,
 				5BE51D6D1F51D19100EDEEED /* Common.swift in Sources */,
 				5BB02A1D1F5895720027AFBC /* ErrorController.swift in Sources */,
 				5B3A5F981F61FC71006B1A91 /* ModoCell.swift in Sources */,
 				5BE51D691F51CA2F00EDEEED /* DetailsController.swift in Sources */,
-				5B5D72E41F63DDF0009416EA /* Palabra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
