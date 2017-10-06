@@ -29,7 +29,6 @@ class HistoricController: UIViewController, UITableViewDelegate, UITableViewData
             self.showNoVerbsSaved()
         }
 
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func closeAction(_ sender: Any) {
@@ -42,7 +41,6 @@ class HistoricController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        log.error("ENVIAMOS DESDE HISTORIC: \(result![indexPath.row].name!)")
         wordSelected?(result![indexPath.row].name!)
         dismiss(animated: true, completion: nil)
     }
@@ -83,7 +81,7 @@ class HistoricController: UIViewController, UITableViewDelegate, UITableViewData
     func showNoVerbsSaved() {
         table.removeFromSuperview()
         let title = UILabel()
-        title.text = "No hay verbos guardados"
+        title.text = "NO_VERBS_SAVED".localized()
         title.sizeToFit()
         title.center = self.view.center
         view.addSubview(title)

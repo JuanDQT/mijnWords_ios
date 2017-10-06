@@ -20,3 +20,7 @@
 "UPDATE_AVAILABLE_BUTTON" = "Open AppStore!";
 
 "TRY_AGAIN" = "Try again!";
+"SAVE" = "Save";
+"DELETE" = "Verwijder";
+"NO_VERBS_SAVED" = "Er zijn geen werkwoorden opgeslagen";
+"INVALID_VERB" = "It's not an infinitve verb";

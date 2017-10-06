@@ -41,7 +41,6 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         ivFocus.image = UIImage(named: "\(Common.getFocusLanguage().lowercased())_lang.png")
         
         // Cargamos layouts
-        //4 times
         for _ in 0..<palabra!.modos!.count {
             let nibView = UINib(nibName: "ModoView", bundle: nil)
             self.ccModos.register(nibView, forCellWithReuseIdentifier: "CC_MODO")
@@ -57,11 +56,11 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         let realm = try! Realm()
         
         if let _ = realm.objects(PalabraSearch.self).filter("id = %@", palabraId!).first {
-            self.bbiSave.title = "Borrar"
+            self.bbiSave.title = "DELETE".localized()
         } else {
-            self.bbiSave.title = "Guardar"
+            self.bbiSave.title = "SAVE".localized()
         }
-        
+
     }
     
     @IBAction func touchRefresh(_ sender: Any) {
@@ -79,21 +78,16 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         
         let customCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CC_MODO", for: indexPath) as! ModoCell
         customCell.fillViews(palabra!.modos![indexPath.row])
-        
-        
-        
+
         return customCell
     }
-    
-    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: ccModos.frame.width, height: ccModos.frame.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
-        //return palabra!.modos!.count
+        return palabra!.modos!.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -155,17 +149,16 @@ class DetailsController: UIViewController, UICollectionViewDataSource, UICollect
         let realm = try! Realm()
         
         if let item = realm.objects(PalabraSearch.self).filter("id = %@", palabraId!).first {
-            bbiSave.title = "Guardar"
+            bbiSave.title = "SAVE".localized()
             
             try! realm.write {
                 realm.delete(item)
             }
         } else {
-            bbiSave.title = "Borrar"
+            bbiSave.title = "DELETE".localized()
             try! realm.write {
                 let itemToAdd: PalabraSearch = PalabraSearch()
                 itemToAdd.id = palabraId!
-                // TODO: revisar esto
                 itemToAdd.languageCode = Common.getBaseLanguage()
                 itemToAdd.name = palabraString
                 realm.add(itemToAdd)

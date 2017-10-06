@@ -12,8 +12,10 @@ import AVFoundation
 class ModoCell: UICollectionViewCell {
     
     @IBOutlet weak var titleModo: UILabel!
-    var maxHeightScrollable = 320
-    let defaultHeightScrollable = 40
+    var maxHeightScrollable = 0
+    let defaultHeightMode = 40
+    let defaultStackViewHeight = 20
+    let marginTopBetweenVerbs = 8
     
     func fillViews(_ modo: Modo) {
         
@@ -26,7 +28,7 @@ class ModoCell: UICollectionViewCell {
         }
         
         titleModo.text = modo.title
-        maxHeightScrollable = (modo.persons!.count * defaultHeightScrollable)
+        maxHeightScrollable = defaultHeightMode + (modo.persons!.count * defaultStackViewHeight) + (modo.persons!.count * marginTopBetweenVerbs) + defaultStackViewHeight
         for (index, tiempoItem) in modo.allVerbs!.enumerated() {
             
             let viewRow = UIView()
@@ -34,7 +36,7 @@ class ModoCell: UICollectionViewCell {
             viewRow.backgroundColor = UIColor.init(rgb: 0x4253AF)
 
             viewRow.translatesAutoresizingMaskIntoConstraints = false
-            let heightViewRow = viewRow.heightAnchor.constraint(equalToConstant: (index == 0) ? CGFloat(maxHeightScrollable) : CGFloat(defaultHeightScrollable))
+            let heightViewRow = viewRow.heightAnchor.constraint(equalToConstant: (index == 0) ? CGFloat(maxHeightScrollable) : CGFloat(defaultHeightMode))
             heightViewRow.identifier = "expandable"
             let widthViewRow = viewRow.widthAnchor.constraint(equalTo: self.contentView.widthAnchor)
             let topViewRow = viewRow.topAnchor.constraint(equalTo: contentView.subviews[index].bottomAnchor, constant: 2)
@@ -50,7 +52,7 @@ class ModoCell: UICollectionViewCell {
             btnTiempo.translatesAutoresizingMaskIntoConstraints = false
             btnTiempo.setTitle(tiempoItem.tiempo, for: .normal)
             //lblTiempo.text = tiempoItem.tiempo
-            let tiempoHeightConstraint = btnTiempo.heightAnchor.constraint(equalToConstant: CGFloat(defaultHeightScrollable))
+            let tiempoHeightConstraint = btnTiempo.heightAnchor.constraint(equalToConstant: CGFloat(defaultHeightMode))
             let tiempoWidthConstraint = btnTiempo.widthAnchor.constraint(equalTo: viewRow.widthAnchor)
             let tiempoTopConstraint = btnTiempo.topAnchor.constraint(equalTo: viewRow.topAnchor)
             NSLayoutConstraint.activate([tiempoHeightConstraint, tiempoWidthConstraint, tiempoTopConstraint])
@@ -68,8 +70,8 @@ class ModoCell: UICollectionViewCell {
                 
                 let stackViewLeftConstraint = stackView.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor)
                 let stackViewRightContraint = stackView.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor)
-                let stackViewHeightConstraint = stackView.heightAnchor.constraint(equalToConstant: CGFloat(20))
-                let stackViewTopConstraint = stackView.topAnchor.constraint(equalTo: viewRow.subviews[k].bottomAnchor, constant: 8)
+                let stackViewHeightConstraint = stackView.heightAnchor.constraint(equalToConstant: CGFloat(defaultStackViewHeight))
+                let stackViewTopConstraint = stackView.topAnchor.constraint(equalTo: viewRow.subviews[k].bottomAnchor, constant: CGFloat(marginTopBetweenVerbs))
                 
                 // Label Person
                 let lblPerson = UILabel()
@@ -107,8 +109,8 @@ class ModoCell: UICollectionViewCell {
                 
                 if x == "expandable" {
                     
-                    if item.constant > CGFloat(defaultHeightScrollable) {
-                        item.constant = CGFloat(defaultHeightScrollable)
+                    if item.constant > CGFloat(defaultHeightMode) {
+                        item.constant = CGFloat(defaultHeightMode)
                     } else {
                         item.constant = CGFloat(maxHeightScrollable)
                     }
@@ -120,21 +122,8 @@ class ModoCell: UICollectionViewCell {
             
         }
     }
-//        var newScrollViewSize: Float = 0.0
-//        
-//        for item in areaBtn.superview!.subviews {
-//            if let _ = item as? UILabel {
-//            } else {
-//                newScrollViewSize += Float(item.frame.height)
-//                
-//            }
-//        }
-        
-        //newScrollViewSize += Float(40 * 5)
-        
-        //self.contentView.contentSize = CGSize(width: contentView.frame.width, height: CGFloat(newScrollViewSize))
+
     func tapVerb(_ sender: Any) {
-        
         
         let btnVerb = sender as! UIButton
         

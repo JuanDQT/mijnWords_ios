@@ -1,6 +1,9 @@
 
 /* Class = "UILabel"; text = "Volver a intentarlo"; ObjectID = "0kL-ku-Ghp"; */
-"0kL-ku-Ghp.text" = "Try again!";
+"0kL-ku-Ghp.text" = "Try again";
+
+/* Class = "UIButton"; normalTitle = "Creditos"; ObjectID = "987-da-Hbd"; */
+"987-da-Hbd.normalTitle" = "Credits";
 
 /* Class = "UILabel"; text = "Verbos en"; ObjectID = "A3l-QY-2qO"; */
 "A3l-QY-2qO.text" = "Verbs in";
@@ -8,8 +11,11 @@
 /* Class = "UINavigationItem"; title = "MijnWords"; ObjectID = "BDE-Iq-4Qc"; */
 "BDE-Iq-4Qc.title" = "MijnWords";
 
+/* Class = "UIBarButtonItem"; title = "Cerrar"; ObjectID = "Bbm-xC-wQu"; */
+"Bbm-xC-wQu.title" = "Close";
+
 /* Class = "UILabel"; text = "Verbos en"; ObjectID = "Bjq-mq-4Fx"; */
-"Bjq-mq-4Fx.text" = "Verbs en";
+"Bjq-mq-4Fx.text" = "Verbs in";
 
 /* Class = "UILabel"; text = "This is a test message"; ObjectID = "Hf5-aa-UTG"; */
 "Hf5-aa-UTG.text" = "This is a test message";
@@ -24,7 +30,7 @@
 "bFV-gY-zLB.text" = "www.esfacil.eu";
 
 /* Class = "UINavigationItem"; title = "Configurar"; ObjectID = "bbh-e3-fNa"; */
-"bbh-e3-fNa.title" = "Configuration";
+"bbh-e3-fNa.title" = "Settings";
 
 /* Class = "UILabel"; text = "Ejemplos en"; ObjectID = "eBm-CJ-jCQ"; */
 "eBm-CJ-jCQ.text" = "Examples in";
@@ -35,11 +41,14 @@
 /* Class = "UIButton"; normalTitle = "Cerrar"; ObjectID = "iyS-jV-DRv"; */
 "iyS-jV-DRv.normalTitle" = "Close";
 
+/* Class = "UINavigationItem"; title = "Seleccione un verbo"; ObjectID = "jlN-Nb-qA9"; */
+"jlN-Nb-qA9.title" = "Select a verb";
+
 /* Class = "UIButton"; normalTitle = "Guardar"; ObjectID = "kPQ-Sm-btk"; */
 "kPQ-Sm-btk.normalTitle" = "Save";
 
 /* Class = "UILabel"; text = "Annemijn Scholtmeijer"; ObjectID = "oN0-qo-zho"; */
-"oN0-qo-zho.text" = "Annemijn Scholtmeijer♥";
+"oN0-qo-zho.text" = "Annemijn Scholtmeijer";
 
 /* Class = "UILabel"; text = "Ejemplos en"; ObjectID = "p77-7z-hZm"; */
 "p77-7z-hZm.text" = "Examples in";
@@ -52,3 +61,6 @@
 
 /* Class = "UILabel"; text = "Introduce una palabra"; ObjectID = "uZw-5m-c7M"; */
 "uZw-5m-c7M.text" = "Introduce a verb";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "vjp-zV-vmN"; */
+"vjp-zV-vmN.title" = "Title";
