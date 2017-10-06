@@ -13,6 +13,7 @@ class HomeController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ivFocusLanguage: UIImageView!
     @IBOutlet weak var tfInput: UITextField!
     @IBOutlet weak var btnError: UIButton!
+    @IBOutlet weak var promptError: UILabel!
     
     var btnEnabled: Bool = true
 
@@ -20,7 +21,6 @@ class HomeController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         tfInput.delegate = self
         tfInput.inputAccessoryView = UIView()
-        // Do any additional setup after loading the view, typically from a nib.
         
         NotificationCenter.default.addObserver(self, selector: #selector(notificationErrorNetwork(_:)), name: Notification.Name(rawValue: "ERROR_NETWORK"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(notificationSuccess(_:)), name: Notification.Name(rawValue: "PALABRA"), object: nil)
@@ -34,6 +34,13 @@ class HomeController: UIViewController, UITextFieldDelegate {
             let palabra = Common.getPalabraIdFromJSON(palabra: tfInput.text!.lowercased())
             if palabra.0.isEmpty {
                 //log.info(NSLocalizedString("NO_WORD_EXIST", comment: "NO_WORD_EXIST"))
+                promptError.text = "INVALID_VERB".localized()
+                
+                promptError.alpha = 1
+                UIView.animate(withDuration: 5.0, animations: {
+                    animate in
+                    self.promptError.alpha = 0
+                })
             } else {
                 toggleStatusButton()
                 API().getResultados(id: palabra.0, palabra: palabra.1)
@@ -129,14 +136,6 @@ class HomeController: UIViewController, UITextFieldDelegate {
         loginAction(self)
         return true
     }
-
-    @IBAction func creditsAction(_ sender: Any) {
-        let viewCredits: CreditsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CREDITS_CONTROLLER") as! CreditsController
-        
-        present(viewCredits, animated: true, completion: nil)
-    }
-    
-    
     
 }
 

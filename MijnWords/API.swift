@@ -34,25 +34,25 @@ class API {
             
             // No tienes internet
             if response.result.error?._code == NSURLErrorNotConnectedToInternet {
-                mapErros["title"] = NSLocalizedString("NO_INTERNET_TITLE", comment: "NO_INTERNET_TITLE")
-                mapErros["description"] = NSLocalizedString("NO_INTERNET_DESCRIPTION", comment: "NO_INTERNET_DESCRIPTION")
-                mapErros["btnDescription"] = NSLocalizedString("NO_INTERNET_BUTTON", comment: "TRY_AGAIN")
+                mapErros["title"] = "NO_INTERNET_TITLE".localized()
+                mapErros["description"] = "NO_INTERNET_DESCRIPTION".localized()
+                mapErros["btnDescription"] = "NO_INTERNET_BUTTON".localized()
                 mapErros["image"] = UIImage(named: "no_network.png")
             }
             
             // El servidor esta off
             if response.result.error?._code == NSURLErrorCannotConnectToHost {
-                mapErros["title"] = NSLocalizedString("SERVER_NO_RESPONSE_TITLE", comment: "SERVER_NO_RESPONSE_TITLE")
-                mapErros["description"] = NSLocalizedString("SERVER_NO_RESPONSE_DESCRIPTION", comment: "SERVER_NO_RESPONSE_DESCRIPTION")
-                mapErros["btnDescription"] = NSLocalizedString("SERVER_NO_RESPONSE_BUTTON", comment: "TRY_AGAIN")
+                mapErros["title"] = "SERVER_NO_RESPONSE_TITLE".localized()
+                mapErros["description"] = "SERVER_NO_RESPONSE_DESCRIPTION".localized()
+                mapErros["btnDescription"] = "SERVER_NO_RESPONSE_BUTTON".localized()
                 mapErros["image"] = UIImage(named: "server_error.png")
             }
             
             // Tiempo de espera
             if response.result.error?._code == NSURLErrorTimedOut {
-                mapErros["title"] = NSLocalizedString("SLOW_INTERNET_CONNECTION_TITLE", comment: "SLOW_INTERNET_CONNECTION_TITLE")
-                mapErros["description"] = NSLocalizedString("SLOW_INTERNET_CONNECTION_DESCRIPTION", comment: "SLOW_INTERNET_CONNECTION_DESCRIPTION")
-                mapErros["btnDescription"] = NSLocalizedString("SLOW_INTERNET_CONNECTION_BUTTON", comment: "TRY_AGAIN")
+                mapErros["title"] = "SLOW_INTERNET_CONNECTION_TITLE".localized()
+                mapErros["description"] = "SLOW_INTERNET_CONNECTION_DESCRIPTION".localized()
+                mapErros["btnDescription"] = "SLOW_INTERNET_CONNECTION_BUTTON".localized()
                 mapErros["image"] = UIImage(named: "slow_internet.png")
             }
             
@@ -88,9 +88,9 @@ class API {
                     log.error("Decimos de upd")
                     var mapUpdate: [String: Any] = [:]
                 
-                    mapUpdate["title"] = NSLocalizedString("UPDATE_AVAILABLE_TITLE", comment: "UPDATE_AVAILABLE_TITLE")
-                    mapUpdate["description"] = NSLocalizedString("UPDATE_AVAILABLE_DESCRIPTION", comment: "UPDATE_AVAILABLE_DESCRIPTION")
-                    mapUpdate["btnDescription"] = NSLocalizedString("UPDATE_AVAILABLE_BUTTON", comment: "UPDATE_AVAILABLE_BUTTON")
+                    mapUpdate["title"] = "UPDATE_AVAILABLE_TITLE".localized()
+                    mapUpdate["description"] = "UPDATE_AVAILABLE_DESCRIPTION".localized()
+                    mapUpdate["btnDescription"] = "UPDATE_AVAILABLE_BUTTON".localized()
                     mapUpdate["image"] = UIImage(named: "update_app.png")
                     NotificationCenter.default.post(name: Notification.Name(rawValue: "UPDATE"), object: nil, userInfo: mapUpdate)
                     return

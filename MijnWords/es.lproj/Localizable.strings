@@ -13,10 +13,14 @@
 "SERVER_NO_RESPONSE_DESCRIPTION" = "El servidor no responde";
 
 "SLOW_INTERNET_CONNECTION_TITLE" = "Error";
-"SLOW_INTERNET_CONNECTION_DESCRIPTION" = "Conexión a internet demasiado lenta";
+"SLOW_INTERNET_CONNECTION_DESCRIPTION" = "La conexión a internet es demasiado lenta";
 
 "UPDATE_AVAILABLE_TITLE" = "Wow!";
 "UPDATE_AVAILABLE_DESCRIPTION" = "Actualización disponible";
-"UPDATE_AVAILABLE_BUTTON" = "Abrir AppStore!";
+"UPDATE_AVAILABLE_BUTTON" = "Abrir en la AppStore!";
 
-"TRY_AGAIN" = "Reintentar";
+"TRY_AGAIN" = "Intentar de nuevo";
+"SAVE" = "Guardar";
+"DELETE" = "Eliminar";
+"NO_VERBS_SAVED" = "No hay verbos guardados";
+"INVALID_VERB" = "No es un verbo en infinitivo";

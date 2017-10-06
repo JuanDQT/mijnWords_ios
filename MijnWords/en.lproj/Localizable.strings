@@ -6,6 +6,7 @@
   Copyright © 2017 Juan Daniel. All rights reserved.
 */
 
+
 "NO_INTERNET_TITLE" = "Error";
 "NO_INTERNET_DESCRIPTION" = "There is no internet connection";
 
@@ -20,3 +21,7 @@
 "UPDATE_AVAILABLE_BUTTON" = "Open AppStore!";
 
 "TRY_AGAIN" = "Try again!";
+"SAVE" = "Save";
+"DELETE" = "Delete";
+"NO_VERBS_SAVED" = "There are no verbs saved";
+"INVALID_VERB" = "It's not an infinitve verb";

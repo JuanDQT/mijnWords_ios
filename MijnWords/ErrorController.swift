@@ -28,7 +28,6 @@ class ErrorController: UIViewController {
         ivError.image = imageError!
         lblDescription.text = descriptionError!
         btnError.setTitle(btnErrorDescription!, for: .normal)
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func tryAgain(_ sender: Any) {

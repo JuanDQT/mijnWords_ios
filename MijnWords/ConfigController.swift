@@ -53,4 +53,7 @@ class ConfigController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         self.view.endEditing(true)
     }
     
+    @IBAction func cancelAction(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
