@@ -23,4 +23,4 @@
 "SAVE" = "Save";
 "DELETE" = "Verwijder";
 "NO_VERBS_SAVED" = "Er zijn geen werkwoorden opgeslagen";
-"INVALID_VERB" = "It's not an infinitve verb";
+"INVALID_VERB" = "Het is geen werkwoord in de infinitief";
